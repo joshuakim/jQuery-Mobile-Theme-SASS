@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery Mobile Prototype</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link href="css/main.css" rel="stylesheet">
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile.js"></script>
+</head>
+<body>
+<!-- page -->
+<div id="home" data-role="page">
+	
+	<!-- panel -->
+	<div data-role="panel" id="mypanel">
+		<p>Off-Canvas Navigation</p>
+		
+		<a href="#myheader" data-rel="close" data-role="button">Close Panel</a>
+	</div>
+	<!-- /panel -->
+
+	<!-- header -->
+	<div data-role="header" id="myheader">
+		<a href="#mypanel" data-icon="bars" data-iconpos="notext">&nbsp;</a>
+		<h1>jQuery Themes</h1>
+	</div>
+	<!-- /header -->
+	<!-- content -->
+	<div data-role="content">
+		<ul data-role="listview">
+			<li><a href="#theme-a">Theme A</a></li>
+			<li><a href="#theme-b">Theme B</a></li>
+			<li><a href="#theme-c">Theme C</a></li>
+			<li><a href="#theme-d">Theme D</a></li>
+			<li><a href="#theme-e">Theme E</a></li>
+		</ul>
+	</div>
+	<!-- /content -->
+	<!-- footer -->
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page -->
+
+<!-- page -->
+<div data-role="page" id="theme-a" data-theme="a">
+	<div data-role="header" data-theme="a">
+		<a href="#home" data-icon="home">Home</a>
+		<h1>Theme A</h1>
+		<a href="#" data-icon="grid" data-iconpos="notext">&nbsp;</a>
+	</div>
+	<div data-role="content">
+		<p>Sample text and <a href="#" class="ui-link">link</a>.</p>
+		<ul data-role="listview" data-inset="true">
+			<li data-role="list-divider">List Header</li>
+			<li><a href="#">Read-only list item</a></li>
+			<li><a href="#">Linked list item</a></li>
+		</ul>
+		<fieldset data-role="controlgroup">
+			<input type="radio" name="radio-a" id="radio-a" checked>
+			<label for="radio-a">One</label>
+			<input type="checkbox" name="checkbox-a" id="checkbox-a" checked>
+			<label for="checkbox-a">Two</label>
+		</fieldset>
+		<input type="search" value="" placeholder="Enter Text Here..." data-clear-btn="true">
+		<input type="range" name="slider1" id="slider1" value="50" min="0" max="100" data-highlight="true">
+		<fieldset data-role="controlgroup"  data-type="horizontal" data-role="fieldcontain">
+			<legend>Cache settings:</legend>
+			<input type="radio" name="radio-choice-a" id="radio-choice-a-1" value="on" checked="checked">
+			<label for="radio-choice-a-1">On</label>
+			<input type="radio" name="radio-choice-a" id="radio-choice-a-2" value="off">
+			<label for="radio-choice-a-2">Off</label>
+		</fieldset>
+		<a href="#home" data-role="button" data-icon="back">Back</a>
+	</div>
+</div>
+<!-- /page -->
+
+<!-- page -->
+<div data-role="page" id="theme-b" data-theme="b">
+	<div data-role="header" data-theme="b">
+		<h1>Theme B</h1>
+	</div>
+	<div data-role="content">
+		<p>Paragraph text and <a href="#" class="ui-link">link</a>.</p>
+		<label for="slider1">Input slider:</label>
+		<input type="range" name="slider1" id="slider1" value="50" min="0" max="100" data-highlight="true">
+		<fieldset data-role="controlgroup"  data-type="horizontal" data-role="fieldcontain">
+			<legend>Cache settings:</legend>
+			<input type="radio" name="radio-choice-b" id="radio-choice-b-1" value="on" checked="checked">
+			<label for="radio-choice-b-1">On</label>
+			<input type="radio" name="radio-choice-b" id="radio-choice-b-2" value="off">
+			<label for="radio-choice-b-2">Off</label>
+		</fieldset>
+		<a href="#home" data-role="button" data-icon="back">Back</a>
+	</div>
+</div>
+<!-- /page -->
+
+<!-- page -->
+<div data-role="page" id="theme-c" data-theme="c">
+	<div data-role="header" data-theme="c">
+		<h1>Theme C</h1>
+	</div>
+	<div data-role="content">
+		<p>Paragraph text and <a href="#" class="ui-link">link</a>.</p>
+		<label for="slider1">Input slider:</label>
+		<input type="range" name="slider1" id="slider1" value="50" min="0" max="100" data-highlight="true">
+		<fieldset data-role="controlgroup"  data-type="horizontal" data-role="fieldcontain">
+			<legend>Cache settings:</legend>
+			<input type="radio" name="radio-choice-c" id="radio-choice-c-1" value="on" checked="checked">
+			<label for="radio-choice-c-1">On</label>
+			<input type="radio" name="radio-choice-c" id="radio-choice-c-2" value="off">
+			<label for="radio-choice-c-2">Off</label>
+		</fieldset>
+		<a href="#home" data-role="button" data-icon="back">Back</a>
+	</div>
+</div>
+<!-- /page -->
+
+<!-- page -->
+<div data-role="page" id="theme-d" data-theme="d">
+	<div data-role="header" data-theme="d">
+		<h1>Theme D</h1>
+	</div>
+	<div data-role="content">
+		<p>Paragraph text and <a href="#" class="ui-link">link</a>.</p>
+		<label for="slider1">Input slider:</label>
+		<input type="range" name="slider1" id="slider1" value="50" min="0" max="100" data-highlight="true">
+		<fieldset data-role="controlgroup"  data-type="horizontal" data-role="fieldcontain">
+			<legend>Cache settings:</legend>
+			<input type="radio" name="radio-choice-d" id="radio-choice-d-1" value="on" checked="checked">
+			<label for="radio-choice-d-1">On</label>
+			<input type="radio" name="radio-choice-d" id="radio-choice-d-2" value="off">
+			<label for="radio-choice-d-2">Off</label>
+		</fieldset>
+		<a href="#home" data-role="button" data-icon="back">Back</a>
+	</div>
+</div>
+</body>
+<!-- /page -->
+
+<!-- page -->
+<div data-role="page" id="theme-e" data-theme="e">
+	<div data-role="header" data-theme="e">
+		<h1>Theme E</h1>
+	</div>
+	<div data-role="content">
+		<p>Paragraph text and <a href="#" class="ui-link">link</a>.</p>
+		<label for="slider1">Input slider:</label>
+		<input type="range" name="slider1" id="slider1" value="50" min="0" max="100" data-highlight="true">
+		<fieldset data-role="controlgroup"  data-type="horizontal" data-role="fieldcontain">
+			<legend>Cache settings:</legend>
+			<input type="radio" name="radio-choice-e" id="radio-choice-e-1" value="on" checked="checked">
+			<label for="radio-choice-e-1">On</label>
+			<input type="radio" name="radio-choice-e" id="radio-choice-e-2" value="off">
+			<label for="radio-choice-e-2">Off</label>
+		</fieldset>
+		<a href="#home" data-role="button" data-icon="back">Back</a>
+	</div>
+</div>
+</body>
+<!-- /page -->
+
+<script src="js/main.min.js" type="text/javascript"></script>
+<script>
+// ----------------------------------------------------------------------
+// TEMP: For Responsive Web Design (RWD) Testing - Show Viewport Width
+$(document).ready(function () {
+	//UX.showViewport();
+});
+</script>
+</html>

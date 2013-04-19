@@ -1,0 +1,128 @@
+/*!==========================================================================
+   IMPORTANT!
+   This is a SASS generated CSS file. Make edits to the original .scss file
+   Name: main.scss
+   ========================================================================== */
+
+// ==========================================================================
+// Set SASS Custom Variables
+// ========================================================================== */
+
+
+// ==========================================================================
+// Import jQuery Mobile's Structure and Default Theme
+// ==========================================================================
+// jquery.mobile.structure-1.3.1.css
+@import "jquery.mobile.theme";
+
+// jquery.mobile.structure-1.3.1.css
+@import "jquery.mobile.structure";
+
+// ==========================================================================
+// Default to including ALL modules
+// Remove or comment-out any modules you do not use to create a smaller
+// css file.
+// ==========================================================================
+/* TODO: Need to breakdown by Base UI
+@include jqm-core;
+
+@include jqm-transitions;
+@include jqm-grids;
+@include jqm-headerfooter;
+@include jqm-navbar;
+@include jqm-button;
+@include jqm-collapsible;
+@include jqm-controlgroup;
+@include jqm-dialog;
+
+@include jqm-forms-checkboxradio;
+@include jqm-forms-fieldcontain;
+@include jqm-forms-select;
+@include jqm-forms-textinput;
+@include jqm-forms-slider;
+
+@include jqm-listview;
+*/
+
+
+/* ===== Custom Styles ======================================================
+   Author: 
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Global Defaults
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Common
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Table
+   ========================================================================== */
+.ui-table-reflow tbody th {
+	margin-top: 2em;
+}
+
+/* ----------------------------------------------------------------------
+   Sub Section
+   ---------------------------------------------------------------------- */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* Sub-Sub Section 1 */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* Sub-Sub Section 2 */
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Variables
+$MQ-min: min-width; // min-device-width (default - work mobile to desktop)
+$MQ-max: max-width;	// max-device-width
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Mixin: Generate Media Queries
+@mixin MQ ($width, $MQ-width: $MQ-min) {
+	@media ($MQ-width: $width) { @content; }
+}
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Breakpoints
+
+// Narrow viewport (NVP)
+// $width-NVP(?)
+
+// Medium viewport (MVP)
+// 560px (35em) - Default ui-responsive breakpoint by jQuery Mobile
+$width-MVP: 35em;
+
+// Wide viewport (WVP)
+// 640px (40em) - Wider
+$width-WVP: 40em;
+
+
+
+
+/* ----------------------------------------------------------------------
+   Medium viewport (MVP)
+   560px (35em) or greater
+   ---------------------------------------------------------------------- */
+@include MQ ($width-MVP) {
+	.my-table.ui-responsive {
+		display: table;
+	}
+}
+
+/* ----------------------------------------------------------------------
+   Wide viewport (WVP)
+   640px (40em) or greater
+   ---------------------------------------------------------------------- */
+@include MQ ($width-WVP) {
+}

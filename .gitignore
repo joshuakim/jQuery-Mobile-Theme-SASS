@@ -1,1 +1,3 @@
-Need to figure out what gitignore file does :D
+# Need to figure out what gitignore file does :D
+.DS_Store
+.sass-cache
