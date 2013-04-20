@@ -5,44 +5,52 @@
    ========================================================================== */
 
 // ==========================================================================
-// Set SASS Custom Variables
+// Default Compass Variables
 // ========================================================================== */
 
+// 0. Allow to overwrite default theme variables a-e
+// 1. Have pre-defined default theme variables a-e
+// 2. Create themes a-e
+// 3. Output rest of global theme CSS
 
 // ==========================================================================
-// Import jQuery Mobile's Structure and Default Theme
-// ==========================================================================
 // jquery.mobile.structure-1.3.1.css
+// ==========================================================================
 @import "jquery.mobile.theme";
 
+
+
+// ==========================================================================
 // jquery.mobile.structure-1.3.1.css
+// ==========================================================================
 @import "jquery.mobile.structure";
 
-// ==========================================================================
-// Default to including ALL modules
-// Remove or comment-out any modules you do not use to create a smaller
+// --------------------------------------------------------------------------
+// Default to including all structure CSS
+// Remove or comment out any modules you do not use to create a smaller
 // css file.
-// ==========================================================================
-/* TODO: Need to breakdown by Base UI
-@include jqm-core;
+// --------------------------------------------------------------------------
+@include ui-core;
 
-@include jqm-transitions;
-@include jqm-grids;
-@include jqm-headerfooter;
-@include jqm-navbar;
-@include jqm-button;
-@include jqm-collapsible;
-@include jqm-controlgroup;
-@include jqm-dialog;
+@include ui-transitions;
+@include ui-grid;
+@include ui-fixed-header-footer;
+@include ui-navbar;
+@include ui-button;
+@include ui-collapsible;
+@include ui-controlgroup;
+@include ui-dialog-popup;
 
-@include jqm-forms-checkboxradio;
-@include jqm-forms-fieldcontain;
-@include jqm-forms-select;
-@include jqm-forms-textinput;
-@include jqm-forms-slider;
+@include ui-checkbox-radio;
+@include ui-fieldset;
+@include ui-select;
+@include ui-input;
+@include ui-rangeslider;
+@include ui-listview;
+@include ui-slider;
 
-@include jqm-listview;
-*/
+@include ui-table;
+@include ui-panel;
 
 
 /* ===== Custom Styles ======================================================

@@ -955,16 +955,10 @@ a.ui-link-inherit {
   cursor: pointer;
   text-shadow: 0 1px 0 #3373a5;
   text-decoration: none;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#5393c5), to(#6facd5));
-  /* Saf4+, Chrome */
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5393c5), color-stop(100%, #6facd5));
   background-image: -webkit-linear-gradient(#5393c5, #6facd5);
-  /* Chrome 10+, Saf5.1+ */
   background-image: -moz-linear-gradient(#5393c5, #6facd5);
-  /* FF3.6 */
-  background-image: -ms-linear-gradient(#5393c5, #6facd5);
-  /* IE10 */
   background-image: -o-linear-gradient(#5393c5, #6facd5);
-  /* Opera 11.10+ */
   background-image: linear-gradient(#5393c5, #6facd5);
   font-family: Helvetica, Arial, sans-serif;
 }
@@ -1279,7 +1273,7 @@ a.ui-link-inherit {
 
 .ui-checkbox-on .ui-icon,
 .ui-radio-on .ui-icon {
-  background-color: #4596ce;
+  background-color: #5393c5;
   /* NOTE: this hex should match the active state color. It's repeated here for cascade */
 }
 
@@ -1358,16 +1352,16 @@ a.ui-link-inherit {
 
 .ui-focus,
 .ui-btn:focus {
-  -moz-box-shadow: inset 0 0 3px #387bbe, 0 0 9px #387bbe;
-  -webkit-box-shadow: inset 0 0 3px #387bbe, 0 0 9px #387bbe;
-  box-shadow: inset 0 0 3px #387bbe, 0 0 9px #387bbe;
+  -webkit-box-shadow: #5393c5 0 0 3px inset, #5393c5 0 0 9px;
+  -moz-box-shadow: #5393c5 0 0 3px inset, #5393c5 0 0 9px;
+  box-shadow: #5393c5 0 0 3px inset, #5393c5 0 0 9px;
 }
 
 .ui-input-text.ui-focus,
 .ui-input-search.ui-focus {
-  -moz-box-shadow: 0 0 12px #387bbe;
-  -webkit-box-shadow: 0 0 12px #387bbe;
-  box-shadow: 0 0 12px #387bbe;
+  -webkit-box-shadow: #5393c5 0 0 12px;
+  -moz-box-shadow: #5393c5 0 0 12px;
+  box-shadow: #5393c5 0 0 12px;
 }
 
 /* unset box shadow in browsers that don't do it right
@@ -5822,26 +5816,6 @@ div.ui-slider-switch.ui-mini {
     display: none;
   }
 }
-/* TODO: Need to breakdown by Base UI
-@include jqm-core;
-
-@include jqm-transitions;
-@include jqm-grids;
-@include jqm-headerfooter;
-@include jqm-navbar;
-@include jqm-button;
-@include jqm-collapsible;
-@include jqm-controlgroup;
-@include jqm-dialog;
-
-@include jqm-forms-checkboxradio;
-@include jqm-forms-fieldcontain;
-@include jqm-forms-select;
-@include jqm-forms-textinput;
-@include jqm-forms-slider;
-
-@include jqm-listview;
-*/
 /* ===== Custom Styles ======================================================
    Author: 
    ========================================================================== */

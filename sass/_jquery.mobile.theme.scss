@@ -1,3 +1,5 @@
+@import "compass/css3";
+
 /*
 * jQuery Mobile 1.3.1
 * jquery.mobile.theme-1.3.1.css
@@ -9,6 +11,77 @@
 * http://jquery.org/license
 *
 */
+// ==========================================================================
+// Global Variables - General
+// ==========================================================================
+// Relative image path to Sprite Icons
+$img-path: "../images/" !default;
+
+
+// ==========================================================================
+// Global Variables - Theme Settings
+// ==========================================================================
+
+// --------------------------------------------------------------------------
+// Font Family
+// --------------------------------------------------------------------------
+$global-font-family: Helvetica, Arial, sans-serif !default;
+
+
+// --------------------------------------------------------------------------
+// Active State
+// --------------------------------------------------------------------------
+// Text Color
+$global-active-color: #fff !default;
+
+// Text Shadow
+$global-active-shadow-x:      0       !default;
+$global-active-shadow-y:      1px     !default;
+$global-active-shadow-radius: 0       !default;
+$global-active-shadow-color:  #3373a5 !default;
+
+// Background
+$global-active-background-color: #5393c5 !default;
+$global-active-background-start: #5393c5 !default;
+$global-active-background-end:   #6facd5 !default;
+
+// Border Color
+$global-active-border: #2373a5 !default;
+
+
+// --------------------------------------------------------------------------
+// Corner Radii
+// --------------------------------------------------------------------------
+$global-radii-blocks: .6em !default;
+$global-radii-buttons: 1em !default;
+
+
+// --------------------------------------------------------------------------
+// Icon
+// --------------------------------------------------------------------------
+$global-icon-set: white !default;	// Options: white | black
+$global-icon-color: #666 !default;
+$global-icon-opacity: 0.40 !default; // Options: 0.00 - 1.00
+
+// PRIVATE: This variable is calculated depending on disc-option and color + opacity
+$global-icon-disc: rgba($global-icon-color, $global-icon-opacity) !default;
+
+// Disc or W/O Disc
+// To remove disc around icon, uncomment the following:
+// $global-icon-disc: transparent !default;
+
+// PRIVATE: This variable is not included in ThemeRoller, but editable if wanted:
+$global-icon-shadow: rgba(255,255,255,.4) !default;
+
+
+// --------------------------------------------------------------------------
+// Box Shadow
+// --------------------------------------------------------------------------
+$global-box-shadow-color: #000 !default;
+$global-box-shadow-opacity: 0.2 !default;
+$global-box-shadow-x:    0   !default;
+$global-box-shadow-y:    1px !default;
+$global-box-shadow-size: 3px !default;
 
 
 /* Swatches */
@@ -150,6 +223,8 @@
 	font-family: Helvetica, Arial, sans-serif /*{global-font-family}*/;
 	text-decoration: none;
 }
+
+
 /* B
 -----------------------------------------------------------------------------------------------------------*/
 .ui-bar-b {
@@ -288,6 +363,8 @@
 	font-family: Helvetica, Arial, sans-serif /*{global-font-family}*/;
 	text-decoration: none;
 }
+
+
 /* C
 -----------------------------------------------------------------------------------------------------------*/
 .ui-bar-c {
@@ -425,6 +502,8 @@
 	font-family: Helvetica, Arial, sans-serif /*{global-font-family}*/;
 	text-decoration: none;
 }
+
+
 /* D
 -----------------------------------------------------------------------------------------------------------*/
 .ui-bar-d {
@@ -563,6 +642,8 @@
 	font-family: Helvetica, Arial, sans-serif /*{global-font-family}*/;
 	text-decoration: none;
 }
+
+
 /* E
 -----------------------------------------------------------------------------------------------------------*/
 .ui-bar-e {
@@ -700,6 +781,8 @@
 	font-family: Helvetica, Arial, sans-serif /*{global-font-family}*/;
 	text-decoration: none;
 }
+
+
 /* Structure */
 /* links within "buttons" 
 -----------------------------------------------------------------------------------------------------------*/
@@ -709,25 +792,20 @@ a.ui-link-inherit {
 /* Active class used as the "on" state across all themes
 -----------------------------------------------------------------------------------------------------------*/
 .ui-btn-active {
-	border: 1px solid 		#2373a5 /*{global-active-border}*/;
-	background: 			#5393c5 /*{global-active-background-color}*/;
+	border: 1px solid $global-active-border;
+	background: $global-active-background-color;
 	font-weight: bold;
-	color: 					#fff /*{global-active-color}*/;
+	color: $global-active-color;
 	cursor: pointer;
-	text-shadow: 0 /*{global-active-shadow-x}*/ 1px /*{global-active-shadow-y}*/ 0 /*{global-active-shadow-radius}*/ #3373a5 /*{global-active-shadow-color}*/;
+	text-shadow: $global-active-shadow-x $global-active-shadow-y $global-active-shadow-radius $global-active-shadow-color;
 	text-decoration: none;
-	background-image: -webkit-gradient(linear, left top, left bottom, from( #5393c5 /*{global-active-background-start}*/), to( #6facd5 /*{global-active-background-end}*/)); /* Saf4+, Chrome */
-	background-image: -webkit-linear-gradient( #5393c5 /*{global-active-background-start}*/, #6facd5 /*{global-active-background-end}*/); /* Chrome 10+, Saf5.1+ */
-	background-image:    -moz-linear-gradient( #5393c5 /*{global-active-background-start}*/, #6facd5 /*{global-active-background-end}*/); /* FF3.6 */
-	background-image:     -ms-linear-gradient( #5393c5 /*{global-active-background-start}*/, #6facd5 /*{global-active-background-end}*/); /* IE10 */
-	background-image:      -o-linear-gradient( #5393c5 /*{global-active-background-start}*/, #6facd5 /*{global-active-background-end}*/); /* Opera 11.10+ */
-	background-image:         linear-gradient( #5393c5 /*{global-active-background-start}*/, #6facd5 /*{global-active-background-end}*/);
-	font-family: Helvetica, Arial, sans-serif /*{global-font-family}*/;
+	@include background-image(linear-gradient($global-active-background-start, $global-active-background-end));
+	font-family: $global-font-family;
 }
 .ui-btn-active:visited,
 .ui-btn-active:hover,
 .ui-btn-active a.ui-link-inherit {
-	color: 					#fff /*{global-active-color}*/;
+	color: $global-active-color;
 }
 /* button inner top highlight
 -----------------------------------------------------------------------------------------------------------*/
@@ -766,7 +844,7 @@ a.ui-link-inherit {
 .ui-icon-searchfield:after {
 	background-color: 						#666 /*{global-icon-color}*/;
 	background-color: 						rgba(0,0,0,.4) /*{global-icon-disc}*/;
-	background-image: url(../images/icons-18-white.png) /*{global-icon-set}*/;
+	background-image: url(#{$img-path}icons-18-white.png) /*{global-icon-set}*/;
 	background-repeat: no-repeat;
 	-webkit-border-radius: 				9px;
 	border-radius: 						9px;
@@ -777,7 +855,7 @@ a.ui-link-inherit {
 .ui-icon-alt .ui-icon-searchfield:after {
 	background-color: 						#fff;
 	background-color: 						rgba(255,255,255,.3);
-	background-image: url(../images/icons-18-black.png);
+	background-image: url(#{$img-path}icons-18-black.png);
 	background-repeat: no-repeat;
 }
 /* No disc
@@ -882,14 +960,14 @@ a.ui-link-inherit {
 	.ui-icon-grid, .ui-icon-star, .ui-icon-alert, .ui-icon-info, .ui-icon-home, .ui-icon-bars, .ui-icon-edit,
 	.ui-icon-search, .ui-icon-searchfield:after, 
 	.ui-icon-checkbox-off, .ui-icon-checkbox-on, .ui-icon-radio-off, .ui-icon-radio-on {
-		background-image: url(../images/icons-36-white.png);
+		background-image: url(#{$img-path}icons-36-white.png);
 		-moz-background-size: 864px 18px;
 		-o-background-size: 864px 18px;
 		-webkit-background-size: 864px 18px;
 		background-size: 864px 18px;
 	}
 	.ui-icon-alt .ui-icon {
-		background-image: url(../images/icons-36-black.png);
+		background-image: url(#{$img-path}icons-36-black.png);
 	}
 	.ui-icon-plus {
 		background-position: 	0 50%;
@@ -977,11 +1055,11 @@ a.ui-link-inherit {
 }
 .ui-checkbox-on .ui-icon,
 .ui-radio-on .ui-icon {
-	background-color: #4596ce /*{global-active-background-color}*/; /* NOTE: this hex should match the active state color. It's repeated here for cascade */
+	background-color: $global-active-background-color; /* NOTE: this hex should match the active state color. It's repeated here for cascade */
 }
 /* loading icon */
 .ui-icon-loading {
-	background: url(../images/ajax-loader.gif);
+	background: url(#{$img-path}ajax-loader.gif);
 	background-size: 46px 46px;
 }
 /* Button corner class
@@ -1043,15 +1121,11 @@ a.ui-link-inherit {
 }
 .ui-focus,
 .ui-btn:focus {
-	-moz-box-shadow: inset 0 0 3px 		#387bbe /*{global-active-background-color}*/, 0 0 9px 		#387bbe /*{global-active-background-color}*/;
-	-webkit-box-shadow: inset 0 0 3px 	#387bbe /*{global-active-background-color}*/, 0 0 9px 		#387bbe /*{global-active-background-color}*/;
-	box-shadow: inset 0 0 3px 			#387bbe /*{global-active-background-color}*/, 0 0 9px 		#387bbe /*{global-active-background-color}*/;
+	@include box-shadow($global-active-background-color 0 0 3px inset, $global-active-background-color 0 0 9px);
 }
 .ui-input-text.ui-focus,
 .ui-input-search.ui-focus {
-	-moz-box-shadow: 0 0 12px 			#387bbe /*{global-active-background-color}*/;
-	-webkit-box-shadow: 0 0 12px 		#387bbe /*{global-active-background-color}*/;
-	box-shadow: 0 0 12px 					#387bbe /*{global-active-background-color}*/;	
+	@include box-shadow($global-active-background-color 0 0 12px);
 }
 /* unset box shadow in browsers that don't do it right
 -----------------------------------------------------------------------------------------------------------*/
