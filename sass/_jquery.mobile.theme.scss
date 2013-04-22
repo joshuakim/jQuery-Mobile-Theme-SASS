@@ -372,131 +372,84 @@ $a-bdown-border: #000 !default;
 }
 
 
-/* Swatches */
+/* Create Swatches */
 /* A
 -----------------------------------------------------------------------------------------------------------*/
-/* Bar */
-.ui-bar-a {
-	border: 1px solid $a-bar-border;
-	background: $a-bar-background-color;
-	color: $a-bar-color;
-	font-weight: bold;
-	text-shadow: $a-bar-shadow-x $a-bar-shadow-y $a-bar-shadow-radius $a-bar-shadow-color;
-	@include background-image(linear-gradient($a-bar-background-start, $a-bar-background-end));
-}
-.ui-bar-a,
-.ui-bar-a input,
-.ui-bar-a select,
-.ui-bar-a textarea,
-.ui-bar-a button {
-	font-family: $global-font-family;
-}
-.ui-bar-a .ui-link-inherit {
-	color: $a-bar-color;
-}
-.ui-bar-a a.ui-link {
-	color: $a-bar-link-color;
-	font-weight: bold;
-}
-.ui-bar-a a.ui-link:visited {
-    color: $a-bar-link-visited;
-}
-.ui-bar-a a.ui-link:hover {
-	color: $a-bar-link-hover;
-}
-.ui-bar-a a.ui-link:active {
-	color: $a-bar-link-active;
-}
+@mixin theme-create-swatch-a {
 
-/* Body */
-.ui-body-a,
-.ui-overlay-a {
-	border: 1px solid $a-body-border;
-	background: $a-body-background-color;
-	color: $a-body-color;
-	text-shadow: $a-body-shadow-x $a-body-shadow-y $a-body-shadow-radius $a-body-shadow-color;
-	font-weight: normal;
-	@include background-image(linear-gradient($a-body-background-start, $a-body-background-end));
+	@include theme-create-swatch(
+		'a',
+	
+		// Header/Footer Bar
+		// -----------------------------------
+		$bar-color: $a-bar-color,
+		$bar-shadow-x: $a-bar-shadow-x,
+		$bar-shadow-y: $a-bar-shadow-y,
+		$bar-shadow-radius: $a-bar-shadow-radius,
+		$bar-shadow-color: $a-bar-shadow-color,
+		$bar-background-color: $a-bar-background-color,
+		$bar-background-start: $a-bar-background-start,
+		$bar-background-end: $a-bar-background-end,
+		$bar-border: $a-bar-border,
+		$bar-link-color: $a-bar-link-color,
+		$bar-link-hover: $a-bar-link-hover,
+		$bar-link-active: $a-bar-link-active,
+		$bar-link-visited: $a-bar-link-visited,
+		
+		// Content Body
+		// -----------------------------------
+		$body-link-color: $a-body-link-color,
+		$body-link-hover: $a-body-link-hover,
+		$body-link-active: $a-body-link-active,
+		$body-link-visited: $a-body-link-visited,
+		$body-color: $a-body-color,
+		$body-shadow-x: $a-body-shadow-x,
+		$body-shadow-y: $a-body-shadow-y,
+		$body-shadow-radius: $a-body-shadow-radius,
+		$body-shadow-color: $a-body-shadow-color,
+		$body-background-color: $a-body-background-color,
+		$body-background-start: $a-body-background-start,
+		$body-background-end: $a-body-background-end,
+		$body-border: $a-body-border,
+		
+		// Button: Normal
+		// -----------------------------------
+		$bup-color: $a-bup-color,
+		$bup-shadow-x: $a-bup-shadow-x,
+		$bup-shadow-y: $a-bup-shadow-y,
+		$bup-shadow-radius: $a-bup-shadow-radius,
+		$bup-shadow-color: $a-bup-shadow-color,
+		$bup-background-color: $a-bup-background-color,
+		$bup-background-start: $a-bup-background-start,
+		$bup-background-end: $a-bup-background-end,
+		$bup-border: $a-bup-border,
+		
+		// Button: Hover
+		// -----------------------------------
+		$bhover-color: $a-bhover-color,
+		$bhover-shadow-x: $a-bhover-shadow-x,
+		$bhover-shadow-y: $a-bhover-shadow-y,
+		$bhover-shadow-radius: $a-bhover-shadow-radius,
+		$bhover-shadow-color: $a-bhover-shadow-color,
+		$bhover-background-color: $a-bhover-background-color,
+		$bhover-background-start: $a-bhover-background-start,
+		$bhover-background-end: $a-bhover-background-end,
+		$bhover-border: $a-bhover-border,
+		
+		
+		// Button: Pressed
+		// -----------------------------------
+		$bdown-color: $a-bdown-color,
+		$bdown-shadow-x: $a-bdown-shadow-x,
+		$bdown-shadow-y: $a-bdown-shadow-y,
+		$bdown-shadow-radius: $a-bdown-shadow-radius,
+		$bdown-shadow-color: $a-bdown-shadow-color,
+		$bdown-background-color: $a-bdown-background-color,
+		$bdown-background-start: $a-bdown-background-start,
+		$bdown-background-end: $a-bdown-background-end,
+		$bdown-border: $a-bdown-border
+	);
 }
-.ui-overlay-a {
-	background-image: none;
-	border-width: 0;
-}
-.ui-body-a,
-.ui-body-a input,
-.ui-body-a select,
-.ui-body-a textarea,
-.ui-body-a button {
-	font-family: $global-font-family;
-}
-.ui-body-a .ui-link-inherit {
-	color: $a-body-color;
-}
-.ui-body-a .ui-link {
-	color: $a-body-link-color;
-	font-weight: bold;
-}
-.ui-body-a .ui-link:visited {
-    color: $a-body-link-visited;
-}
-.ui-body-a .ui-link:hover {
-	color: $a-body-link-hover;
-}
-.ui-body-a .ui-link:active {
-	color: $a-body-link-active;
-}
-
-/* Button: Normal */
-.ui-btn-up-a {
-	border: 1px solid $a-bup-border;
-	background: $a-bup-background-color;
-	font-weight: bold;
-	color: $a-bup-color;
-	text-shadow: $a-bup-shadow-x $a-bup-shadow-y $a-bup-shadow-radius $a-bup-shadow-color;
-	@include background-image(linear-gradient($a-bup-background-start, $a-bup-background-end));
-}
-.ui-btn-up-a:visited,
-.ui-btn-up-a a.ui-link-inherit {
-	color: $a-bup-color;
-}
-
-/* Button: Hover */
-.ui-btn-hover-a {
-	border: 1px solid $a-bhover-border;
-	background: $a-bhover-background-color;
-	font-weight: bold;
-	color: $a-bhover-color;
-	text-shadow: $a-bhover-shadow-x $a-bhover-shadow-y $a-bhover-shadow-radius $a-bhover-shadow-color;
-	@include background-image(linear-gradient($a-bhover-background-start, $a-bhover-background-end));
-}
-.ui-btn-hover-a:visited,
-.ui-btn-hover-a:hover,
-.ui-btn-hover-a a.ui-link-inherit {
-	color: $a-bhover-color;
-}
-
-/* Button: Pressed */
-.ui-btn-down-a {
-	border: 1px solid $a-bdown-border;
-	background: $a-bdown-background-color;
-	font-weight: bold;
-	color: $a-bdown-color;
-	text-shadow: $a-bdown-shadow-x $a-bdown-shadow-y $a-bdown-shadow-radius $a-bdown-shadow-color;
-	@include background-image(linear-gradient($a-bdown-background-start, $a-bdown-background-end));
-}
-.ui-btn-down-a:visited,
-.ui-btn-down-a:hover,
-.ui-btn-down-a a.ui-link-inherit {
-	color: $a-bdown-color;
-}
-
-.ui-btn-up-a,
-.ui-btn-hover-a,
-.ui-btn-down-a {
-	font-family: $global-font-family;
-	text-decoration: none;
-}
-
 
 /* B
 -----------------------------------------------------------------------------------------------------------*/
