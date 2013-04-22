@@ -61,7 +61,7 @@ $global-radii-buttons: 1em !default;
 // --------------------------------------------------------------------------
 $global-icon-set: white !default;	// Options: white | black
 $global-icon-color: #666 !default;
-$global-icon-opacity: 0.40 !default; // Options: 0.00 - 1.00
+$global-icon-opacity: 0.40 !default;
 
 // PRIVATE: This variable is calculated depending on disc-option and color + opacity
 $global-icon-disc: rgba($global-icon-color, $global-icon-opacity) !default;
@@ -79,8 +79,6 @@ $global-icon-shadow: rgba(255,255,255,.4) !default;
 // --------------------------------------------------------------------------
 $global-box-shadow-color: #000 !default;
 $global-box-shadow-opacity: 0.2 !default;
-$global-box-shadow-x:    0   !default;
-$global-box-shadow-y:    1px !default;
 $global-box-shadow-size: 3px !default;
 
 
@@ -816,8 +814,7 @@ a.ui-link-inherit {
 /* corner rounding classes
 -----------------------------------------------------------------------------------------------------------*/
 .ui-corner-all {
-	-webkit-border-radius: 				.6em /*{global-radii-blocks}*/;
-	border-radius: 						.6em /*{global-radii-blocks}*/;
+	@include border-radius($global-radii-blocks);
 }
 /* Form field separator
 -----------------------------------------------------------------------------------------------------------*/
@@ -842,19 +839,18 @@ a.ui-link-inherit {
 -----------------------------------------------------------------------------------------------------------*/
 .ui-icon,
 .ui-icon-searchfield:after {
-	background-color: 						#666 /*{global-icon-color}*/;
-	background-color: 						rgba(0,0,0,.4) /*{global-icon-disc}*/;
-	background-image: url(#{$img-path}icons-18-white.png) /*{global-icon-set}*/;
+	background-color: $global-icon-color;
+	background-color: $global-icon-disc;
+	background-image: url(#{$img-path}icons-18-#{$global-icon-set}.png);
 	background-repeat: no-repeat;
-	-webkit-border-radius: 				9px;
-	border-radius: 						9px;
+	@include border-radius(9px);
 }
 /* Alt icon color
 -----------------------------------------------------------------------------------------------------------*/
 .ui-icon-alt .ui-icon,
 .ui-icon-alt .ui-icon-searchfield:after {
-	background-color: 						#fff;
-	background-color: 						rgba(255,255,255,.3);
+	background-color: #fff;
+	background-color: rgba(255,255,255,.3);
 	background-image: url(#{$img-path}icons-18-black.png);
 	background-repeat: no-repeat;
 }
@@ -954,17 +950,33 @@ a.ui-link-inherit {
        only screen and (min--moz-device-pixel-ratio: 1.3),
        only screen and (min-resolution: 200dpi) {
 	
-	.ui-icon-plus, .ui-icon-minus, .ui-icon-delete, .ui-icon-arrow-r,
-	.ui-icon-arrow-l, .ui-icon-arrow-u, .ui-icon-arrow-d, .ui-icon-check,
-	.ui-icon-gear, .ui-icon-refresh, .ui-icon-forward, .ui-icon-back,
-	.ui-icon-grid, .ui-icon-star, .ui-icon-alert, .ui-icon-info, .ui-icon-home, .ui-icon-bars, .ui-icon-edit,
-	.ui-icon-search, .ui-icon-searchfield:after, 
-	.ui-icon-checkbox-off, .ui-icon-checkbox-on, .ui-icon-radio-off, .ui-icon-radio-on {
-		background-image: url(#{$img-path}icons-36-white.png);
-		-moz-background-size: 864px 18px;
-		-o-background-size: 864px 18px;
-		-webkit-background-size: 864px 18px;
-		background-size: 864px 18px;
+	.ui-icon-plus, 
+	.ui-icon-minus, 
+	.ui-icon-delete, 
+	.ui-icon-arrow-r,
+	.ui-icon-arrow-l, 
+	.ui-icon-arrow-u, 
+	.ui-icon-arrow-d, 
+	.ui-icon-check,
+	.ui-icon-gear, 
+	.ui-icon-refresh, 
+	.ui-icon-forward, 
+	.ui-icon-back,
+	.ui-icon-grid, 
+	.ui-icon-star, 
+	.ui-icon-alert, 
+	.ui-icon-info, 
+	.ui-icon-home, 
+	.ui-icon-bars, 
+	.ui-icon-edit,
+	.ui-icon-search, 
+	.ui-icon-searchfield:after, 
+	.ui-icon-checkbox-off, 
+	.ui-icon-checkbox-on, 
+	.ui-icon-radio-off, 
+	.ui-icon-radio-on {
+		background-image: url(#{$img-path}icons-36-#{$global-icon-set}.png);
+		@include background-size(864px 18px);
 	}
 	.ui-icon-alt .ui-icon {
 		background-image: url(#{$img-path}icons-36-black.png);
@@ -1046,8 +1058,7 @@ a.ui-link-inherit {
 /* checks,radios */
 .ui-checkbox .ui-icon,
 .ui-selectmenu-list .ui-icon {
-	-webkit-border-radius: 3px;
-	border-radius: 3px;
+	@include border-radius(3px);
 }
 .ui-icon-checkbox-off,
 .ui-icon-radio-off {
@@ -1065,14 +1076,12 @@ a.ui-link-inherit {
 /* Button corner class
 -----------------------------------------------------------------------------------------------------------*/
 .ui-btn-corner-all {
-	-webkit-border-radius: 				1em /*{global-radii-buttons}*/;
-	border-radius: 						1em /*{global-radii-buttons}*/;
+	@include border-radius($global-radii-buttons);
 }
 /* radius clip workaround for cleaning up corner trapping */
 .ui-corner-all,
 .ui-btn-corner-all {
-	-webkit-background-clip: padding;
-	background-clip: padding-box;
+	@include background-clip(padding-box);
 }
 /* Overlay / modal
 -----------------------------------------------------------------------------------------------------------*/
@@ -1085,35 +1094,26 @@ a.ui-link-inherit {
 	height: 100%;
 }
 .ui-overlay-shadow {
-	-moz-box-shadow: 0 0 12px 			rgba(0,0,0,.6);
-	-webkit-box-shadow: 0 0 12px 		rgba(0,0,0,.6);
-	box-shadow: 0 0 12px 				rgba(0,0,0,.6);
+	@include box-shadow(0 0 12px rgba(0,0,0,.6));
 }
 .ui-shadow {
-	-moz-box-shadow: 0 1px 3px /*{global-box-shadow-size}*/ 			rgba(0,0,0,.2) /*{global-box-shadow-color}*/;
-	-webkit-box-shadow: 0 1px 3px /*{global-box-shadow-size}*/ 		rgba(0,0,0,.2) /*{global-box-shadow-color}*/;
-	box-shadow: 0 1px 3px /*{global-box-shadow-size}*/ 				rgba(0,0,0,.2) /*{global-box-shadow-color}*/
+	@include box-shadow(0 1px $global-box-shadow-size rgba($global-box-shadow-color, $global-box-shadow-opacity));
 }
 .ui-bar-a .ui-shadow,
-.ui-bar-b .ui-shadow ,
+.ui-bar-b .ui-shadow,
 .ui-bar-c .ui-shadow  {
-	-moz-box-shadow: 0 1px 0 				rgba(255,255,255,.3);
-	-webkit-box-shadow: 0 1px 0 			rgba(255,255,255,.3);
-	box-shadow: 0 1px 0 					rgba(255,255,255,.3);
+	@include box-shadow(0 1px 0 rgba(255,255,255,.3));
 }
 .ui-shadow-inset {
-	-moz-box-shadow: inset 0 1px 4px 		rgba(0,0,0,.2);
-	-webkit-box-shadow: inset 0 1px 4px 	rgba(0,0,0,.2);
-	box-shadow: inset 0 1px 4px 			rgba(0,0,0,.2);
+	@include box-shadow(inset 0 1px 4px rgba(0,0,0,.2));
 }
 .ui-icon-shadow {
-	-moz-box-shadow: 0 1px 0 				rgba(255,255,255,.4) /*{global-icon-shadow}*/;
-	-webkit-box-shadow: 0 1px 0 			rgba(255,255,255,.4) /*{global-icon-shadow}*/;
-	box-shadow: 0 1px 0 					rgba(255,255,255,.4) /*{global-icon-shadow}*/;
+	@include box-shadow(0 1px 0 $global-icon-shadow);
 }
 /* Focus state - set here for specificity (note: these classes are added by JavaScript)
 -----------------------------------------------------------------------------------------------------------*/
-.ui-btn:focus, .ui-link-inherit:focus {
+.ui-btn:focus, 
+.ui-link-inherit:focus {
 	outline: 0;
 }
 .ui-btn.ui-focus {
@@ -1121,11 +1121,11 @@ a.ui-link-inherit {
 }
 .ui-focus,
 .ui-btn:focus {
-	@include box-shadow($global-active-background-color 0 0 3px inset, $global-active-background-color 0 0 9px);
+	@include box-shadow(inset 0 0 3px $global-active-background-color, 0 0 9px $global-active-background-color);
 }
 .ui-input-text.ui-focus,
 .ui-input-search.ui-focus {
-	@include box-shadow($global-active-background-color 0 0 12px);
+	@include box-shadow(0 0 12px $global-active-background-color);
 }
 /* unset box shadow in browsers that don't do it right
 -----------------------------------------------------------------------------------------------------------*/

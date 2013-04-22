@@ -980,6 +980,9 @@ a.ui-link-inherit {
 -----------------------------------------------------------------------------------------------------------*/
 .ui-corner-all {
   -webkit-border-radius: 0.6em;
+  -moz-border-radius: 0.6em;
+  -ms-border-radius: 0.6em;
+  -o-border-radius: 0.6em;
   border-radius: 0.6em;
 }
 
@@ -1010,10 +1013,13 @@ a.ui-link-inherit {
 .ui-icon,
 .ui-icon-searchfield:after {
   background-color: #666666;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(102, 102, 102, 0.4);
   background-image: url(../images/icons-18-white.png);
   background-repeat: no-repeat;
   -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  -o-border-radius: 9px;
   border-radius: 9px;
 }
 
@@ -1145,16 +1151,35 @@ a.ui-link-inherit {
 /* HD/"retina" sprite
 -----------------------------------------------------------------------------------------------------------*/
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (min-resolution: 200dpi) {
-  .ui-icon-plus, .ui-icon-minus, .ui-icon-delete, .ui-icon-arrow-r,
-  .ui-icon-arrow-l, .ui-icon-arrow-u, .ui-icon-arrow-d, .ui-icon-check,
-  .ui-icon-gear, .ui-icon-refresh, .ui-icon-forward, .ui-icon-back,
-  .ui-icon-grid, .ui-icon-star, .ui-icon-alert, .ui-icon-info, .ui-icon-home, .ui-icon-bars, .ui-icon-edit,
-  .ui-icon-search, .ui-icon-searchfield:after,
-  .ui-icon-checkbox-off, .ui-icon-checkbox-on, .ui-icon-radio-off, .ui-icon-radio-on {
+  .ui-icon-plus,
+  .ui-icon-minus,
+  .ui-icon-delete,
+  .ui-icon-arrow-r,
+  .ui-icon-arrow-l,
+  .ui-icon-arrow-u,
+  .ui-icon-arrow-d,
+  .ui-icon-check,
+  .ui-icon-gear,
+  .ui-icon-refresh,
+  .ui-icon-forward,
+  .ui-icon-back,
+  .ui-icon-grid,
+  .ui-icon-star,
+  .ui-icon-alert,
+  .ui-icon-info,
+  .ui-icon-home,
+  .ui-icon-bars,
+  .ui-icon-edit,
+  .ui-icon-search,
+  .ui-icon-searchfield:after,
+  .ui-icon-checkbox-off,
+  .ui-icon-checkbox-on,
+  .ui-icon-radio-off,
+  .ui-icon-radio-on {
     background-image: url(../images/icons-36-white.png);
+    -webkit-background-size: 864px 18px;
     -moz-background-size: 864px 18px;
     -o-background-size: 864px 18px;
-    -webkit-background-size: 864px 18px;
     background-size: 864px 18px;
   }
 
@@ -1263,6 +1288,9 @@ a.ui-link-inherit {
 .ui-checkbox .ui-icon,
 .ui-selectmenu-list .ui-icon {
   -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
   border-radius: 3px;
 }
 
@@ -1287,6 +1315,9 @@ a.ui-link-inherit {
 -----------------------------------------------------------------------------------------------------------*/
 .ui-btn-corner-all {
   -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
   border-radius: 1em;
 }
 
@@ -1294,6 +1325,7 @@ a.ui-link-inherit {
 .ui-corner-all,
 .ui-btn-corner-all {
   -webkit-background-clip: padding;
+  -moz-background-clip: padding;
   background-clip: padding-box;
 }
 
@@ -1309,40 +1341,41 @@ a.ui-link-inherit {
 }
 
 .ui-overlay-shadow {
-  -moz-box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
 }
 
 .ui-shadow {
-  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .ui-bar-a .ui-shadow,
 .ui-bar-b .ui-shadow,
 .ui-bar-c .ui-shadow {
-  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
   -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
 .ui-shadow-inset {
-  -moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.2);
 }
 
 .ui-icon-shadow {
-  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
   -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
 }
 
 /* Focus state - set here for specificity (note: these classes are added by JavaScript)
 -----------------------------------------------------------------------------------------------------------*/
-.ui-btn:focus, .ui-link-inherit:focus {
+.ui-btn:focus,
+.ui-link-inherit:focus {
   outline: 0;
 }
 
@@ -1352,16 +1385,16 @@ a.ui-link-inherit {
 
 .ui-focus,
 .ui-btn:focus {
-  -webkit-box-shadow: #5393c5 0 0 3px inset, #5393c5 0 0 9px;
-  -moz-box-shadow: #5393c5 0 0 3px inset, #5393c5 0 0 9px;
-  box-shadow: #5393c5 0 0 3px inset, #5393c5 0 0 9px;
+  -webkit-box-shadow: inset 0 0 3px #5393c5, 0 0 9px #5393c5;
+  -moz-box-shadow: inset 0 0 3px #5393c5, 0 0 9px #5393c5;
+  box-shadow: inset 0 0 3px #5393c5, 0 0 9px #5393c5;
 }
 
 .ui-input-text.ui-focus,
 .ui-input-search.ui-focus {
-  -webkit-box-shadow: #5393c5 0 0 12px;
-  -moz-box-shadow: #5393c5 0 0 12px;
-  box-shadow: #5393c5 0 0 12px;
+  -webkit-box-shadow: 0 0 12px #5393c5;
+  -moz-box-shadow: 0 0 12px #5393c5;
+  box-shadow: 0 0 12px #5393c5;
 }
 
 /* unset box shadow in browsers that don't do it right
