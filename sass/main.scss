@@ -3,20 +3,27 @@
    This is a SASS generated CSS file. Make edits to the original .scss file
    Name: main.scss
    ========================================================================== */
+// Organization:
+// 1. Overwrite Default Theme Global and Swatch Variables
+// 2. Import "jquery.mobile.theme" [Private]
+// 3. Import "jquery.mobile.structure" [Private]
+// 4. Define which structure structure components to load
+// 5. Custom Styles
+
 
 // ==========================================================================
-// Default Compass Variables
-// ========================================================================== */
+// Overwrite Theme Global and Swatch Variables
+// ==========================================================================
 
 
 // ==========================================================================
-// jquery.mobile.structure-1.3.1.css
+// jquery.mobile.structure.css
 // ==========================================================================
 @import "jquery.mobile.theme";
 
 
 // ==========================================================================
-// jquery.mobile.structure-1.3.1.css
+// jquery.mobile.structure.css
 // ==========================================================================
 @import "jquery.mobile.structure";
 
