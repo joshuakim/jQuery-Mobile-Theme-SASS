@@ -159,17 +159,217 @@ $a-bhover-border: #000 !default;
 
 // Button: Pressed
 // --------------------------------------------------------------------------
-$a-bdown-color: #fff;
-$a-bdown-shadow-x: 0;
-$a-bdown-shadow-y: 1px;
-$a-bdown-shadow-radius: 0;
-$a-bdown-shadow-color: #111;
+$a-bdown-color: #fff !default;
+$a-bdown-shadow-x: 0 !default;
+$a-bdown-shadow-y: 1px !default;
+$a-bdown-shadow-radius: 0 !default;
+$a-bdown-shadow-color: #111 !default;
 
-$a-bdown-background-color: #222;
-$a-bdown-background-start: #202020;
-$a-bdown-background-end: #2c2c2c;
+$a-bdown-background-color: #222 !default;
+$a-bdown-background-start: #202020 !default;
+$a-bdown-background-end: #2c2c2c !default;
 
-$a-bdown-border: #000;
+$a-bdown-border: #000 !default;
+
+
+// ==========================================================================
+// Mixin: Create a New Theme Swatch
+// ==========================================================================
+@mixin theme-create-swatch(
+	$swatch, // Swatch letter: a - e
+
+	// Header/Footer Bar
+	// -----------------------------------
+	$bar-color: null,
+	$bar-shadow-x: null,
+	$bar-shadow-y: null,
+	$bar-shadow-radius: null,
+	$bar-shadow-color: null,
+	$bar-background-color: null,
+	$bar-background-start: null,
+	$bar-background-end: null,
+	$bar-border: null,
+	$bar-link-color: null,
+	$bar-link-hover: null,
+	$bar-link-active: null,
+	$bar-link-visited: null,
+	
+	// Content Body
+	// -----------------------------------
+	$body-link-color: null,
+	$body-link-hover: null,
+	$body-link-active: null,
+	$body-link-visited: null,
+	$body-color: null,
+	$body-shadow-x: null,
+	$body-shadow-y: null,
+	$body-shadow-radius: null,
+	$body-shadow-color: null,
+	$body-background-color: null,
+	$body-background-start: null,
+	$body-background-end: null,
+	$body-border: null,
+	
+	// Button: Normal
+	// -----------------------------------
+	$bup-color: null,
+	$bup-shadow-x: null,
+	$bup-shadow-y: null,
+	$bup-shadow-radius: null,
+	$bup-shadow-color: null,
+	$bup-background-color: null,
+	$bup-background-start: null,
+	$bup-background-end: null,
+	$bup-border: null,
+	
+	// Button: Hover
+	// -----------------------------------
+	$bhover-color: null,
+	$bhover-shadow-x: null,
+	$bhover-shadow-y: null,
+	$bhover-shadow-radius: null,
+	$bhover-shadow-color: null,
+	$bhover-background-color: null,
+	$bhover-background-start: null,
+	$bhover-background-end: null,
+	$bhover-border: null,
+	
+	
+	// Button: Pressed
+	// -----------------------------------
+	$bdown-color: null,
+	$bdown-shadow-x: null,
+	$bdown-shadow-y: null,
+	$bdown-shadow-radius: null,
+	$bdown-shadow-color: null,
+	$bdown-background-color: null,
+	$bdown-background-start: null,
+	$bdown-background-end: null,
+	$bdown-border: null
+)
+{
+	/* Bar */
+	.ui-bar-#{$swatch} {
+		border: 1px solid $bar-border;
+		background: $bar-background-color;
+		color: $bar-color;
+		font-weight: bold;
+		text-shadow: $bar-shadow-x $bar-shadow-y $bar-shadow-radius $bar-shadow-color;
+		@include background-image(linear-gradient($bar-background-start, $bar-background-end));
+	}
+	.ui-bar-#{$swatch},
+	.ui-bar-#{$swatch} input,
+	.ui-bar-#{$swatch} select,
+	.ui-bar-#{$swatch} textarea,
+	.ui-bar-#{$swatch} button {
+		font-family: $global-font-family;
+	}
+	.ui-bar-#{$swatch} .ui-link-inherit {
+		color: $bar-color;
+	}
+	.ui-bar-#{$swatch} a.ui-link {
+		color: $bar-link-color;
+		font-weight: bold;
+	}
+	.ui-bar-#{$swatch} a.ui-link:visited {
+		color: $bar-link-visited;
+	}
+	.ui-bar-#{$swatch} a.ui-link:hover {
+		color: $bar-link-hover;
+	}
+	.ui-bar-#{$swatch} a.ui-link:active {
+		color: $bar-link-active;
+	}
+	
+	/* Body */
+	.ui-body-#{$swatch},
+	.ui-overlay-#{$swatch} {
+		border: 1px solid $body-border;
+		background: $body-background-color;
+		color: $body-color;
+		text-shadow: $body-shadow-x $body-shadow-y $body-shadow-radius $body-shadow-color;
+		font-weight: normal;
+		@include background-image(linear-gradient($body-background-start, $body-background-end));
+	}
+	.ui-overlay-#{$swatch} {
+		background-image: none;
+		border-width: 0;
+	}
+	.ui-body-#{$swatch},
+	.ui-body-#{$swatch} input,
+	.ui-body-#{$swatch} select,
+	.ui-body-#{$swatch} textarea,
+	.ui-body-#{$swatch} button {
+		font-family: $global-font-family;
+	}
+	.ui-body-#{$swatch} .ui-link-inherit {
+		color: $body-color;
+	}
+	.ui-body-#{$swatch} .ui-link {
+		color: $body-link-color;
+		font-weight: bold;
+	}
+	.ui-body-#{$swatch} .ui-link:visited {
+		color: $body-link-visited;
+	}
+	.ui-body-#{$swatch} .ui-link:hover {
+		color: $body-link-hover;
+	}
+	.ui-body-#{$swatch} .ui-link:active {
+		color: $body-link-active;
+	}
+	
+	/* Button: Normal */
+	.ui-btn-up-#{$swatch} {
+		border: 1px solid $bup-border;
+		background: $bup-background-color;
+		font-weight: bold;
+		color: $bup-color;
+		text-shadow: $bup-shadow-x $bup-shadow-y $bup-shadow-radius $bup-shadow-color;
+		@include background-image(linear-gradient($bup-background-start, $bup-background-end));
+	}
+	.ui-btn-up-#{$swatch}:visited,
+	.ui-btn-up-#{$swatch} a.ui-link-inherit {
+		color: $bup-color;
+	}
+	
+	/* Button: Hover */
+	.ui-btn-hover-#{$swatch} {
+		border: 1px solid $bhover-border;
+		background: $bhover-background-color;
+		font-weight: bold;
+		color: $bhover-color;
+		text-shadow: $bhover-shadow-x $bhover-shadow-y $bhover-shadow-radius $bhover-shadow-color;
+		@include background-image(linear-gradient($bhover-background-start, $bhover-background-end));
+	}
+	.ui-btn-hover-#{$swatch}:visited,
+	.ui-btn-hover-#{$swatch}:hover,
+	.ui-btn-hover-#{$swatch} a.ui-link-inherit {
+		color: $bhover-color;
+	}
+	
+	/* Button: Pressed */
+	.ui-btn-down-#{$swatch} {
+		border: 1px solid $bdown-border;
+		background: $bdown-background-color;
+		font-weight: bold;
+		color: $bdown-color;
+		text-shadow: $bdown-shadow-x $bdown-shadow-y $bdown-shadow-radius $bdown-shadow-color;
+		@include background-image(linear-gradient($bdown-background-start, $bdown-background-end));
+	}
+	.ui-btn-down-#{$swatch}:visited,
+	.ui-btn-down-#{$swatch}:hover,
+	.ui-btn-down-#{$swatch} a.ui-link-inherit {
+		color: $bdown-color;
+	}
+	
+	.ui-btn-up-#{$swatch},
+	.ui-btn-hover-#{$swatch},
+	.ui-btn-down-#{$swatch} {
+		font-family: $global-font-family;
+		text-decoration: none;
+	}
+}
 
 
 /* Swatches */
