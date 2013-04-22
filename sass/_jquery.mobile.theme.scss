@@ -82,58 +82,141 @@ $global-box-shadow-opacity: 0.2 !default;
 $global-box-shadow-size: 3px !default;
 
 
+// ==========================================================================
+// Swatch A
+// ==========================================================================
+
+// Header/Footer Bar
+// --------------------------------------------------------------------------
+$a-bar-color: #fff !default;
+$a-bar-shadow-x: 0 !default;
+$a-bar-shadow-y: -1px !default;
+$a-bar-shadow-radius: 0 !default;
+$a-bar-shadow-color: #000 !default;
+
+$a-bar-background-color: #111 !default;
+$a-bar-background-start: #3c3c3c !default;
+$a-bar-background-end: #111 !default;
+
+$a-bar-border: #333 !default;
+
+// Not in ThemeRoller
+$a-bar-link-color: #7cc4e7 !default;
+$a-bar-link-hover: #2489ce !default;
+$a-bar-link-active: #2489ce !default;
+$a-bar-link-visited: #2489ce !default;
+
+
+// Content Body
+// --------------------------------------------------------------------------
+$a-body-link-color: #2489ce !default;
+$a-body-link-hover: #2489ce !default;
+$a-body-link-active: #2489ce !default;
+$a-body-link-visited: #2489ce !default;
+
+$a-body-color: #fff !default;
+$a-body-shadow-x: 0 !default;
+$a-body-shadow-y: 1px !default;
+$a-body-shadow-radius: 0 !default;
+$a-body-shadow-color: #111 !default;
+
+$a-body-background-color: #222 !default;
+$a-body-background-start: #444 !default;
+$a-body-background-end: #222 !default;
+
+$a-body-border: #444 !default;
+
+
+// Button: Normal
+// --------------------------------------------------------------------------
+$a-bup-color: #fff !default;
+$a-bup-shadow-x: 0 !default;
+$a-bup-shadow-y: 1px !default;
+$a-bup-shadow-radius: 0 !default;
+$a-bup-shadow-color: #111 !default;
+
+$a-bup-background-color: #333 !default;
+$a-bup-background-start: #444 !default;
+$a-bup-background-end: #2d2d2d !default;
+
+$a-bup-border: #111 !default;
+
+
+// Button: Hover
+// --------------------------------------------------------------------------
+$a-bhover-color: #fff !default;
+$a-bhover-shadow-x: 0 !default;
+$a-bhover-shadow-y: 1px !default;
+$a-bhover-shadow-radius: 0 !default;
+$a-bhover-shadow-color: #111 !default;
+
+$a-bhover-background-color: #444 !default;
+$a-bhover-background-start: #555 !default;
+$a-bhover-background-end: #383838 !default;
+
+$a-bhover-border: #000 !default;
+
+
+// Button: Pressed
+// --------------------------------------------------------------------------
+$a-bdown-color: #fff;
+$a-bdown-shadow-x: 0;
+$a-bdown-shadow-y: 1px;
+$a-bdown-shadow-radius: 0;
+$a-bdown-shadow-color: #111;
+
+$a-bdown-background-color: #222;
+$a-bdown-background-start: #202020;
+$a-bdown-background-end: #2c2c2c;
+
+$a-bdown-border: #000;
+
+
 /* Swatches */
 /* A
 -----------------------------------------------------------------------------------------------------------*/
+/* Bar */
 .ui-bar-a {
-	border: 1px solid 		#333 /*{a-bar-border}*/;
-	background: 			#111 /*{a-bar-background-color}*/;
-	color: 					#fff /*{a-bar-color}*/;
+	border: 1px solid $a-bar-border;
+	background: $a-bar-background-color;
+	color: $a-bar-color;
 	font-weight: bold;
-	text-shadow: 0 /*{a-bar-shadow-x}*/ -1px /*{a-bar-shadow-y}*/ 0 /*{a-bar-shadow-radius}*/ #000 /*{a-bar-shadow-color}*/;
-	background-image: -webkit-gradient(linear, left top, left bottom, from( #3c3c3c /*{a-bar-background-start}*/), to( #111 /*{a-bar-background-end}*/)); /* Saf4+, Chrome */
-	background-image: -webkit-linear-gradient( #3c3c3c /*{a-bar-background-start}*/, #111 /*{a-bar-background-end}*/); /* Chrome 10+, Saf5.1+ */
-	background-image:    -moz-linear-gradient( #3c3c3c /*{a-bar-background-start}*/, #111 /*{a-bar-background-end}*/); /* FF3.6 */
-	background-image:     -ms-linear-gradient( #3c3c3c /*{a-bar-background-start}*/, #111 /*{a-bar-background-end}*/); /* IE10 */
-	background-image:      -o-linear-gradient( #3c3c3c /*{a-bar-background-start}*/, #111 /*{a-bar-background-end}*/); /* Opera 11.10+ */
-	background-image:         linear-gradient( #3c3c3c /*{a-bar-background-start}*/, #111 /*{a-bar-background-end}*/);
+	text-shadow: $a-bar-shadow-x $a-bar-shadow-y $a-bar-shadow-radius $a-bar-shadow-color;
+	@include background-image(linear-gradient($a-bar-background-start, $a-bar-background-end));
 }
 .ui-bar-a,
 .ui-bar-a input,
 .ui-bar-a select,
 .ui-bar-a textarea,
 .ui-bar-a button {
-	font-family: Helvetica, Arial, sans-serif /*{global-font-family}*/;
+	font-family: $global-font-family;
 }
 .ui-bar-a .ui-link-inherit {
-	color: #fff /*{a-bar-color}*/;
+	color: $a-bar-color;
 }
 .ui-bar-a a.ui-link {
-	color: #7cc4e7 /*{a-bar-link-color}*/;
+	color: $a-bar-link-color;
 	font-weight: bold;
 }
 .ui-bar-a a.ui-link:visited {
-    color: #2489ce /*{a-bar-link-visited}*/;
+    color: $a-bar-link-visited;
 }
 .ui-bar-a a.ui-link:hover {
-	color: #2489ce /*{a-bar-link-hover}*/;
+	color: $a-bar-link-hover;
 }
 .ui-bar-a a.ui-link:active {
-	color: #2489ce /*{a-bar-link-active}*/;
+	color: $a-bar-link-active;
 }
+
+/* Body */
 .ui-body-a,
 .ui-overlay-a {
-	border: 1px solid 		#444 /*{a-body-border}*/;
-	background: 			#222 /*{a-body-background-color}*/;
-	color: 					#fff /*{a-body-color}*/;
-	text-shadow: 0 /*{a-body-shadow-x}*/ 1px /*{a-body-shadow-y}*/ 0 /*{a-body-shadow-radius}*/ #111 /*{a-body-shadow-color}*/;
+	border: 1px solid $a-body-border;
+	background: $a-body-background-color;
+	color: $a-body-color;
+	text-shadow: $a-body-shadow-x $a-body-shadow-y $a-body-shadow-radius $a-body-shadow-color;
 	font-weight: normal;
-	background-image: -webkit-gradient(linear, left top, left bottom, from( #444 /*{a-body-background-start}*/), to( #222 /*{a-body-background-end}*/)); /* Saf4+, Chrome */
-	background-image: -webkit-linear-gradient( #444 /*{a-body-background-start}*/, #222 /*{a-body-background-end}*/); /* Chrome 10+, Saf5.1+ */
-	background-image:    -moz-linear-gradient( #444 /*{a-body-background-start}*/, #222 /*{a-body-background-end}*/); /* FF3.6 */
-	background-image:     -ms-linear-gradient( #444 /*{a-body-background-start}*/, #222 /*{a-body-background-end}*/); /* IE10 */
-	background-image:      -o-linear-gradient( #444 /*{a-body-background-start}*/, #222 /*{a-body-background-end}*/); /* Opera 11.10+ */
-	background-image:         linear-gradient( #444 /*{a-body-background-start}*/, #222 /*{a-body-background-end}*/);	
+	@include background-image(linear-gradient($a-body-background-start, $a-body-background-end));
 }
 .ui-overlay-a {
 	background-image: none;
@@ -144,81 +227,73 @@ $global-box-shadow-size: 3px !default;
 .ui-body-a select,
 .ui-body-a textarea,
 .ui-body-a button {
-	font-family: Helvetica, Arial, sans-serif /*{global-font-family}*/;
+	font-family: $global-font-family;
 }
 .ui-body-a .ui-link-inherit {
-	color: 	#fff /*{a-body-color}*/;
+	color: $a-body-color;
 }
 .ui-body-a .ui-link {
-	color: #2489ce /*{a-body-link-color}*/;
+	color: $a-body-link-color;
 	font-weight: bold;
 }
 .ui-body-a .ui-link:visited {
-    color: #2489ce /*{a-body-link-visited}*/;
+    color: $a-body-link-visited;
 }
 .ui-body-a .ui-link:hover {
-	color: #2489ce /*{a-body-link-hover}*/;
+	color: $a-body-link-hover;
 }
 .ui-body-a .ui-link:active {
-	color: #2489ce /*{a-body-link-active}*/;
+	color: $a-body-link-active;
 }
+
+/* Button: Normal */
 .ui-btn-up-a {
-	border: 1px solid 		#111 /*{a-bup-border}*/;
-	background: 			#333 /*{a-bup-background-color}*/;
+	border: 1px solid $a-bup-border;
+	background: $a-bup-background-color;
 	font-weight: bold;
-	color: 					#fff /*{a-bup-color}*/;
-	text-shadow: 0 /*{a-bup-shadow-x}*/ 1px /*{a-bup-shadow-y}*/ 0 /*{a-bup-shadow-radius}*/ #111 /*{a-bup-shadow-color}*/;
-	background-image: -webkit-gradient(linear, left top, left bottom, from( #444 /*{a-bup-background-start}*/), to( #2d2d2d /*{a-bup-background-end}*/)); /* Saf4+, Chrome */
-	background-image: -webkit-linear-gradient( #444 /*{a-bup-background-start}*/, #2d2d2d /*{a-bup-background-end}*/); /* Chrome 10+, Saf5.1+ */
-	background-image:    -moz-linear-gradient( #444 /*{a-bup-background-start}*/, #2d2d2d /*{a-bup-background-end}*/); /* FF3.6 */
-	background-image:     -ms-linear-gradient( #444 /*{a-bup-background-start}*/, #2d2d2d /*{a-bup-background-end}*/); /* IE10 */
-	background-image:      -o-linear-gradient( #444 /*{a-bup-background-start}*/, #2d2d2d /*{a-bup-background-end}*/); /* Opera 11.10+ */
-	background-image:         linear-gradient( #444 /*{a-bup-background-start}*/, #2d2d2d /*{a-bup-background-end}*/);
+	color: $a-bup-color;
+	text-shadow: $a-bup-shadow-x $a-bup-shadow-y $a-bup-shadow-radius $a-bup-shadow-color;
+	@include background-image(linear-gradient($a-bup-background-start, $a-bup-background-end));
 }
 .ui-btn-up-a:visited,
 .ui-btn-up-a a.ui-link-inherit {
-	color: 					#fff /*{a-bup-color}*/;
+	color: $a-bup-color;
 }
+
+/* Button: Hover */
 .ui-btn-hover-a {
-	border: 1px solid 		#000 /*{a-bhover-border}*/;
-	background: 			#444 /*{a-bhover-background-color}*/;
+	border: 1px solid $a-bhover-border;
+	background: $a-bhover-background-color;
 	font-weight: bold;
-	color: 					#fff /*{a-bhover-color}*/;
-	text-shadow: 0 /*{a-bhover-shadow-x}*/ 1px /*{a-bhover-shadow-y}*/ 0 /*{a-bhover-shadow-radius}*/ #111 /*{a-bhover-shadow-color}*/;
-	background-image: -webkit-gradient(linear, left top, left bottom, from( #555 /*{a-bhover-background-start}*/), to( #383838 /*{a-bhover-background-end}*/)); /* Saf4+, Chrome */
-	background-image: -webkit-linear-gradient( #555 /*{a-bhover-background-start}*/, #383838 /*{a-bhover-background-end}*/); /* Chrome 10+, Saf5.1+ */
-	background-image:    -moz-linear-gradient( #555 /*{a-bhover-background-start}*/, #383838 /*{a-bhover-background-end}*/); /* FF3.6 */
-	background-image:     -ms-linear-gradient( #555 /*{a-bhover-background-start}*/, #383838 /*{a-bhover-background-end}*/); /* IE10 */
-	background-image:      -o-linear-gradient( #555 /*{a-bhover-background-start}*/, #383838 /*{a-bhover-background-end}*/); /* Opera 11.10+ */
-	background-image:         linear-gradient( #555 /*{a-bhover-background-start}*/, #383838 /*{a-bhover-background-end}*/);
+	color: $a-bhover-color;
+	text-shadow: $a-bhover-shadow-x $a-bhover-shadow-y $a-bhover-shadow-radius $a-bhover-shadow-color;
+	@include background-image(linear-gradient($a-bhover-background-start, $a-bhover-background-end));
 }
 .ui-btn-hover-a:visited,
 .ui-btn-hover-a:hover,
 .ui-btn-hover-a a.ui-link-inherit {
-	color: 					#fff /*{a-bhover-color}*/;
+	color: $a-bhover-color;
 }
+
+/* Button: Pressed */
 .ui-btn-down-a {
-	border: 1px solid 		#000 /*{a-bdown-border}*/;
-	background: 			#222 /*{a-bdown-background-color}*/;
+	border: 1px solid $a-bdown-border;
+	background: $a-bdown-background-color;
 	font-weight: bold;
-	color: 					#fff /*{a-bdown-color}*/;
-	text-shadow: 0 /*{a-bdown-shadow-x}*/ 1px /*{a-bdown-shadow-y}*/ 0 /*{a-bdown-shadow-radius}*/ #111 /*{a-bdown-shadow-color}*/;
-	background-image: -webkit-gradient(linear, left top, left bottom, from( #202020 /*{a-bdown-background-start}*/), to( #2c2c2c /*{a-bdown-background-end}*/)); /* Saf4+, Chrome */
-	background-image: -webkit-linear-gradient( #202020 /*{a-bdown-background-start}*/, #2c2c2c /*{a-bdown-background-end}*/); /* Chrome 10+, Saf5.1+ */
-	background-image:    -moz-linear-gradient( #202020 /*{a-bdown-background-start}*/, #2c2c2c /*{a-bdown-background-end}*/); /* FF3.6 */
-	background-image:     -ms-linear-gradient( #202020 /*{a-bdown-background-start}*/, #2c2c2c /*{a-bdown-background-end}*/); /* IE10 */
-	background-image:      -o-linear-gradient( #202020 /*{a-bdown-background-start}*/, #2c2c2c /*{a-bdown-background-end}*/); /* Opera 11.10+ */
-	background-image:         linear-gradient( #202020 /*{a-bdown-background-start}*/, #2c2c2c /*{a-bdown-background-end}*/);
+	color: $a-bdown-color;
+	text-shadow: $a-bdown-shadow-x $a-bdown-shadow-y $a-bdown-shadow-radius $a-bdown-shadow-color;
+	@include background-image(linear-gradient($a-bdown-background-start, $a-bdown-background-end));
 }
 .ui-btn-down-a:visited,
 .ui-btn-down-a:hover,
 .ui-btn-down-a a.ui-link-inherit {
-	color: 					#fff /*{a-bdown-color}*/;
+	color: $a-bdown-color;
 }
+
 .ui-btn-up-a,
 .ui-btn-hover-a,
 .ui-btn-down-a {
-	font-family: Helvetica, Arial, sans-serif /*{global-font-family}*/;
+	font-family: $global-font-family;
 	text-decoration: none;
 }
 
