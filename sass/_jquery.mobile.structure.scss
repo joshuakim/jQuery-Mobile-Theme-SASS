@@ -1,13 +1,14 @@
 /*
-* jQuery Mobile [1.3.1]
-* jquery.mobile.structure-1.3.1.css
-* http://jquerymobile.com
-*
-* Copyright 2010, 2013 jQuery Foundation, Inc. and other contributors
-* Released under the MIT license.
-* http://jquery.org/license
-*
-*/
+ * BASED ON:
+ * jQuery Mobile [1.3.1]
+ * jquery.mobile.structure-1.3.1.css
+ * http://jquerymobile.com
+ * 
+ * Copyright 2010, 2013 jQuery Foundation, Inc. and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ * 
+ */
 
 // ================================================================================
 // ui-core
@@ -3475,17 +3476,17 @@
 	/* Hide all prioritized columns by default */
 	@media only all {
 	th.ui-table-priority-6,
-	 td.ui-table-priority-6,
-	 th.ui-table-priority-5,
-	 td.ui-table-priority-5,
-	 th.ui-table-priority-4,
-	 td.ui-table-priority-4,
-	 th.ui-table-priority-3,
-	 td.ui-table-priority-3,
-	 th.ui-table-priority-2,
-	 td.ui-table-priority-2,
-	 th.ui-table-priority-1,
-	 td.ui-table-priority-1 {
+	td.ui-table-priority-6,
+	th.ui-table-priority-5,
+	td.ui-table-priority-5,
+	th.ui-table-priority-4,
+	td.ui-table-priority-4,
+	th.ui-table-priority-3,
+	td.ui-table-priority-3,
+	th.ui-table-priority-2,
+	td.ui-table-priority-2,
+	th.ui-table-priority-1,
+	td.ui-table-priority-1 {
 		display: none;
 	}
 	}
@@ -3493,42 +3494,42 @@
 	/* Show priority 1 at 320px (20em x 16px) */
 	@media screen and (min-width: 20em) {
 	.ui-table-columntoggle.ui-responsive th.ui-table-priority-1,
-	 .ui-table-columntoggle.ui-responsive td.ui-table-priority-1 {
+	.ui-table-columntoggle.ui-responsive td.ui-table-priority-1 {
 		display: table-cell;
 	}
 	}
 	/* Show priority 2 at 480px (30em x 16px) */
 	@media screen and (min-width: 30em) {
 	.ui-table-columntoggle.ui-responsive th.ui-table-priority-2,
-	 .ui-table-columntoggle.ui-responsive td.ui-table-priority-2 {
+	.ui-table-columntoggle.ui-responsive td.ui-table-priority-2 {
 		display: table-cell;
 	}
 	}
 	/* Show priority 3 at 640px (40em x 16px) */
 	@media screen and (min-width: 40em) {
 	.ui-table-columntoggle.ui-responsive th.ui-table-priority-3,
-	 .ui-table-columntoggle.ui-responsive td.ui-table-priority-3 {
+	.ui-table-columntoggle.ui-responsive td.ui-table-priority-3 {
 		display: table-cell;
 	}
 	}
 	/* Show priority 4 at 800px (50em x 16px) */
 	@media screen and (min-width: 50em) {
 	.ui-table-columntoggle.ui-responsive th.ui-table-priority-4,
-	 .ui-table-columntoggle.ui-responsive td.ui-table-priority-4 {
+	.ui-table-columntoggle.ui-responsive td.ui-table-priority-4 {
 		display: table-cell;
 	}
 	}
 	/* Show priority 5 at 960px (60em x 16px) */
 	@media screen and (min-width: 60em) {
 	.ui-table-columntoggle.ui-responsive th.ui-table-priority-5,
-	 .ui-table-columntoggle.ui-responsive td.ui-table-priority-5 {
+	.ui-table-columntoggle.ui-responsive td.ui-table-priority-5 {
 		display: table-cell;
 	}
 	}
 	/* Show priority 6 at 1,120px (70em x 16px) */
 	@media screen and (min-width: 70em) {
 	.ui-table-columntoggle.ui-responsive th.ui-table-priority-6,
-	 .ui-table-columntoggle.ui-responsive td.ui-table-priority-6 {
+	.ui-table-columntoggle.ui-responsive td.ui-table-priority-6 {
 		display: table-cell;
 	}
 	}

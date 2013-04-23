@@ -1,24 +1,24 @@
 @import "compass/css3";
-
 /*
-* jQuery Mobile [1.3.1]
-* jquery.mobile.theme-1.3.1.css
-* http://jquerymobile.com
-*
-* Copyright 2010, 2013 jQuery Foundation, Inc. and other contributors
-* Released under the MIT license.
-* http://jquery.org/license
-*
-*/
+ * BASED ON:
+ * jQuery Mobile [1.3.1]
+ * jquery.mobile.theme-1.3.1.css
+ * http://jquerymobile.com
+ * 
+ * Copyright 2010, 2013 jQuery Foundation, Inc. and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ * 
+ */
 // ==========================================================================
-// Global Variables - General
+// Variables: Global - General
 // ==========================================================================
 // Relative image path to Sprite Icons
 $img-path: "../images/" !default;
 
 
 // ==========================================================================
-// Global Variables - Theme Settings
+// Variables: Theme Global Settings
 // ==========================================================================
 
 // --------------------------------------------------------------------------
@@ -82,7 +82,7 @@ $global-box-shadow-size: 3px !default;
 
 
 // ==========================================================================
-// Swatch A
+// Variables: Swatch A
 // ==========================================================================
 
 // Header/Footer Bar
@@ -172,7 +172,7 @@ $a-bdown-border: #000 !default;
 
 
 // ==========================================================================
-// Swatch B
+// Variables: Swatch B
 // ==========================================================================
 
 // Header/Footer Bar
@@ -262,7 +262,7 @@ $b-bdown-border: #225377 !default;
 
 
 // ==========================================================================
-// Swatch C
+// Variables: Swatch C
 // ==========================================================================
 
 // Header/Footer Bar
@@ -352,8 +352,194 @@ $c-bdown-border: #bbb !default;
 
 
 // ==========================================================================
-// Mixin: Create a New Theme Swatch
+// Variables: Swatch D
 // ==========================================================================
+
+// Header/Footer Bar
+// -----------------------------------
+$d-bar-color: #333 !default;
+$d-bar-shadow-x: 0 !default;
+$d-bar-shadow-y: 1px !default;
+$d-bar-shadow-radius: 0 !default;
+$d-bar-shadow-color: #eee !default;
+
+$d-bar-background-color: #bbb !default;
+$d-bar-background-start: #ddd !default;
+$d-bar-background-end: #bbb !default;
+
+$d-bar-border: #bbb !default;
+
+// Not in ThemeRoller
+$d-bar-link-color: #2489ce !default;
+$d-bar-link-hover: #2489ce !default;
+$d-bar-link-active: #2489ce !default;
+$d-bar-link-visited: #2489ce !default;
+
+
+// Content Body
+// -----------------------------------
+$d-body-link-color: #2489ce !default;
+$d-body-link-hover: #2489ce !default;
+$d-body-link-active: #2489ce !default;
+$d-body-link-visited: #2489ce !default;
+
+$d-body-color: #333 !default;
+$d-body-shadow-x: 0 !default;
+$d-body-shadow-y: 1px !default;
+$d-body-shadow-radius: 0 !default;
+$d-body-shadow-color: #fff !default;
+
+$d-body-background-color: #fff !default;
+$d-body-background-start: #fff !default;
+$d-body-background-end: #fff !default;
+
+$d-body-border: #bbb !default;
+
+
+// Button: Normal
+// -----------------------------------
+$d-bup-color: #333 !default;
+$d-bup-shadow-x: 0 !default;
+$d-bup-shadow-y: 1px !default;
+$d-bup-shadow-radius: 0 !default;
+$d-bup-shadow-color: #fff !default;
+
+$d-bup-background-color: #fff !default;
+$d-bup-background-start: #fafafa !default;
+$d-bup-background-end: #f6f6f6 !default;
+
+$d-bup-border: #bbb !default;
+
+
+// Button: Hover
+// -----------------------------------
+$d-bhover-color: #222 !default;
+$d-bhover-shadow-x: 0 !default;
+$d-bhover-shadow-y: 1px !default;
+$d-bhover-shadow-radius: 0 !default;
+$d-bhover-shadow-color: #fff !default;
+
+$d-bhover-background-color: #dfdfdf !default;
+$d-bhover-background-start: #f6f6f6 !default;
+$d-bhover-background-end: #e0e0e0 !default;
+
+$d-bhover-border: #bbb !default;
+
+
+// Button: Pressed
+// -----------------------------------
+$d-bdown-color: #333 !default;
+$d-bdown-shadow-x: 0 !default;
+$d-bdown-shadow-y: 1px !default;
+$d-bdown-shadow-radius: 0 !default;
+$d-bdown-shadow-color: #fff !default;
+
+$d-bdown-background-color: #eee !default;
+$d-bdown-background-start: #e5e5e5 !default;
+$d-bdown-background-end: #f2f2f2 !default;
+
+$d-bdown-border: #aaa !default;
+
+
+// ==========================================================================
+// Variables: Swatch E
+// ==========================================================================
+
+// Header/Footer Bar
+// -----------------------------------
+$e-bar-color: #333 !default;
+$e-bar-shadow-x: 0 !default;
+$e-bar-shadow-y: 1px !default;
+$e-bar-shadow-radius: 0 !default;
+$e-bar-shadow-color: #fff !default;
+
+$e-bar-background-color: #fadb4e !default;
+$e-bar-background-start: #fceda7 !default;
+$e-bar-background-end: #fbef7e !default;
+
+$e-bar-border: #f7c942 !default;
+
+// Not in ThemeRoller
+$e-bar-link-color: #2489ce !default;
+$e-bar-link-hover: #2489ce !default;
+$e-bar-link-active: #2489ce !default;
+$e-bar-link-visited: #2489ce !default;
+
+
+// Content Body
+// -----------------------------------
+$e-body-link-color: #2489ce !default;
+$e-body-link-hover: #2489ce !default;
+$e-body-link-active: #2489ce !default;
+$e-body-link-visited: #2489ce !default;
+
+$e-body-color: #222 !default;
+$e-body-shadow-x: 0 !default;
+$e-body-shadow-y: 1px !default;
+$e-body-shadow-radius: 0 !default;
+$e-body-shadow-color: #fff !default;
+
+$e-body-background-color: #fff9df !default;
+$e-body-background-start: #fffadf !default;
+$e-body-background-end: #fff3a5 !default;
+
+$e-body-border: #f7c942 !default;
+
+
+// Button: Normal
+// -----------------------------------
+$e-bup-color: #333 !default;
+$e-bup-shadow-x: 0 !default;
+$e-bup-shadow-y: 1px !default;
+$e-bup-shadow-radius: 0 !default;
+$e-bup-shadow-color: #fff !default;
+
+$e-bup-background-color: #fadb4e !default;
+$e-bup-background-start: #ffefaa !default;
+$e-bup-background-end: #ffe155 !default;
+
+$e-bup-border: #f4c63f !default;
+
+
+// Button: Hover
+// -----------------------------------
+$e-bhover-color: #111 !default;
+$e-bhover-shadow-x: 0 !default;
+$e-bhover-shadow-y: 1px !default;
+$e-bhover-shadow-radius: 0 !default;
+$e-bhover-shadow-color: #fff !default;
+
+$e-bhover-background-color: #fbe26f !default;
+$e-bhover-background-start: #fff5ba !default;
+$e-bhover-background-end: #fbdd52 !default;
+
+$e-bhover-border: #f2c43d !default;
+
+
+// Button: Pressed
+// -----------------------------------
+$e-bdown-color: #111 !default;
+$e-bdown-shadow-x: 0 !default;
+$e-bdown-shadow-y: 1px !default;
+$e-bdown-shadow-radius: 0 !default;
+$e-bdown-shadow-color: #fff !default;
+
+$e-bdown-background-color: #fceda7 !default;
+$e-bdown-background-start: #f8d94c !default;
+$e-bdown-background-end: #fadb4e !default;
+
+$e-bdown-border: #f2c43d !default;
+
+
+
+// ===========================================================================================================
+// Mixin:
+//   Create a New Theme Swatch
+// 
+// Description:
+//   $swatch - Swatch name is required. jQuery Mobile recommends using letters A - Z. 
+//   However, you can create a swatch with any name
+// ===========================================================================================================
 @mixin theme-create-swatch(
 	$swatch, // Swatch letter: a - e
 
@@ -427,13 +613,22 @@ $c-bdown-border: #bbb !default;
 	$bdown-border: null
 )
 {
+	
+	/* ==========================================================================
+	   Swatch: #{$swatch}
+	   ========================================================================== */
 	/* Bar */
 	.ui-bar-#{$swatch} {
+		/* $bar-border */
 		border: 1px solid $bar-border;
+		/* $bar-background-color */
 		background: $bar-background-color;
+		/* $bar-color */
 		color: $bar-color;
 		font-weight: bold;
+		/* $bar-shadow-x $bar-shadow-y $bar-shadow-radius $bar-shadow-color */
 		text-shadow: $bar-shadow-x $bar-shadow-y $bar-shadow-radius $bar-shadow-color;
+		/* $bar-background-start, $bar-background-end */
 		@include background-image(linear-gradient($bar-background-start, $bar-background-end));
 	}
 	.ui-bar-#{$swatch},
@@ -441,33 +636,44 @@ $c-bdown-border: #bbb !default;
 	.ui-bar-#{$swatch} select,
 	.ui-bar-#{$swatch} textarea,
 	.ui-bar-#{$swatch} button {
+		/* $global-font-family */
 		font-family: $global-font-family;
 	}
 	.ui-bar-#{$swatch} .ui-link-inherit {
+		/* $bar-color */
 		color: $bar-color;
 	}
 	.ui-bar-#{$swatch} a.ui-link {
+		/* $bar-link-color */
 		color: $bar-link-color;
 		font-weight: bold;
 	}
 	.ui-bar-#{$swatch} a.ui-link:visited {
+		/* $bar-link-visited */
 		color: $bar-link-visited;
 	}
 	.ui-bar-#{$swatch} a.ui-link:hover {
+		/* $bar-link-hover */
 		color: $bar-link-hover;
 	}
 	.ui-bar-#{$swatch} a.ui-link:active {
+		/* $bar-link-active */
 		color: $bar-link-active;
 	}
 	
 	/* Body */
 	.ui-body-#{$swatch},
 	.ui-overlay-#{$swatch} {
+		/* $body-border */
 		border: 1px solid $body-border;
+		/* $body-background-color */
 		background: $body-background-color;
+		/* $body-color */
 		color: $body-color;
+		/* $body-shadow-x $body-shadow-y $body-shadow-radius $body-shadow-color */
 		text-shadow: $body-shadow-x $body-shadow-y $body-shadow-radius $body-shadow-color;
 		font-weight: normal;
+		/* $body-background-start, $body-background-end */
 		@include background-image(linear-gradient($body-background-start, $body-background-end));
 	}
 	.ui-overlay-#{$swatch} {
@@ -479,84 +685,121 @@ $c-bdown-border: #bbb !default;
 	.ui-body-#{$swatch} select,
 	.ui-body-#{$swatch} textarea,
 	.ui-body-#{$swatch} button {
+		/* $global-font-family */
 		font-family: $global-font-family;
 	}
 	.ui-body-#{$swatch} .ui-link-inherit {
+		/* $body-color */
 		color: $body-color;
 	}
 	.ui-body-#{$swatch} .ui-link {
+		/* $body-link-color */
 		color: $body-link-color;
 		font-weight: bold;
 	}
 	.ui-body-#{$swatch} .ui-link:visited {
+		/* $body-link-visited */
 		color: $body-link-visited;
 	}
 	.ui-body-#{$swatch} .ui-link:hover {
+		/* $body-link-hover */
 		color: $body-link-hover;
 	}
 	.ui-body-#{$swatch} .ui-link:active {
+		/* $body-link-active */
 		color: $body-link-active;
 	}
 	
 	/* Button: Normal */
 	.ui-btn-up-#{$swatch} {
+		/* $bup-border */
 		border: 1px solid $bup-border;
+		/* $bup-background-color */
 		background: $bup-background-color;
 		font-weight: bold;
+		/* $bup-color */
 		color: $bup-color;
+		/* $bup-shadow-x $bup-shadow-y $bup-shadow-radius $bup-shadow-color */
 		text-shadow: $bup-shadow-x $bup-shadow-y $bup-shadow-radius $bup-shadow-color;
+		/* $bup-background-start, $bup-background-end */
 		@include background-image(linear-gradient($bup-background-start, $bup-background-end));
 	}
 	.ui-btn-up-#{$swatch}:visited,
 	.ui-btn-up-#{$swatch} a.ui-link-inherit {
+		/* $bup-color */
 		color: $bup-color;
 	}
 	
 	/* Button: Hover */
 	.ui-btn-hover-#{$swatch} {
+		/* $bhover-border */
 		border: 1px solid $bhover-border;
+		/* $bhover-background-color */
 		background: $bhover-background-color;
 		font-weight: bold;
+		/* $bhover-color */
 		color: $bhover-color;
+		/* $bhover-shadow-x $bhover-shadow-y $bhover-shadow-radius $bhover-shadow-color */
 		text-shadow: $bhover-shadow-x $bhover-shadow-y $bhover-shadow-radius $bhover-shadow-color;
+		/* $bhover-background-start, $bhover-background-end */
 		@include background-image(linear-gradient($bhover-background-start, $bhover-background-end));
 	}
 	.ui-btn-hover-#{$swatch}:visited,
 	.ui-btn-hover-#{$swatch}:hover,
 	.ui-btn-hover-#{$swatch} a.ui-link-inherit {
+		/* $bhover-color */
 		color: $bhover-color;
 	}
 	
 	/* Button: Pressed */
 	.ui-btn-down-#{$swatch} {
+		/* $bdown-border */
 		border: 1px solid $bdown-border;
+		/* $bdown-background-color */
 		background: $bdown-background-color;
 		font-weight: bold;
+		/* $bdown-color */
 		color: $bdown-color;
+		/* $bdown-shadow-x $bdown-shadow-y $bdown-shadow-radius $bdown-shadow-color */
 		text-shadow: $bdown-shadow-x $bdown-shadow-y $bdown-shadow-radius $bdown-shadow-color;
+		/* $bdown-background-start, $bdown-background-end */
 		@include background-image(linear-gradient($bdown-background-start, $bdown-background-end));
 	}
 	.ui-btn-down-#{$swatch}:visited,
 	.ui-btn-down-#{$swatch}:hover,
 	.ui-btn-down-#{$swatch} a.ui-link-inherit {
+		/* $bdown-color */
 		color: $bdown-color;
 	}
 	
 	.ui-btn-up-#{$swatch},
 	.ui-btn-hover-#{$swatch},
 	.ui-btn-down-#{$swatch} {
+		/* $global-font-family */
 		font-family: $global-font-family;
 		text-decoration: none;
 	}
 }
 
 
-// Create Swatches
-// For swatches a-e, create a wrapper mixin to easily include or exlude default theme swatches a-e.
+// ===========================================================================================================
+// Mixins: 
+//   Wrapper functions to quickly print default theme swatches A - E
+//
+// Description:
+//   @include theme-swatch-a;
+//   @include theme-swatch-b;
+//   @include theme-swatch-c;
+//   @include theme-swatch-d;
+//   @include theme-swatch-e;
+//
+//   These wrapper functions use the predefined swatch a-e variables and calls mixin theme-create-swatch().
+//   Therefore, include the default theme a-e "variables" before calling these mixins.
+// -----------------------------------------------------------------------------------------------------------
 
 // A
 // -----------------------------------------------------------------------------------------------------------
-@mixin theme-create-swatch-a {
+@mixin theme-swatch-a {
 
 	@include theme-create-swatch(
 		'a',
@@ -632,12 +875,10 @@ $c-bdown-border: #bbb !default;
 	);
 }
 
-@include theme-create-swatch-a;
-
 
 // B
 // -----------------------------------------------------------------------------------------------------------
-@mixin theme-create-swatch-b {
+@mixin theme-swatch-b {
 
 	@include theme-create-swatch(
 		'b',
@@ -713,12 +954,10 @@ $c-bdown-border: #bbb !default;
 	);
 }
 
-@include theme-create-swatch-b;
-
 
 // C
 // -----------------------------------------------------------------------------------------------------------
-@mixin theme-create-swatch-c {
+@mixin theme-swatch-c {
 
 	@include theme-create-swatch(
 		'c',
@@ -794,645 +1033,529 @@ $c-bdown-border: #bbb !default;
 	);
 }
 
-@include theme-create-swatch-c;
 
+// D
+// -----------------------------------------------------------------------------------------------------------
+@mixin theme-swatch-d {
 
-/* D
------------------------------------------------------------------------------------------------------------*/
-.ui-bar-d {
-	border: 1px solid 		#bbb /*{d-bar-border}*/;
-	background: 			#bbb /*{d-bar-background-color}*/;
-	color: 					#333 /*{d-bar-color}*/;
-	font-weight: bold;
-	text-shadow: 0 /*{d-bar-shadow-x}*/ 1px /*{d-bar-shadow-y}*/ 0 /*{d-bar-shadow-radius}*/ #eee /*{d-bar-shadow-color}*/;
-	background-image: -webkit-gradient(linear, left top, left bottom, from( #ddd /*{d-bar-background-start}*/), to( #bbb /*{d-bar-background-end}*/)); /* Saf4+, Chrome */
-	background-image: -webkit-linear-gradient( #ddd /*{d-bar-background-start}*/, #bbb /*{d-bar-background-end}*/); /* Chrome 10+, Saf5.1+ */
-	background-image:    -moz-linear-gradient( #ddd /*{d-bar-background-start}*/, #bbb /*{d-bar-background-end}*/); /* FF3.6 */
-	background-image:     -ms-linear-gradient( #ddd /*{d-bar-background-start}*/, #bbb /*{d-bar-background-end}*/); /* IE10 */
-	background-image:      -o-linear-gradient( #ddd /*{d-bar-background-start}*/, #bbb /*{d-bar-background-end}*/); /* Opera 11.10+ */
-	background-image:         linear-gradient( #ddd /*{d-bar-background-start}*/, #bbb /*{d-bar-background-end}*/);
-}
-.ui-bar-d,
-.ui-bar-d input,
-.ui-bar-d select,
-.ui-bar-d textarea,
-.ui-bar-d button {
-	font-family: Helvetica, Arial, sans-serif /*{global-font-family}*/;
-}
-.ui-bar-d .ui-link-inherit {
-	color: 	#333 /*{d-bar-color}*/;
-}
-.ui-bar-d a.ui-link {
-	color: #2489ce /*{d-bar-link-color}*/;
-	font-weight: bold;
-}
-.ui-bar-d a.ui-link:visited {
-    color: #2489ce /*{d-bar-link-visited}*/;
-}
-.ui-bar-d a.ui-link:hover {
-	color: #2489ce /*{d-bar-link-hover}*/;
-}
-.ui-bar-d a.ui-link:active {
-	color: #2489ce /*{d-bar-link-active}*/;
-}
-.ui-body-d,
-.ui-overlay-d {
-	border: 1px solid 		#bbb /*{d-body-border}*/;
-	color: 					#333 /*{d-body-color}*/;
-	text-shadow: 0 /*{d-body-shadow-x}*/ 1px /*{d-body-shadow-y}*/ 0 /*{d-body-shadow-radius}*/ 	#fff /*{d-body-shadow-color}*/;
-	background: 			#fff /*{d-body-background-color}*/;
-	background-image: -webkit-gradient(linear, left top, left bottom, from( #fff /*{d-body-background-start}*/), to( #fff /*{d-body-background-end}*/)); /* Saf4+, Chrome */
-	background-image: -webkit-linear-gradient( #fff /*{d-body-background-start}*/, #fff /*{d-body-background-end}*/); /* Chrome 10+, Saf5.1+ */
-	background-image:    -moz-linear-gradient( #fff /*{d-body-background-start}*/, #fff /*{d-body-background-end}*/); /* FF3.6 */
-	background-image:     -ms-linear-gradient( #fff /*{d-body-background-start}*/, #fff /*{d-body-background-end}*/); /* IE10 */
-	background-image:      -o-linear-gradient( #fff /*{d-body-background-start}*/, #fff /*{d-body-background-end}*/); /* Opera 11.10+ */
-	background-image:         linear-gradient( #fff /*{d-body-background-start}*/, #fff /*{d-body-background-end}*/);
-}
-.ui-overlay-d {
-	background-image: none;
-	border-width: 0;
-}
-.ui-body-d,
-.ui-body-d input,
-.ui-body-d select,
-.ui-body-d textarea,
-.ui-body-d button {
-	font-family: Helvetica, Arial, sans-serif /*{global-font-family}*/;
-}
-.ui-body-d .ui-link-inherit {
-	color: 	#333 /*{d-body-color}*/;
-}
-.ui-body-d .ui-link {
-	color: #2489ce /*{d-body-link-color}*/;
-	font-weight: bold;
-}
-.ui-body-d .ui-link:visited {
-    color: #2489ce /*{d-body-link-visited}*/;
-}
-.ui-body-d .ui-link:hover {
-	color: #2489ce /*{d-body-link-hover}*/;
-}
-.ui-body-d .ui-link:active {
-	color: #2489ce /*{d-body-link-active}*/;
-}
-.ui-btn-up-d {
-	border: 1px solid 		#bbb /*{d-bup-border}*/;
-	background: 			#fff /*{d-bup-background-color}*/;
-	font-weight: bold;
-	color: 					#333 /*{d-bup-color}*/;
-	text-shadow: 0 /*{d-bup-shadow-x}*/ 1px /*{d-bup-shadow-y}*/ 0 /*{d-bup-shadow-radius}*/ #fff /*{d-bup-shadow-color}*/;
-	background-image: -webkit-gradient(linear, left top, left bottom, from( #fafafa /*{d-bup-background-start}*/), to( #f6f6f6 /*{d-bup-background-end}*/)); /* Saf4+, Chrome */
-	background-image: -webkit-linear-gradient( #fafafa /*{d-bup-background-start}*/, #f6f6f6 /*{d-bup-background-end}*/); /* Chrome 10+, Saf5.1+ */
-	background-image:    -moz-linear-gradient( #fafafa /*{d-bup-background-start}*/, #f6f6f6 /*{d-bup-background-end}*/); /* FF3.6 */
-	background-image:     -ms-linear-gradient( #fafafa /*{d-bup-background-start}*/, #f6f6f6 /*{d-bup-background-end}*/); /* IE10 */
-	background-image:      -o-linear-gradient( #fafafa /*{d-bup-background-start}*/, #f6f6f6 /*{d-bup-background-end}*/); /* Opera 11.10+ */
-	background-image:         linear-gradient( #fafafa /*{d-bup-background-start}*/, #f6f6f6 /*{d-bup-background-end}*/);
-}
-.ui-btn-up-d:visited,
-.ui-btn-up-d a.ui-link-inherit {
-	color: 					#333 /*{d-bup-color}*/;
-}
-.ui-btn-hover-d {
-	border: 1px solid 		#aaa /*{d-bhover-border}*/;
-	background: 			#eee /*{d-bhover-background-color}*/;
-	font-weight: bold;
-	color: 					#333 /*{d-bhover-color}*/;
-	cursor: pointer;
-	text-shadow: 0 /*{d-bhover-shadow-x}*/ 1px /*{d-bhover-shadow-y}*/ 0 /*{d-bhover-shadow-radius}*/ 	#fff /*{d-bhover-shadow-color}*/;
-	background-image: -webkit-gradient(linear, left top, left bottom, from( #eee /*{d-bhover-background-start}*/), to( #fff /*{d-bhover-background-end}*/)); /* Saf4+, Chrome */
-	background-image: -webkit-linear-gradient( #eee /*{d-bhover-background-start}*/, #fff /*{d-bhover-background-end}*/); /* Chrome 10+, Saf5.1+ */
-	background-image:    -moz-linear-gradient( #eee /*{d-bhover-background-start}*/, #fff /*{d-bhover-background-end}*/); /* FF3.6 */
-	background-image:     -ms-linear-gradient( #eee /*{d-bhover-background-start}*/, #fff /*{d-bhover-background-end}*/); /* IE10 */
-	background-image:      -o-linear-gradient( #eee /*{d-bhover-background-start}*/, #fff /*{d-bhover-background-end}*/); /* Opera 11.10+ */
-	background-image:         linear-gradient( #eee /*{d-bhover-background-start}*/, #fff /*{d-bhover-background-end}*/);
-}
-.ui-btn-hover-d:visited,
-.ui-btn-hover-d:hover,
-.ui-btn-hover-d a.ui-link-inherit {
-	color: 					#333 /*{d-bhover-color}*/;
-}
-.ui-btn-down-d {
-	border: 1px solid 		#aaa /*{d-bdown-border}*/;
-	background: 			#eee /*{d-bdown-background-color}*/;
-	font-weight: bold;
-	color: 					#333 /*{d-bdown-color}*/;
-	text-shadow: 0 /*{d-bdown-shadow-x}*/ 1px /*{d-bdown-shadow-y}*/ 0 /*{d-bdown-shadow-radius}*/ 	#fff /*{d-bdown-shadow-color}*/;
-	background-image: -webkit-gradient(linear, left top, left bottom, from( #e5e5e5 /*{d-bdown-background-start}*/), to( #f2f2f2 /*{d-bdown-background-end}*/)); /* Saf4+, Chrome */
-	background-image: -webkit-linear-gradient( #e5e5e5 /*{d-bdown-background-start}*/, #f2f2f2 /*{d-bdown-background-end}*/); /* Chrome 10+, Saf5.1+ */
-	background-image:    -moz-linear-gradient( #e5e5e5 /*{d-bdown-background-start}*/, #f2f2f2 /*{d-bdown-background-end}*/); /* FF3.6 */
-	background-image:     -ms-linear-gradient( #e5e5e5 /*{d-bdown-background-start}*/, #f2f2f2 /*{d-bdown-background-end}*/); /* IE10 */
-	background-image:      -o-linear-gradient( #e5e5e5 /*{d-bdown-background-start}*/, #f2f2f2 /*{d-bdown-background-end}*/); /* Opera 11.10+ */
-	background-image:         linear-gradient( #e5e5e5 /*{d-bdown-background-start}*/, #f2f2f2 /*{d-bdown-background-end}*/);
-}
-.ui-btn-down-d:visited,
-.ui-btn-down-d:hover,
-.ui-btn-down-d a.ui-link-inherit {
-	color: 					#333 /*{d-bdown-color}*/;
-}
-.ui-btn-up-d,
-.ui-btn-hover-d,
-.ui-btn-down-d {
-	font-family: Helvetica, Arial, sans-serif /*{global-font-family}*/;
-	text-decoration: none;
-}
-
-
-/* E
------------------------------------------------------------------------------------------------------------*/
-.ui-bar-e {
-	border: 1px solid 		#f7c942 /*{e-bar-border}*/;
-	background: 			#fadb4e /*{e-bar-background-color}*/;
-	color: 					#333 /*{e-bar-color}*/;
-	font-weight: bold;
-	text-shadow: 0 /*{e-bar-shadow-x}*/ 1px /*{e-bar-shadow-y}*/ 0 /*{e-bar-shadow-radius}*/ 	#fff /*{e-bar-shadow-color}*/;
-	background-image: -webkit-gradient(linear, left top, left bottom, from( #fceda7 /*{e-bar-background-start}*/), to( #fbef7e /*{e-bar-background-end}*/)); /* Saf4+, Chrome */
-	background-image: -webkit-linear-gradient( #fceda7 /*{e-bar-background-start}*/, #fbef7e /*{e-bar-background-end}*/); /* Chrome 10+, Saf5.1+ */
-	background-image:    -moz-linear-gradient( #fceda7 /*{e-bar-background-start}*/, #fbef7e /*{e-bar-background-end}*/); /* FF3.6 */
-	background-image:     -ms-linear-gradient( #fceda7 /*{e-bar-background-start}*/, #fbef7e /*{e-bar-background-end}*/); /* IE10 */
-	background-image:      -o-linear-gradient( #fceda7 /*{e-bar-background-start}*/, #fbef7e /*{e-bar-background-end}*/); /* Opera 11.10+ */
-	background-image:         linear-gradient( #fceda7 /*{e-bar-background-start}*/, #fbef7e /*{e-bar-background-end}*/);
-}
-.ui-bar-e,
-.ui-bar-e input,
-.ui-bar-e select,
-.ui-bar-e textarea,
-.ui-bar-e button {
-	font-family: Helvetica, Arial, sans-serif /*{global-font-family}*/;
-}
-.ui-bar-e .ui-link-inherit {
-	color: 	#333 /*{e-bar-color}*/;
-}
-.ui-bar-e a.ui-link {
-	color: #2489ce /*{e-bar-link-color}*/;
-	font-weight: bold;
-}
-.ui-bar-e a.ui-link:visited {
-    color: #2489ce /*{e-bar-link-visited}*/;
-}
-.ui-bar-e a.ui-link:hover {
-	color: #2489ce /*{e-bar-link-hover}*/;
-}
-.ui-bar-e a.ui-link:active {
-	color: #2489ce /*{e-bar-link-active}*/;
-}
-.ui-body-e,
-.ui-overlay-e {
-	border: 1px solid 		#f7c942 /*{e-body-border}*/;
-	color: 					#222 /*{e-body-color}*/;
-	text-shadow: 0 /*{e-body-shadow-x}*/ 1px /*{e-body-shadow-y}*/ 0 /*{e-body-shadow-radius}*/ 	#fff /*{e-body-shadow-color}*/;
-	background: 			#fff9df /*{e-body-background-color}*/;
-	background-image: -webkit-gradient(linear, left top, left bottom, from( #fffadf /*{e-body-background-start}*/), to( #fff3a5 /*{e-body-background-end}*/)); /* Saf4+, Chrome */
-	background-image: -webkit-linear-gradient( #fffadf /*{e-body-background-start}*/, #fff3a5 /*{e-body-background-end}*/); /* Chrome 10+, Saf5.1+ */
-	background-image:    -moz-linear-gradient( #fffadf /*{e-body-background-start}*/, #fff3a5 /*{e-body-background-end}*/); /* FF3.6 */
-	background-image:     -ms-linear-gradient( #fffadf /*{e-body-background-start}*/, #fff3a5 /*{e-body-background-end}*/); /* IE10 */
-	background-image:      -o-linear-gradient( #fffadf /*{e-body-background-start}*/, #fff3a5 /*{e-body-background-end}*/); /* Opera 11.10+ */
-	background-image:         linear-gradient( #fffadf /*{e-body-background-start}*/, #fff3a5 /*{e-body-background-end}*/);
-}
-.ui-overlay-e {
-	background-image: none;
-	border-width: 0;
-}
-.ui-body-e,
-.ui-body-e input,
-.ui-body-e select,
-.ui-body-e textarea,
-.ui-body-e button {
-	font-family: Helvetica, Arial, sans-serif /*{global-font-family}*/;
-}
-.ui-body-e .ui-link-inherit {
-	color: 	#222 /*{e-body-color}*/;
-}
-.ui-body-e .ui-link {
-	color: #2489ce /*{e-body-link-color}*/;
-	font-weight: bold;
-}
-.ui-body-e .ui-link:visited {
-    color: #2489ce /*{e-body-link-visited}*/;
-}
-.ui-body-e .ui-link:hover {
-	color: #2489ce /*{e-body-link-hover}*/;
-}
-.ui-body-e .ui-link:active {
-	color: #2489ce /*{e-body-link-active}*/;
-}
-.ui-btn-up-e {
-	border: 1px solid 		#f4c63f /*{e-bup-border}*/;
-	background: 			#fadb4e /*{e-bup-background-color}*/;
-	font-weight: bold;
-	color: 					#222 /*{e-bup-color}*/;
-	text-shadow: 0 /*{e-bup-shadow-x}*/ 1px /*{e-bup-shadow-y}*/ 0 /*{e-bup-shadow-radius}*/ 	#fff /*{e-bup-shadow-color}*/;
-	background-image: -webkit-gradient(linear, left top, left bottom, from( #ffefaa /*{e-bup-background-start}*/), to( #ffe155 /*{e-bup-background-end}*/)); /* Saf4+, Chrome */
-	background-image: -webkit-linear-gradient( #ffefaa /*{e-bup-background-start}*/, #ffe155 /*{e-bup-background-end}*/); /* Chrome 10+, Saf5.1+ */
-	background-image:    -moz-linear-gradient( #ffefaa /*{e-bup-background-start}*/, #ffe155 /*{e-bup-background-end}*/); /* FF3.6 */
-	background-image:     -ms-linear-gradient( #ffefaa /*{e-bup-background-start}*/, #ffe155 /*{e-bup-background-end}*/); /* IE10 */
-	background-image:      -o-linear-gradient( #ffefaa /*{e-bup-background-start}*/, #ffe155 /*{e-bup-background-end}*/); /* Opera 11.10+ */
-	background-image:         linear-gradient( #ffefaa /*{e-bup-background-start}*/, #ffe155 /*{e-bup-background-end}*/);
-}
-.ui-btn-up-e:visited,
-.ui-btn-up-e a.ui-link-inherit {
-	color: 					#222 /*{e-bup-color}*/;
-}
-.ui-btn-hover-e {
-	border: 1px solid 		#f2c43d /*{e-bhover-border}*/;
-	background: 			#fbe26f /*{e-bhover-background-color}*/;
-	font-weight: bold;
-	color: 					#111 /*{e-bhover-color}*/;
-	text-shadow: 0 /*{e-bhover-shadow-x}*/ 1px /*{e-bhover-shadow-y}*/ 0 /*{e-bhover-shadow-radius}*/ 	#fff /*{e-bhover-shadow-color}*/;
-	background-image: -webkit-gradient(linear, left top, left bottom, from( #fff5ba /*{e-bhover-background-start}*/), to( #fbdd52 /*{e-bhover-background-end}*/)); /* Saf4+, Chrome */
-	background-image: -webkit-linear-gradient( #fff5ba /*{e-bhover-background-start}*/, #fbdd52 /*{e-bhover-background-end}*/); /* Chrome 10+, Saf5.1+ */
-	background-image:    -moz-linear-gradient( #fff5ba /*{e-bhover-background-start}*/, #fbdd52 /*{e-bhover-background-end}*/); /* FF3.6 */
-	background-image:     -ms-linear-gradient( #fff5ba /*{e-bhover-background-start}*/, #fbdd52 /*{e-bhover-background-end}*/); /* IE10 */
-	background-image:      -o-linear-gradient( #fff5ba /*{e-bhover-background-start}*/, #fbdd52 /*{e-bhover-background-end}*/); /* Opera 11.10+ */
-	background-image:         linear-gradient( #fff5ba /*{e-bhover-background-start}*/, #fbdd52 /*{e-bhover-background-end}*/);
-}
-.ui-btn-hover-e:visited,
-.ui-btn-hover-e:hover,
-.ui-btn-hover-e a.ui-link-inherit {
-	color: 					#333 /*{e-bhover-color}*/;
-}
-.ui-btn-down-e {
-	border: 1px solid 		#f2c43d /*{e-bdown-border}*/;
-	background: 			#fceda7 /*{e-bdown-background-color}*/;
-	font-weight: bold;
-	color: 					#111 /*{e-bdown-color}*/;
-	text-shadow: 0 /*{e-bdown-shadow-x}*/ 1px /*{e-bdown-shadow-y}*/ 0 /*{e-bdown-shadow-radius}*/ 	#fff /*{e-bdown-shadow-color}*/;
-	background-image: -webkit-gradient(linear, left top, left bottom, from( #f8d94c /*{e-bdown-background-start}*/), to( #fadb4e /*{e-bdown-background-end}*/)); /* Saf4+, Chrome */
-	background-image: -webkit-linear-gradient( #f8d94c /*{e-bdown-background-start}*/, #fadb4e /*{e-bdown-background-end}*/); /* Chrome 10+, Saf5.1+ */
-	background-image:    -moz-linear-gradient( #f8d94c /*{e-bdown-background-start}*/, #fadb4e /*{e-bdown-background-end}*/); /* FF3.6 */
-	background-image:     -ms-linear-gradient( #f8d94c /*{e-bdown-background-start}*/, #fadb4e /*{e-bdown-background-end}*/); /* IE10 */
-	background-image:      -o-linear-gradient( #f8d94c /*{e-bdown-background-start}*/, #fadb4e /*{e-bdown-background-end}*/); /* Opera 11.10+ */
-	background-image:         linear-gradient( #f8d94c /*{e-bdown-background-start}*/, #fadb4e /*{e-bdown-background-end}*/);
-}
-.ui-btn-down-e:visited,
-.ui-btn-down-e:hover,
-.ui-btn-down-e a.ui-link-inherit {
-	color: 					#333 /*{e-bdown-color}*/;
-}
-.ui-btn-up-e,
-.ui-btn-hover-e,
-.ui-btn-down-e {
-	font-family: Helvetica, Arial, sans-serif /*{global-font-family}*/;
-	text-decoration: none;
-}
-
-
-/* Structure */
-/* links within "buttons" 
------------------------------------------------------------------------------------------------------------*/
-a.ui-link-inherit {
-	text-decoration: none !important;
-}
-/* Active class used as the "on" state across all themes
------------------------------------------------------------------------------------------------------------*/
-.ui-btn-active {
-	border: 1px solid $global-active-border;
-	background: $global-active-background-color;
-	font-weight: bold;
-	color: $global-active-color;
-	cursor: pointer;
-	text-shadow: $global-active-shadow-x $global-active-shadow-y $global-active-shadow-radius $global-active-shadow-color;
-	text-decoration: none;
-	@include background-image(linear-gradient($global-active-background-start, $global-active-background-end));
-	font-family: $global-font-family;
-}
-.ui-btn-active:visited,
-.ui-btn-active:hover,
-.ui-btn-active a.ui-link-inherit {
-	color: $global-active-color;
-}
-/* button inner top highlight
------------------------------------------------------------------------------------------------------------*/
-.ui-btn-inner {
-	border-top: 1px solid 	#fff;
-	border-color: 			rgba(255,255,255,.3);
-}
-/* corner rounding classes
------------------------------------------------------------------------------------------------------------*/
-.ui-corner-all {
-	@include border-radius($global-radii-blocks);
-}
-/* Form field separator
------------------------------------------------------------------------------------------------------------*/
-.ui-br {
-	border-color: rgb(130,130,130);
-	border-color: rgba(130,130,130,.3);
-	border-style: solid;
-}
-/* Interaction cues
------------------------------------------------------------------------------------------------------------*/
-.ui-disabled {
-	filter: Alpha(Opacity=30);
-	opacity: .3;
-	zoom: 1;
-}
-.ui-disabled,
-.ui-disabled a {
-	cursor: default !important;
-	pointer-events: none;
-}
-/* Icons
------------------------------------------------------------------------------------------------------------*/
-.ui-icon,
-.ui-icon-searchfield:after {
-	background-color: $global-icon-color;
-	background-color: $global-icon-disc;
-	background-image: url(#{$img-path}icons-18-#{$global-icon-set}.png);
-	background-repeat: no-repeat;
-	@include border-radius(9px);
-}
-/* Alt icon color
------------------------------------------------------------------------------------------------------------*/
-.ui-icon-alt .ui-icon,
-.ui-icon-alt .ui-icon-searchfield:after {
-	background-color: #fff;
-	background-color: rgba(255,255,255,.3);
-	background-image: url(#{$img-path}icons-18-black.png);
-	background-repeat: no-repeat;
-}
-/* No disc
------------------------------------------------------------------------------------------------------------*/
-.ui-icon-nodisc .ui-icon,
-.ui-icon-nodisc .ui-icon-searchfield:after,
-.ui-icon-nodisc .ui-icon-alt .ui-icon,
-.ui-icon-nodisc .ui-icon-alt .ui-icon-searchfield:after {
-	background-color: transparent;
-}
-/* Icon sprite
------------------------------------------------------------------------------------------------------------*/
-/* plus minus */
-.ui-icon-plus {
-	background-position: 	-1px -1px;
-}
-.ui-icon-minus {
-	background-position: 	-37px -1px;
-}
-/* delete/close */
-.ui-icon-delete {
-	background-position: 	-73px -1px;
-}
-/* arrows */
-.ui-icon-arrow-r {
-	background-position: 	-108px -1px;
-}
-.ui-icon-arrow-l {
-	background-position: 	-144px -1px;
-}
-.ui-icon-arrow-u {
-	background-position: 	-180px -1px;
-}
-.ui-icon-arrow-d {
-	background-position: 	-216px -1px;
-}
-/* misc */
-.ui-icon-check {
-	background-position: 	-252px -1px;
-}
-.ui-icon-gear {
-	background-position: 	-288px -1px;
-}
-.ui-icon-refresh {
-	background-position: 	-323px -1px;
-}
-.ui-icon-forward {
-	background-position: 	-360px -1px;
-}
-.ui-icon-back {
-	background-position: 	-396px -1px;
-}
-.ui-icon-grid {
-	background-position: 	-432px -1px;
-}
-.ui-icon-star {
-	background-position: 	-467px -1px;
-}
-.ui-icon-alert {
-	background-position: 	-503px -1px;
-}
-.ui-icon-info {
-	background-position: 	-539px -1px;
-}
-.ui-icon-home {
-	background-position: 	-575px -1px;
-}
-/* search */
-.ui-icon-search,
-.ui-icon-searchfield:after {
-	background-position: 	-611px -1px;
-}
-/* checkbox radio */
-.ui-icon-checkbox-on {
-	background-position: 	-647px -1px;
-}
-.ui-icon-checkbox-off {
-	background-position: 	-683px -1px;
-}
-.ui-icon-radio-on {
-	background-position: 	-718px -1px;
-}
-.ui-icon-radio-off {
-	background-position: 	-754px -1px;
-}
-/* menu edit */
-.ui-icon-bars {
-	background-position: 	-788px -1px;
-}
-.ui-icon-edit {
-	background-position: 	-824px -1px;
-}
-/* HD/"retina" sprite
------------------------------------------------------------------------------------------------------------*/
-@media only screen and (-webkit-min-device-pixel-ratio: 1.3),
-       only screen and (min--moz-device-pixel-ratio: 1.3),
-       only screen and (min-resolution: 200dpi) {
+	@include theme-create-swatch(
+		'd',
 	
-	.ui-icon-plus, 
-	.ui-icon-minus, 
-	.ui-icon-delete, 
-	.ui-icon-arrow-r,
-	.ui-icon-arrow-l, 
-	.ui-icon-arrow-u, 
-	.ui-icon-arrow-d, 
-	.ui-icon-check,
-	.ui-icon-gear, 
-	.ui-icon-refresh, 
-	.ui-icon-forward, 
-	.ui-icon-back,
-	.ui-icon-grid, 
-	.ui-icon-star, 
-	.ui-icon-alert, 
-	.ui-icon-info, 
-	.ui-icon-home, 
-	.ui-icon-bars, 
-	.ui-icon-edit,
-	.ui-icon-search, 
-	.ui-icon-searchfield:after, 
-	.ui-icon-checkbox-off, 
-	.ui-icon-checkbox-on, 
-	.ui-icon-radio-off, 
-	.ui-icon-radio-on {
-		background-image: url(#{$img-path}icons-36-#{$global-icon-set}.png);
-		@include background-size(864px 18px);
+		// Header/Footer Bar
+		// -----------------------------------
+		$bar-color: $d-bar-color,
+		$bar-shadow-x: $d-bar-shadow-x,
+		$bar-shadow-y: $d-bar-shadow-y,
+		$bar-shadow-radius: $d-bar-shadow-radius,
+		$bar-shadow-color: $d-bar-shadow-color,
+		$bar-background-color: $d-bar-background-color,
+		$bar-background-start: $d-bar-background-start,
+		$bar-background-end: $d-bar-background-end,
+		$bar-border: $d-bar-border,
+		$bar-link-color: $d-bar-link-color,
+		$bar-link-hover: $d-bar-link-hover,
+		$bar-link-active: $d-bar-link-active,
+		$bar-link-visited: $d-bar-link-visited,
+		
+		// Content Body
+		// -----------------------------------
+		$body-link-color: $d-body-link-color,
+		$body-link-hover: $d-body-link-hover,
+		$body-link-active: $d-body-link-active,
+		$body-link-visited: $d-body-link-visited,
+		$body-color: $d-body-color,
+		$body-shadow-x: $d-body-shadow-x,
+		$body-shadow-y: $d-body-shadow-y,
+		$body-shadow-radius: $d-body-shadow-radius,
+		$body-shadow-color: $d-body-shadow-color,
+		$body-background-color: $d-body-background-color,
+		$body-background-start: $d-body-background-start,
+		$body-background-end: $d-body-background-end,
+		$body-border: $d-body-border,
+		
+		// Button: Normal
+		// -----------------------------------
+		$bup-color: $d-bup-color,
+		$bup-shadow-x: $d-bup-shadow-x,
+		$bup-shadow-y: $d-bup-shadow-y,
+		$bup-shadow-radius: $d-bup-shadow-radius,
+		$bup-shadow-color: $d-bup-shadow-color,
+		$bup-background-color: $d-bup-background-color,
+		$bup-background-start: $d-bup-background-start,
+		$bup-background-end: $d-bup-background-end,
+		$bup-border: $d-bup-border,
+		
+		// Button: Hover
+		// -----------------------------------
+		$bhover-color: $d-bhover-color,
+		$bhover-shadow-x: $d-bhover-shadow-x,
+		$bhover-shadow-y: $d-bhover-shadow-y,
+		$bhover-shadow-radius: $d-bhover-shadow-radius,
+		$bhover-shadow-color: $d-bhover-shadow-color,
+		$bhover-background-color: $d-bhover-background-color,
+		$bhover-background-start: $d-bhover-background-start,
+		$bhover-background-end: $d-bhover-background-end,
+		$bhover-border: $d-bhover-border,
+		
+		
+		// Button: Pressed
+		// -----------------------------------
+		$bdown-color: $d-bdown-color,
+		$bdown-shadow-x: $d-bdown-shadow-x,
+		$bdown-shadow-y: $d-bdown-shadow-y,
+		$bdown-shadow-radius: $d-bdown-shadow-radius,
+		$bdown-shadow-color: $d-bdown-shadow-color,
+		$bdown-background-color: $d-bdown-background-color,
+		$bdown-background-start: $d-bdown-background-start,
+		$bdown-background-end: $d-bdown-background-end,
+		$bdown-border: $d-bdown-border
+	);
+}
+
+
+// E
+// -----------------------------------------------------------------------------------------------------------
+@mixin theme-swatch-e {
+
+	@include theme-create-swatch(
+		'e',
+	
+		// Header/Footer Bar
+		// -----------------------------------
+		$bar-color: $e-bar-color,
+		$bar-shadow-x: $e-bar-shadow-x,
+		$bar-shadow-y: $e-bar-shadow-y,
+		$bar-shadow-radius: $e-bar-shadow-radius,
+		$bar-shadow-color: $e-bar-shadow-color,
+		$bar-background-color: $e-bar-background-color,
+		$bar-background-start: $e-bar-background-start,
+		$bar-background-end: $e-bar-background-end,
+		$bar-border: $e-bar-border,
+		$bar-link-color: $e-bar-link-color,
+		$bar-link-hover: $e-bar-link-hover,
+		$bar-link-active: $e-bar-link-active,
+		$bar-link-visited: $e-bar-link-visited,
+		
+		// Content Body
+		// -----------------------------------
+		$body-link-color: $e-body-link-color,
+		$body-link-hover: $e-body-link-hover,
+		$body-link-active: $e-body-link-active,
+		$body-link-visited: $e-body-link-visited,
+		$body-color: $e-body-color,
+		$body-shadow-x: $e-body-shadow-x,
+		$body-shadow-y: $e-body-shadow-y,
+		$body-shadow-radius: $e-body-shadow-radius,
+		$body-shadow-color: $e-body-shadow-color,
+		$body-background-color: $e-body-background-color,
+		$body-background-start: $e-body-background-start,
+		$body-background-end: $e-body-background-end,
+		$body-border: $e-body-border,
+		
+		// Button: Normal
+		// -----------------------------------
+		$bup-color: $e-bup-color,
+		$bup-shadow-x: $e-bup-shadow-x,
+		$bup-shadow-y: $e-bup-shadow-y,
+		$bup-shadow-radius: $e-bup-shadow-radius,
+		$bup-shadow-color: $e-bup-shadow-color,
+		$bup-background-color: $e-bup-background-color,
+		$bup-background-start: $e-bup-background-start,
+		$bup-background-end: $e-bup-background-end,
+		$bup-border: $e-bup-border,
+		
+		// Button: Hover
+		// -----------------------------------
+		$bhover-color: $e-bhover-color,
+		$bhover-shadow-x: $e-bhover-shadow-x,
+		$bhover-shadow-y: $e-bhover-shadow-y,
+		$bhover-shadow-radius: $e-bhover-shadow-radius,
+		$bhover-shadow-color: $e-bhover-shadow-color,
+		$bhover-background-color: $e-bhover-background-color,
+		$bhover-background-start: $e-bhover-background-start,
+		$bhover-background-end: $e-bhover-background-end,
+		$bhover-border: $e-bhover-border,
+		
+		
+		// Button: Pressed
+		// -----------------------------------
+		$bdown-color: $e-bdown-color,
+		$bdown-shadow-x: $e-bdown-shadow-x,
+		$bdown-shadow-y: $e-bdown-shadow-y,
+		$bdown-shadow-radius: $e-bdown-shadow-radius,
+		$bdown-shadow-color: $e-bdown-shadow-color,
+		$bdown-background-color: $e-bdown-background-color,
+		$bdown-background-start: $e-bdown-background-start,
+		$bdown-background-end: $e-bdown-background-end,
+		$bdown-border: $e-bdown-border
+	);
+}
+
+
+// ===========================================================================================================
+// Mixin:
+//   Print jQuery Mobile's default Theme Structure styles
+// ===========================================================================================================
+@mixin theme-structure {
+	/* Structure */
+	
+	/* links within "buttons" 
+	-----------------------------------------------------------------------------------------------------------*/
+	a.ui-link-inherit {
+		text-decoration: none !important;
 	}
-	.ui-icon-alt .ui-icon {
-		background-image: url(#{$img-path}icons-36-black.png);
+	/* Active class used as the "on" state across all themes
+	-----------------------------------------------------------------------------------------------------------*/
+	.ui-btn-active {
+		border: 1px solid $global-active-border;
+		background: $global-active-background-color;
+		font-weight: bold;
+		color: $global-active-color;
+		cursor: pointer;
+		text-shadow: $global-active-shadow-x $global-active-shadow-y $global-active-shadow-radius $global-active-shadow-color;
+		text-decoration: none;
+		@include background-image(linear-gradient($global-active-background-start, $global-active-background-end));
+		font-family: $global-font-family;
 	}
+	.ui-btn-active:visited,
+	.ui-btn-active:hover,
+	.ui-btn-active a.ui-link-inherit {
+		color: $global-active-color;
+	}
+	/* button inner top highlight
+	-----------------------------------------------------------------------------------------------------------*/
+	.ui-btn-inner {
+		border-top: 1px solid 	#fff;
+		border-color: 			rgba(255,255,255,.3);
+	}
+	/* corner rounding classes
+	-----------------------------------------------------------------------------------------------------------*/
+	.ui-corner-all {
+		@include border-radius($global-radii-blocks);
+	}
+	/* Form field separator
+	-----------------------------------------------------------------------------------------------------------*/
+	.ui-br {
+		border-color: rgb(130,130,130);
+		border-color: rgba(130,130,130,.3);
+		border-style: solid;
+	}
+	/* Interaction cues
+	-----------------------------------------------------------------------------------------------------------*/
+	.ui-disabled {
+		filter: Alpha(Opacity=30);
+		opacity: .3;
+		zoom: 1;
+	}
+	.ui-disabled,
+	.ui-disabled a {
+		cursor: default !important;
+		pointer-events: none;
+	}
+	/* Icons
+	-----------------------------------------------------------------------------------------------------------*/
+	.ui-icon,
+	.ui-icon-searchfield:after {
+		background-color: $global-icon-color;
+		background-color: $global-icon-disc;
+		background-image: url(#{$img-path}icons-18-#{$global-icon-set}.png);
+		background-repeat: no-repeat;
+		@include border-radius(9px);
+	}
+	/* Alt icon color
+	-----------------------------------------------------------------------------------------------------------*/
+	.ui-icon-alt .ui-icon,
+	.ui-icon-alt .ui-icon-searchfield:after {
+		background-color: #fff;
+		background-color: rgba(255,255,255,.3);
+		background-image: url(#{$img-path}icons-18-black.png);
+		background-repeat: no-repeat;
+	}
+	/* No disc
+	-----------------------------------------------------------------------------------------------------------*/
+	.ui-icon-nodisc .ui-icon,
+	.ui-icon-nodisc .ui-icon-searchfield:after,
+	.ui-icon-nodisc .ui-icon-alt .ui-icon,
+	.ui-icon-nodisc .ui-icon-alt .ui-icon-searchfield:after {
+		background-color: transparent;
+	}
+	/* Icon sprite
+	-----------------------------------------------------------------------------------------------------------*/
+	/* plus minus */
 	.ui-icon-plus {
-		background-position: 	0 50%;
+		background-position: 	-1px -1px;
 	}
 	.ui-icon-minus {
-		background-position: 	-36px 50%;
+		background-position: 	-37px -1px;
 	}
+	/* delete/close */
 	.ui-icon-delete {
-		background-position: 	-72px 50%;
+		background-position: 	-73px -1px;
 	}
+	/* arrows */
 	.ui-icon-arrow-r {
-		background-position: 	-108px 50%;
+		background-position: 	-108px -1px;
 	}
 	.ui-icon-arrow-l {
-		background-position: 	-144px 50%;
+		background-position: 	-144px -1px;
 	}
 	.ui-icon-arrow-u {
-		background-position: 	-179px 50%;
+		background-position: 	-180px -1px;
 	}
 	.ui-icon-arrow-d {
-		background-position: 	-215px 50%;
+		background-position: 	-216px -1px;
 	}
+	/* misc */
 	.ui-icon-check {
-		background-position: 	-252px 50%;
+		background-position: 	-252px -1px;
 	}
 	.ui-icon-gear {
-		background-position: 	-287px 50%;
+		background-position: 	-288px -1px;
 	}
 	.ui-icon-refresh {
-		background-position: 	-323px 50%;
+		background-position: 	-323px -1px;
 	}
 	.ui-icon-forward {
-		background-position: 	-360px 50%;
+		background-position: 	-360px -1px;
 	}
 	.ui-icon-back {
-		background-position: 	-395px 50%;
+		background-position: 	-396px -1px;
 	}
 	.ui-icon-grid {
-		background-position: 	-431px 50%;
+		background-position: 	-432px -1px;
 	}
 	.ui-icon-star {
-		background-position: 	-467px 50%;
+		background-position: 	-467px -1px;
 	}
 	.ui-icon-alert {
-		background-position: 	-503px 50%;
+		background-position: 	-503px -1px;
 	}
 	.ui-icon-info {
-		background-position: 	-538px 50%;
+		background-position: 	-539px -1px;
 	}
 	.ui-icon-home {
-		background-position: 	-575px 50%;
+		background-position: 	-575px -1px;
 	}
+	/* search */
 	.ui-icon-search,
 	.ui-icon-searchfield:after {
-		background-position: 	-611px 50%;
+		background-position: 	-611px -1px;
 	}
+	/* checkbox radio */
 	.ui-icon-checkbox-on {
-		background-position: 	-647px 50%;
+		background-position: 	-647px -1px;
 	}
 	.ui-icon-checkbox-off {
-		background-position: 	-683px 50%;
+		background-position: 	-683px -1px;
 	}
 	.ui-icon-radio-on {
-		background-position: 	-718px 50%;
+		background-position: 	-718px -1px;
 	}
 	.ui-icon-radio-off {
-		background-position: 	-754px 50%;
+		background-position: 	-754px -1px;
 	}
+	/* menu edit */
 	.ui-icon-bars {
-		background-position: 	-788px 50%;
-	
-	}.ui-icon-edit {
-		background-position: 	-824px 50%;
+		background-position: 	-788px -1px;
 	}
-}
-/* checks,radios */
-.ui-checkbox .ui-icon,
-.ui-selectmenu-list .ui-icon {
-	@include border-radius(3px);
-}
-.ui-icon-checkbox-off,
-.ui-icon-radio-off {
-	background-color: transparent;	
-}
-.ui-checkbox-on .ui-icon,
-.ui-radio-on .ui-icon {
-	background-color: $global-active-background-color; /* NOTE: this hex should match the active state color. It's repeated here for cascade */
-}
-/* loading icon */
-.ui-icon-loading {
-	background: url(#{$img-path}ajax-loader.gif);
-	background-size: 46px 46px;
-}
-/* Button corner class
------------------------------------------------------------------------------------------------------------*/
-.ui-btn-corner-all {
-	@include border-radius($global-radii-buttons);
-}
-/* radius clip workaround for cleaning up corner trapping */
-.ui-corner-all,
-.ui-btn-corner-all {
-	@include background-clip(padding-box);
-}
-/* Overlay / modal
------------------------------------------------------------------------------------------------------------*/
-.ui-overlay {
-	background: #666;
-	filter: Alpha(Opacity=50);
-	opacity: .5;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-}
-.ui-overlay-shadow {
-	@include box-shadow(0 0 12px rgba(0,0,0,.6));
-}
-.ui-shadow {
-	@include box-shadow(0 1px $global-box-shadow-size rgba($global-box-shadow-color, $global-box-shadow-opacity));
-}
-.ui-bar-a .ui-shadow,
-.ui-bar-b .ui-shadow,
-.ui-bar-c .ui-shadow  {
-	@include box-shadow(0 1px 0 rgba(255,255,255,.3));
-}
-.ui-shadow-inset {
-	@include box-shadow(inset 0 1px 4px rgba(0,0,0,.2));
-}
-.ui-icon-shadow {
-	@include box-shadow(0 1px 0 $global-icon-shadow);
-}
-/* Focus state - set here for specificity (note: these classes are added by JavaScript)
------------------------------------------------------------------------------------------------------------*/
-.ui-btn:focus, 
-.ui-link-inherit:focus {
-	outline: 0;
-}
-.ui-btn.ui-focus {
-	z-index: 1;
-}
-.ui-focus,
-.ui-btn:focus {
-	@include box-shadow(inset 0 0 3px $global-active-background-color, 0 0 9px $global-active-background-color);
-}
-.ui-input-text.ui-focus,
-.ui-input-search.ui-focus {
-	@include box-shadow(0 0 12px $global-active-background-color);
-}
-/* unset box shadow in browsers that don't do it right
------------------------------------------------------------------------------------------------------------*/
-.ui-mobile-nosupport-boxshadow * {
-	-moz-box-shadow: none !important;
-	-webkit-box-shadow: none !important;
-	box-shadow: none !important;
-}
-/* ...and bring back focus */
-.ui-mobile-nosupport-boxshadow .ui-focus,
-.ui-mobile-nosupport-boxshadow .ui-btn:focus,
-.ui-mobile-nosupport-boxshadow .ui-link-inherit:focus {
-	outline-width: 1px;
-	outline-style: auto;
+	.ui-icon-edit {
+		background-position: 	-824px -1px;
+	}
+	/* HD/"retina" sprite
+	-----------------------------------------------------------------------------------------------------------*/
+	@media only screen and (-webkit-min-device-pixel-ratio: 1.3),
+		   only screen and (min--moz-device-pixel-ratio: 1.3),
+		   only screen and (min-resolution: 200dpi) {
+		
+		.ui-icon-plus, 
+		.ui-icon-minus, 
+		.ui-icon-delete, 
+		.ui-icon-arrow-r,
+		.ui-icon-arrow-l, 
+		.ui-icon-arrow-u, 
+		.ui-icon-arrow-d, 
+		.ui-icon-check,
+		.ui-icon-gear, 
+		.ui-icon-refresh, 
+		.ui-icon-forward, 
+		.ui-icon-back,
+		.ui-icon-grid, 
+		.ui-icon-star, 
+		.ui-icon-alert, 
+		.ui-icon-info, 
+		.ui-icon-home, 
+		.ui-icon-bars, 
+		.ui-icon-edit,
+		.ui-icon-search, 
+		.ui-icon-searchfield:after, 
+		.ui-icon-checkbox-off, 
+		.ui-icon-checkbox-on, 
+		.ui-icon-radio-off, 
+		.ui-icon-radio-on {
+			background-image: url(#{$img-path}icons-36-#{$global-icon-set}.png);
+			@include background-size(864px 18px);
+		}
+		.ui-icon-alt .ui-icon {
+			background-image: url(#{$img-path}icons-36-black.png);
+		}
+		.ui-icon-plus {
+			background-position: 	0 50%;
+		}
+		.ui-icon-minus {
+			background-position: 	-36px 50%;
+		}
+		.ui-icon-delete {
+			background-position: 	-72px 50%;
+		}
+		.ui-icon-arrow-r {
+			background-position: 	-108px 50%;
+		}
+		.ui-icon-arrow-l {
+			background-position: 	-144px 50%;
+		}
+		.ui-icon-arrow-u {
+			background-position: 	-179px 50%;
+		}
+		.ui-icon-arrow-d {
+			background-position: 	-215px 50%;
+		}
+		.ui-icon-check {
+			background-position: 	-252px 50%;
+		}
+		.ui-icon-gear {
+			background-position: 	-287px 50%;
+		}
+		.ui-icon-refresh {
+			background-position: 	-323px 50%;
+		}
+		.ui-icon-forward {
+			background-position: 	-360px 50%;
+		}
+		.ui-icon-back {
+			background-position: 	-395px 50%;
+		}
+		.ui-icon-grid {
+			background-position: 	-431px 50%;
+		}
+		.ui-icon-star {
+			background-position: 	-467px 50%;
+		}
+		.ui-icon-alert {
+			background-position: 	-503px 50%;
+		}
+		.ui-icon-info {
+			background-position: 	-538px 50%;
+		}
+		.ui-icon-home {
+			background-position: 	-575px 50%;
+		}
+		.ui-icon-search,
+		.ui-icon-searchfield:after {
+			background-position: 	-611px 50%;
+		}
+		.ui-icon-checkbox-on {
+			background-position: 	-647px 50%;
+		}
+		.ui-icon-checkbox-off {
+			background-position: 	-683px 50%;
+		}
+		.ui-icon-radio-on {
+			background-position: 	-718px 50%;
+		}
+		.ui-icon-radio-off {
+			background-position: 	-754px 50%;
+		}
+		.ui-icon-bars {
+			background-position: 	-788px 50%;
+		
+		}.ui-icon-edit {
+			background-position: 	-824px 50%;
+		}
+	}
+	/* checks,radios */
+	.ui-checkbox .ui-icon,
+	.ui-selectmenu-list .ui-icon {
+		@include border-radius(3px);
+	}
+	.ui-icon-checkbox-off,
+	.ui-icon-radio-off {
+		background-color: transparent;	
+	}
+	.ui-checkbox-on .ui-icon,
+	.ui-radio-on .ui-icon {
+		background-color: $global-active-background-color; /* NOTE: this hex should match the active state color. It's repeated here for cascade */
+	}
+	/* loading icon */
+	.ui-icon-loading {
+		background: url(#{$img-path}ajax-loader.gif);
+		background-size: 46px 46px;
+	}
+	/* Button corner class
+	-----------------------------------------------------------------------------------------------------------*/
+	.ui-btn-corner-all {
+		@include border-radius($global-radii-buttons);
+	}
+	/* radius clip workaround for cleaning up corner trapping */
+	.ui-corner-all,
+	.ui-btn-corner-all {
+		@include background-clip(padding-box);
+	}
+	/* Overlay / modal
+	-----------------------------------------------------------------------------------------------------------*/
+	.ui-overlay {
+		background: #666;
+		filter: Alpha(Opacity=50);
+		opacity: .5;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+	.ui-overlay-shadow {
+		@include box-shadow(0 0 12px rgba(0,0,0,.6));
+	}
+	.ui-shadow {
+		@include box-shadow(0 1px $global-box-shadow-size rgba($global-box-shadow-color, $global-box-shadow-opacity));
+	}
+	.ui-bar-a .ui-shadow,
+	.ui-bar-b .ui-shadow,
+	.ui-bar-c .ui-shadow  {
+		@include box-shadow(0 1px 0 rgba(255,255,255,.3));
+	}
+	.ui-shadow-inset {
+		@include box-shadow(inset 0 1px 4px rgba(0,0,0,.2));
+	}
+	.ui-icon-shadow {
+		@include box-shadow(0 1px 0 $global-icon-shadow);
+	}
+	/* Focus state - set here for specificity (note: these classes are added by JavaScript)
+	-----------------------------------------------------------------------------------------------------------*/
+	.ui-btn:focus, 
+	.ui-link-inherit:focus {
+		outline: 0;
+	}
+	.ui-btn.ui-focus {
+		z-index: 1;
+	}
+	.ui-focus,
+	.ui-btn:focus {
+		@include box-shadow(inset 0 0 3px $global-active-background-color, 0 0 9px $global-active-background-color);
+	}
+	.ui-input-text.ui-focus,
+	.ui-input-search.ui-focus {
+		@include box-shadow(0 0 12px $global-active-background-color);
+	}
+	/* unset box shadow in browsers that don't do it right
+	-----------------------------------------------------------------------------------------------------------*/
+	.ui-mobile-nosupport-boxshadow * {
+		-moz-box-shadow: none !important;
+		-webkit-box-shadow: none !important;
+		box-shadow: none !important;
+	}
+	/* ...and bring back focus */
+	.ui-mobile-nosupport-boxshadow .ui-focus,
+	.ui-mobile-nosupport-boxshadow .ui-btn:focus,
+	.ui-mobile-nosupport-boxshadow .ui-link-inherit:focus {
+		outline-width: 1px;
+		outline-style: auto;
+	}
 }

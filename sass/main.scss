@@ -1,10 +1,17 @@
 /*!==========================================================================
-   IMPORTANT!
-   This is a SASS generated CSS file. Make edits to the original .scss file
-   Name: main.scss
-   ========================================================================== */
-// Organization:
-// 1. Overwrite Default Theme Global and Swatch Variables
+ * IMPORTANT!
+ *   This is a SASS generated CSS file. Make edits to the original .scss file
+ * 
+ * Name:
+ *   main.scss
+ * 
+ * Copyright 2013 JNK Design & Development
+ * Released under the MIT license.
+ * ========================================================================== */
+
+// ==========================================================================
+// SASS Organization:
+// 1. Overwrite Default Global Theme and Swatch Variables
 // 2. Import "jquery.mobile.theme" [Private]
 // 3. Import "jquery.mobile.structure" [Private]
 // 4. Define which structure structure components to load
@@ -17,21 +24,43 @@
 
 
 // ==========================================================================
-// jquery.mobile.structure.css
+// jQuery Theme
 // ==========================================================================
 @import "jquery.mobile.theme";
 
+// --------------------------------------------------------------------------
+// DEFAULT:
+//   Include theme swatch a - e
+//
+// NOTE:
+//   Remove or comment out swatches if NOT needed. This will create a 
+//   cleaner and smaller css file.
+// --------------------------------------------------------------------------
+
+@include theme-swatch-a;
+@include theme-swatch-b;
+@include theme-swatch-c;
+@include theme-swatch-d;
+@include theme-swatch-e;
+
+// RECOMMENDED:
+@include theme-structure;
+
 
 // ==========================================================================
-// jquery.mobile.structure.css
+// jQuery Structure
 // ==========================================================================
 @import "jquery.mobile.structure";
 
 // --------------------------------------------------------------------------
-// Default to including all structure CSS
-// Remove or comment out any modules you do not use to create a smaller
-// css file.
+// DEFAULT:
+//   Include all structure CSS
+// 
+// NOTE:
+//   Remove or comment out any modules you do not use to create a smaller
+//   css file.
 // --------------------------------------------------------------------------
+
 @include ui-core;
 
 @include ui-transitions;

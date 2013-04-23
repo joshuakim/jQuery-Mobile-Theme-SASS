@@ -1,26 +1,39 @@
 /*==========================================================================
-   IMPORTANT!
-   This is a SASS generated CSS file. Make edits to the original .scss file
-   Name: main.scss
-   ========================================================================== */
+ * IMPORTANT!
+ *   This is a SASS generated CSS file. Make edits to the original .scss file
+ * 
+ * Name:
+ *   main.scss
+ * 
+ * Copyright 2013 JNK Design & Development
+ * Released under the MIT license.
+ * ========================================================================== */
 /*
-* jQuery Mobile 1.3.1
-* jquery.mobile.theme-1.3.1.css
-* Git HEAD hash: 74b4bec049fd93e4fe40205e6157de16eb64eb46 <> Date: Wed Apr 10 2013 21:57:23 UTC
-* http://jquerymobile.com
-*
-* Copyright 2010, 2013 jQuery Foundation, Inc. and other contributors
-* Released under the MIT license.
-* http://jquery.org/license
-*
-*/
+ * BASED ON:
+ * jQuery Mobile [1.3.1]
+ * jquery.mobile.theme-1.3.1.css
+ * http://jquerymobile.com
+ * 
+ * Copyright 2010, 2013 jQuery Foundation, Inc. and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ * 
+ */
+/* ==========================================================================
+   Swatch: a
+   ========================================================================== */
 /* Bar */
 .ui-bar-a {
+  /* $bar-border */
   border: 1px solid #333333;
+  /* $bar-background-color */
   background: #111111;
+  /* $bar-color */
   color: white;
   font-weight: bold;
+  /* $bar-shadow-x $bar-shadow-y $bar-shadow-radius $bar-shadow-color */
   text-shadow: 0 -1px 0 black;
+  /* $bar-background-start, $bar-background-end */
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3c3c3c), color-stop(100%, #111111));
   background-image: -webkit-linear-gradient(#3c3c3c, #111111);
   background-image: -moz-linear-gradient(#3c3c3c, #111111);
@@ -33,38 +46,49 @@
 .ui-bar-a select,
 .ui-bar-a textarea,
 .ui-bar-a button {
+  /* $global-font-family */
   font-family: Helvetica, Arial, sans-serif;
 }
 
 .ui-bar-a .ui-link-inherit {
+  /* $bar-color */
   color: white;
 }
 
 .ui-bar-a a.ui-link {
+  /* $bar-link-color */
   color: #7cc4e7;
   font-weight: bold;
 }
 
 .ui-bar-a a.ui-link:visited {
+  /* $bar-link-visited */
   color: #2489ce;
 }
 
 .ui-bar-a a.ui-link:hover {
+  /* $bar-link-hover */
   color: #2489ce;
 }
 
 .ui-bar-a a.ui-link:active {
+  /* $bar-link-active */
   color: #2489ce;
 }
 
 /* Body */
 .ui-body-a,
 .ui-overlay-a {
+  /* $body-border */
   border: 1px solid #444444;
+  /* $body-background-color */
   background: #222222;
+  /* $body-color */
   color: white;
+  /* $body-shadow-x $body-shadow-y $body-shadow-radius $body-shadow-color */
   text-shadow: 0 1px 0 #111111;
   font-weight: normal;
+  /* $body-background-start, $body-background-end */
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #444444), color-stop(100%, #222222));
   background-image: -webkit-linear-gradient(#444444, #222222);
   background-image: -moz-linear-gradient(#444444, #222222);
@@ -82,37 +106,48 @@
 .ui-body-a select,
 .ui-body-a textarea,
 .ui-body-a button {
+  /* $global-font-family */
   font-family: Helvetica, Arial, sans-serif;
 }
 
 .ui-body-a .ui-link-inherit {
+  /* $body-color */
   color: white;
 }
 
 .ui-body-a .ui-link {
+  /* $body-link-color */
   color: #2489ce;
   font-weight: bold;
 }
 
 .ui-body-a .ui-link:visited {
+  /* $body-link-visited */
   color: #2489ce;
 }
 
 .ui-body-a .ui-link:hover {
+  /* $body-link-hover */
   color: #2489ce;
 }
 
 .ui-body-a .ui-link:active {
+  /* $body-link-active */
   color: #2489ce;
 }
 
 /* Button: Normal */
 .ui-btn-up-a {
+  /* $bup-border */
   border: 1px solid #111111;
+  /* $bup-background-color */
   background: #333333;
   font-weight: bold;
+  /* $bup-color */
   color: white;
+  /* $bup-shadow-x $bup-shadow-y $bup-shadow-radius $bup-shadow-color */
   text-shadow: 0 1px 0 #111111;
+  /* $bup-background-start, $bup-background-end */
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #444444), color-stop(100%, #2d2d2d));
   background-image: -webkit-linear-gradient(#444444, #2d2d2d);
   background-image: -moz-linear-gradient(#444444, #2d2d2d);
@@ -122,16 +157,22 @@
 
 .ui-btn-up-a:visited,
 .ui-btn-up-a a.ui-link-inherit {
+  /* $bup-color */
   color: white;
 }
 
 /* Button: Hover */
 .ui-btn-hover-a {
+  /* $bhover-border */
   border: 1px solid black;
+  /* $bhover-background-color */
   background: #444444;
   font-weight: bold;
+  /* $bhover-color */
   color: white;
+  /* $bhover-shadow-x $bhover-shadow-y $bhover-shadow-radius $bhover-shadow-color */
   text-shadow: 0 1px 0 #111111;
+  /* $bhover-background-start, $bhover-background-end */
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #555555), color-stop(100%, #383838));
   background-image: -webkit-linear-gradient(#555555, #383838);
   background-image: -moz-linear-gradient(#555555, #383838);
@@ -142,16 +183,22 @@
 .ui-btn-hover-a:visited,
 .ui-btn-hover-a:hover,
 .ui-btn-hover-a a.ui-link-inherit {
+  /* $bhover-color */
   color: white;
 }
 
 /* Button: Pressed */
 .ui-btn-down-a {
+  /* $bdown-border */
   border: 1px solid black;
+  /* $bdown-background-color */
   background: #222222;
   font-weight: bold;
+  /* $bdown-color */
   color: white;
+  /* $bdown-shadow-x $bdown-shadow-y $bdown-shadow-radius $bdown-shadow-color */
   text-shadow: 0 1px 0 #111111;
+  /* $bdown-background-start, $bdown-background-end */
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #202020), color-stop(100%, #2c2c2c));
   background-image: -webkit-linear-gradient(#202020, #2c2c2c);
   background-image: -moz-linear-gradient(#202020, #2c2c2c);
@@ -162,23 +209,33 @@
 .ui-btn-down-a:visited,
 .ui-btn-down-a:hover,
 .ui-btn-down-a a.ui-link-inherit {
+  /* $bdown-color */
   color: white;
 }
 
 .ui-btn-up-a,
 .ui-btn-hover-a,
 .ui-btn-down-a {
+  /* $global-font-family */
   font-family: Helvetica, Arial, sans-serif;
   text-decoration: none;
 }
 
+/* ==========================================================================
+   Swatch: b
+   ========================================================================== */
 /* Bar */
 .ui-bar-b {
+  /* $bar-border */
   border: 1px solid #456f9a;
+  /* $bar-background-color */
   background: #5e87b0;
+  /* $bar-color */
   color: white;
   font-weight: bold;
+  /* $bar-shadow-x $bar-shadow-y $bar-shadow-radius $bar-shadow-color */
   text-shadow: 0 1px 0 #3e6790;
+  /* $bar-background-start, $bar-background-end */
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #6facd5), color-stop(100%, #497bae));
   background-image: -webkit-linear-gradient(#6facd5, #497bae);
   background-image: -moz-linear-gradient(#6facd5, #497bae);
@@ -191,38 +248,49 @@
 .ui-bar-b select,
 .ui-bar-b textarea,
 .ui-bar-b button {
+  /* $global-font-family */
   font-family: Helvetica, Arial, sans-serif;
 }
 
 .ui-bar-b .ui-link-inherit {
+  /* $bar-color */
   color: white;
 }
 
 .ui-bar-b a.ui-link {
+  /* $bar-link-color */
   color: #ddf0f8;
   font-weight: bold;
 }
 
 .ui-bar-b a.ui-link:visited {
+  /* $bar-link-visited */
   color: #ddf0f8;
 }
 
 .ui-bar-b a.ui-link:hover {
+  /* $bar-link-hover */
   color: #ddf0f8;
 }
 
 .ui-bar-b a.ui-link:active {
+  /* $bar-link-active */
   color: #ddf0f8;
 }
 
 /* Body */
 .ui-body-b,
 .ui-overlay-b {
+  /* $body-border */
   border: 1px solid #999999;
+  /* $body-background-color */
   background: #f3f3f3;
+  /* $body-color */
   color: #222222;
+  /* $body-shadow-x $body-shadow-y $body-shadow-radius $body-shadow-color */
   text-shadow: 0 1px 0 white;
   font-weight: normal;
+  /* $body-background-start, $body-background-end */
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dddddd), color-stop(100%, #cccccc));
   background-image: -webkit-linear-gradient(#dddddd, #cccccc);
   background-image: -moz-linear-gradient(#dddddd, #cccccc);
@@ -240,37 +308,48 @@
 .ui-body-b select,
 .ui-body-b textarea,
 .ui-body-b button {
+  /* $global-font-family */
   font-family: Helvetica, Arial, sans-serif;
 }
 
 .ui-body-b .ui-link-inherit {
+  /* $body-color */
   color: #222222;
 }
 
 .ui-body-b .ui-link {
+  /* $body-link-color */
   color: #2489ce;
   font-weight: bold;
 }
 
 .ui-body-b .ui-link:visited {
+  /* $body-link-visited */
   color: #2489ce;
 }
 
 .ui-body-b .ui-link:hover {
+  /* $body-link-hover */
   color: #2489ce;
 }
 
 .ui-body-b .ui-link:active {
+  /* $body-link-active */
   color: #2489ce;
 }
 
 /* Button: Normal */
 .ui-btn-up-b {
+  /* $bup-border */
   border: 1px solid #044062;
+  /* $bup-background-color */
   background: #396b9e;
   font-weight: bold;
+  /* $bup-color */
   color: white;
+  /* $bup-shadow-x $bup-shadow-y $bup-shadow-radius $bup-shadow-color */
   text-shadow: 0 1px 0 #194b7e;
+  /* $bup-background-start, $bup-background-end */
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5f9cc5), color-stop(100%, #396b9e));
   background-image: -webkit-linear-gradient(#5f9cc5, #396b9e);
   background-image: -moz-linear-gradient(#5f9cc5, #396b9e);
@@ -280,16 +359,22 @@
 
 .ui-btn-up-b:visited,
 .ui-btn-up-b a.ui-link-inherit {
+  /* $bup-color */
   color: white;
 }
 
 /* Button: Hover */
 .ui-btn-hover-b {
+  /* $bhover-border */
   border: 1px solid #00415e;
+  /* $bhover-background-color */
   background: #4b88b6;
   font-weight: bold;
+  /* $bhover-color */
   color: white;
+  /* $bhover-shadow-x $bhover-shadow-y $bhover-shadow-radius $bhover-shadow-color */
   text-shadow: 0 1px 0 #194b7e;
+  /* $bhover-background-start, $bhover-background-end */
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #6facd5), color-stop(100%, #4272a4));
   background-image: -webkit-linear-gradient(#6facd5, #4272a4);
   background-image: -moz-linear-gradient(#6facd5, #4272a4);
@@ -300,16 +385,22 @@
 .ui-btn-hover-b:visited,
 .ui-btn-hover-b:hover,
 .ui-btn-hover-b a.ui-link-inherit {
+  /* $bhover-color */
   color: white;
 }
 
 /* Button: Pressed */
 .ui-btn-down-b {
+  /* $bdown-border */
   border: 1px solid #225377;
+  /* $bdown-background-color */
   background: #4e89c5;
   font-weight: bold;
+  /* $bdown-color */
   color: white;
+  /* $bdown-shadow-x $bdown-shadow-y $bdown-shadow-radius $bdown-shadow-color */
   text-shadow: 0 1px 0 #194b7e;
+  /* $bdown-background-start, $bdown-background-end */
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #295b8e), color-stop(100%, #3e79b5));
   background-image: -webkit-linear-gradient(#295b8e, #3e79b5);
   background-image: -moz-linear-gradient(#295b8e, #3e79b5);
@@ -320,23 +411,33 @@
 .ui-btn-down-b:visited,
 .ui-btn-down-b:hover,
 .ui-btn-down-b a.ui-link-inherit {
+  /* $bdown-color */
   color: white;
 }
 
 .ui-btn-up-b,
 .ui-btn-hover-b,
 .ui-btn-down-b {
+  /* $global-font-family */
   font-family: Helvetica, Arial, sans-serif;
   text-decoration: none;
 }
 
+/* ==========================================================================
+   Swatch: c
+   ========================================================================== */
 /* Bar */
 .ui-bar-c {
+  /* $bar-border */
   border: 1px solid #b3b3b3;
+  /* $bar-background-color */
   background: #eeeeee;
+  /* $bar-color */
   color: #3e3e3e;
   font-weight: bold;
+  /* $bar-shadow-x $bar-shadow-y $bar-shadow-radius $bar-shadow-color */
   text-shadow: 0 1px 0 white;
+  /* $bar-background-start, $bar-background-end */
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f0f0f0), color-stop(100%, #dddddd));
   background-image: -webkit-linear-gradient(#f0f0f0, #dddddd);
   background-image: -moz-linear-gradient(#f0f0f0, #dddddd);
@@ -349,38 +450,49 @@
 .ui-bar-c select,
 .ui-bar-c textarea,
 .ui-bar-c button {
+  /* $global-font-family */
   font-family: Helvetica, Arial, sans-serif;
 }
 
 .ui-bar-c .ui-link-inherit {
+  /* $bar-color */
   color: #3e3e3e;
 }
 
 .ui-bar-c a.ui-link {
+  /* $bar-link-color */
   color: #7cc4e7;
   font-weight: bold;
 }
 
 .ui-bar-c a.ui-link:visited {
+  /* $bar-link-visited */
   color: #2489ce;
 }
 
 .ui-bar-c a.ui-link:hover {
+  /* $bar-link-hover */
   color: #2489ce;
 }
 
 .ui-bar-c a.ui-link:active {
+  /* $bar-link-active */
   color: #2489ce;
 }
 
 /* Body */
 .ui-body-c,
 .ui-overlay-c {
+  /* $body-border */
   border: 1px solid #aaaaaa;
+  /* $body-background-color */
   background: #f9f9f9;
+  /* $body-color */
   color: #333333;
+  /* $body-shadow-x $body-shadow-y $body-shadow-radius $body-shadow-color */
   text-shadow: 0 1px 0 white;
   font-weight: normal;
+  /* $body-background-start, $body-background-end */
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f9f9f9), color-stop(100%, #eeeeee));
   background-image: -webkit-linear-gradient(#f9f9f9, #eeeeee);
   background-image: -moz-linear-gradient(#f9f9f9, #eeeeee);
@@ -398,37 +510,48 @@
 .ui-body-c select,
 .ui-body-c textarea,
 .ui-body-c button {
+  /* $global-font-family */
   font-family: Helvetica, Arial, sans-serif;
 }
 
 .ui-body-c .ui-link-inherit {
+  /* $body-color */
   color: #333333;
 }
 
 .ui-body-c .ui-link {
+  /* $body-link-color */
   color: #2489ce;
   font-weight: bold;
 }
 
 .ui-body-c .ui-link:visited {
+  /* $body-link-visited */
   color: #2489ce;
 }
 
 .ui-body-c .ui-link:hover {
+  /* $body-link-hover */
   color: #2489ce;
 }
 
 .ui-body-c .ui-link:active {
+  /* $body-link-active */
   color: #2489ce;
 }
 
 /* Button: Normal */
 .ui-btn-up-c {
+  /* $bup-border */
   border: 1px solid #cccccc;
+  /* $bup-background-color */
   background: #eeeeee;
   font-weight: bold;
+  /* $bup-color */
   color: #222222;
+  /* $bup-shadow-x $bup-shadow-y $bup-shadow-radius $bup-shadow-color */
   text-shadow: 0 1px 0 white;
+  /* $bup-background-start, $bup-background-end */
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #f1f1f1));
   background-image: -webkit-linear-gradient(#ffffff, #f1f1f1);
   background-image: -moz-linear-gradient(#ffffff, #f1f1f1);
@@ -438,16 +561,22 @@
 
 .ui-btn-up-c:visited,
 .ui-btn-up-c a.ui-link-inherit {
+  /* $bup-color */
   color: #222222;
 }
 
 /* Button: Hover */
 .ui-btn-hover-c {
+  /* $bhover-border */
   border: 1px solid #bbbbbb;
+  /* $bhover-background-color */
   background: #dfdfdf;
   font-weight: bold;
+  /* $bhover-color */
   color: #222222;
+  /* $bhover-shadow-x $bhover-shadow-y $bhover-shadow-radius $bhover-shadow-color */
   text-shadow: 0 1px 0 white;
+  /* $bhover-background-start, $bhover-background-end */
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f6f6f6), color-stop(100%, #e0e0e0));
   background-image: -webkit-linear-gradient(#f6f6f6, #e0e0e0);
   background-image: -moz-linear-gradient(#f6f6f6, #e0e0e0);
@@ -458,16 +587,22 @@
 .ui-btn-hover-c:visited,
 .ui-btn-hover-c:hover,
 .ui-btn-hover-c a.ui-link-inherit {
+  /* $bhover-color */
   color: #222222;
 }
 
 /* Button: Pressed */
 .ui-btn-down-c {
+  /* $bdown-border */
   border: 1px solid #bbbbbb;
+  /* $bdown-background-color */
   background: #d6d6d6;
   font-weight: bold;
+  /* $bdown-color */
   color: #222222;
+  /* $bdown-shadow-x $bdown-shadow-y $bdown-shadow-radius $bdown-shadow-color */
   text-shadow: 0 1px 0 white;
+  /* $bdown-background-start, $bdown-background-end */
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d0d0d0), color-stop(100%, #dfdfdf));
   background-image: -webkit-linear-gradient(#d0d0d0, #dfdfdf);
   background-image: -moz-linear-gradient(#d0d0d0, #dfdfdf);
@@ -478,34 +613,37 @@
 .ui-btn-down-c:visited,
 .ui-btn-down-c:hover,
 .ui-btn-down-c a.ui-link-inherit {
+  /* $bdown-color */
   color: #222222;
 }
 
 .ui-btn-up-c,
 .ui-btn-hover-c,
 .ui-btn-down-c {
+  /* $global-font-family */
   font-family: Helvetica, Arial, sans-serif;
   text-decoration: none;
 }
 
-/* D
------------------------------------------------------------------------------------------------------------*/
+/* ==========================================================================
+   Swatch: d
+   ========================================================================== */
+/* Bar */
 .ui-bar-d {
+  /* $bar-border */
   border: 1px solid #bbbbbb;
+  /* $bar-background-color */
   background: #bbbbbb;
+  /* $bar-color */
   color: #333333;
   font-weight: bold;
+  /* $bar-shadow-x $bar-shadow-y $bar-shadow-radius $bar-shadow-color */
   text-shadow: 0 1px 0 #eeeeee;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#dddddd), to(#bbbbbb));
-  /* Saf4+, Chrome */
+  /* $bar-background-start, $bar-background-end */
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dddddd), color-stop(100%, #bbbbbb));
   background-image: -webkit-linear-gradient(#dddddd, #bbbbbb);
-  /* Chrome 10+, Saf5.1+ */
   background-image: -moz-linear-gradient(#dddddd, #bbbbbb);
-  /* FF3.6 */
-  background-image: -ms-linear-gradient(#dddddd, #bbbbbb);
-  /* IE10 */
   background-image: -o-linear-gradient(#dddddd, #bbbbbb);
-  /* Opera 11.10+ */
   background-image: linear-gradient(#dddddd, #bbbbbb);
 }
 
@@ -514,46 +652,53 @@
 .ui-bar-d select,
 .ui-bar-d textarea,
 .ui-bar-d button {
+  /* $global-font-family */
   font-family: Helvetica, Arial, sans-serif;
 }
 
 .ui-bar-d .ui-link-inherit {
+  /* $bar-color */
   color: #333333;
 }
 
 .ui-bar-d a.ui-link {
+  /* $bar-link-color */
   color: #2489ce;
   font-weight: bold;
 }
 
 .ui-bar-d a.ui-link:visited {
+  /* $bar-link-visited */
   color: #2489ce;
 }
 
 .ui-bar-d a.ui-link:hover {
+  /* $bar-link-hover */
   color: #2489ce;
 }
 
 .ui-bar-d a.ui-link:active {
+  /* $bar-link-active */
   color: #2489ce;
 }
 
+/* Body */
 .ui-body-d,
 .ui-overlay-d {
+  /* $body-border */
   border: 1px solid #bbbbbb;
-  color: #333333;
-  text-shadow: 0 1px 0 white;
+  /* $body-background-color */
   background: white;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
-  /* Saf4+, Chrome */
-  background-image: -webkit-linear-gradient(white, white);
-  /* Chrome 10+, Saf5.1+ */
-  background-image: -moz-linear-gradient(white, white);
-  /* FF3.6 */
-  background-image: -ms-linear-gradient(white, white);
-  /* IE10 */
-  background-image: -o-linear-gradient(white, white);
-  /* Opera 11.10+ */
+  /* $body-color */
+  color: #333333;
+  /* $body-shadow-x $body-shadow-y $body-shadow-radius $body-shadow-color */
+  text-shadow: 0 1px 0 white;
+  font-weight: normal;
+  /* $body-background-start, $body-background-end */
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #ffffff));
+  background-image: -webkit-linear-gradient(#ffffff, #ffffff);
+  background-image: -moz-linear-gradient(#ffffff, #ffffff);
+  background-image: -o-linear-gradient(#ffffff, #ffffff);
   background-image: linear-gradient(#ffffff, #ffffff);
 }
 
@@ -567,130 +712,140 @@
 .ui-body-d select,
 .ui-body-d textarea,
 .ui-body-d button {
+  /* $global-font-family */
   font-family: Helvetica, Arial, sans-serif;
 }
 
 .ui-body-d .ui-link-inherit {
+  /* $body-color */
   color: #333333;
 }
 
 .ui-body-d .ui-link {
+  /* $body-link-color */
   color: #2489ce;
   font-weight: bold;
 }
 
 .ui-body-d .ui-link:visited {
+  /* $body-link-visited */
   color: #2489ce;
 }
 
 .ui-body-d .ui-link:hover {
+  /* $body-link-hover */
   color: #2489ce;
 }
 
 .ui-body-d .ui-link:active {
+  /* $body-link-active */
   color: #2489ce;
 }
 
+/* Button: Normal */
 .ui-btn-up-d {
+  /* $bup-border */
   border: 1px solid #bbbbbb;
+  /* $bup-background-color */
   background: white;
   font-weight: bold;
+  /* $bup-color */
   color: #333333;
+  /* $bup-shadow-x $bup-shadow-y $bup-shadow-radius $bup-shadow-color */
   text-shadow: 0 1px 0 white;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#f6f6f6));
-  /* Saf4+, Chrome */
+  /* $bup-background-start, $bup-background-end */
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fafafa), color-stop(100%, #f6f6f6));
   background-image: -webkit-linear-gradient(#fafafa, #f6f6f6);
-  /* Chrome 10+, Saf5.1+ */
   background-image: -moz-linear-gradient(#fafafa, #f6f6f6);
-  /* FF3.6 */
-  background-image: -ms-linear-gradient(#fafafa, #f6f6f6);
-  /* IE10 */
   background-image: -o-linear-gradient(#fafafa, #f6f6f6);
-  /* Opera 11.10+ */
   background-image: linear-gradient(#fafafa, #f6f6f6);
 }
 
 .ui-btn-up-d:visited,
 .ui-btn-up-d a.ui-link-inherit {
+  /* $bup-color */
   color: #333333;
 }
 
+/* Button: Hover */
 .ui-btn-hover-d {
-  border: 1px solid #aaaaaa;
-  background: #eeeeee;
+  /* $bhover-border */
+  border: 1px solid #bbbbbb;
+  /* $bhover-background-color */
+  background: #dfdfdf;
   font-weight: bold;
-  color: #333333;
-  cursor: pointer;
+  /* $bhover-color */
+  color: #222222;
+  /* $bhover-shadow-x $bhover-shadow-y $bhover-shadow-radius $bhover-shadow-color */
   text-shadow: 0 1px 0 white;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(white));
-  /* Saf4+, Chrome */
-  background-image: -webkit-linear-gradient(#eeeeee, white);
-  /* Chrome 10+, Saf5.1+ */
-  background-image: -moz-linear-gradient(#eeeeee, white);
-  /* FF3.6 */
-  background-image: -ms-linear-gradient(#eeeeee, white);
-  /* IE10 */
-  background-image: -o-linear-gradient(#eeeeee, white);
-  /* Opera 11.10+ */
-  background-image: linear-gradient(#eeeeee, #ffffff);
+  /* $bhover-background-start, $bhover-background-end */
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f6f6f6), color-stop(100%, #e0e0e0));
+  background-image: -webkit-linear-gradient(#f6f6f6, #e0e0e0);
+  background-image: -moz-linear-gradient(#f6f6f6, #e0e0e0);
+  background-image: -o-linear-gradient(#f6f6f6, #e0e0e0);
+  background-image: linear-gradient(#f6f6f6, #e0e0e0);
 }
 
 .ui-btn-hover-d:visited,
 .ui-btn-hover-d:hover,
 .ui-btn-hover-d a.ui-link-inherit {
-  color: #333333;
+  /* $bhover-color */
+  color: #222222;
 }
 
+/* Button: Pressed */
 .ui-btn-down-d {
+  /* $bdown-border */
   border: 1px solid #aaaaaa;
+  /* $bdown-background-color */
   background: #eeeeee;
   font-weight: bold;
+  /* $bdown-color */
   color: #333333;
+  /* $bdown-shadow-x $bdown-shadow-y $bdown-shadow-radius $bdown-shadow-color */
   text-shadow: 0 1px 0 white;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#e5e5e5), to(#f2f2f2));
-  /* Saf4+, Chrome */
+  /* $bdown-background-start, $bdown-background-end */
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e5e5e5), color-stop(100%, #f2f2f2));
   background-image: -webkit-linear-gradient(#e5e5e5, #f2f2f2);
-  /* Chrome 10+, Saf5.1+ */
   background-image: -moz-linear-gradient(#e5e5e5, #f2f2f2);
-  /* FF3.6 */
-  background-image: -ms-linear-gradient(#e5e5e5, #f2f2f2);
-  /* IE10 */
   background-image: -o-linear-gradient(#e5e5e5, #f2f2f2);
-  /* Opera 11.10+ */
   background-image: linear-gradient(#e5e5e5, #f2f2f2);
 }
 
 .ui-btn-down-d:visited,
 .ui-btn-down-d:hover,
 .ui-btn-down-d a.ui-link-inherit {
+  /* $bdown-color */
   color: #333333;
 }
 
 .ui-btn-up-d,
 .ui-btn-hover-d,
 .ui-btn-down-d {
+  /* $global-font-family */
   font-family: Helvetica, Arial, sans-serif;
   text-decoration: none;
 }
 
-/* E
------------------------------------------------------------------------------------------------------------*/
+/* ==========================================================================
+   Swatch: e
+   ========================================================================== */
+/* Bar */
 .ui-bar-e {
+  /* $bar-border */
   border: 1px solid #f7c942;
+  /* $bar-background-color */
   background: #fadb4e;
+  /* $bar-color */
   color: #333333;
   font-weight: bold;
+  /* $bar-shadow-x $bar-shadow-y $bar-shadow-radius $bar-shadow-color */
   text-shadow: 0 1px 0 white;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fceda7), to(#fbef7e));
-  /* Saf4+, Chrome */
+  /* $bar-background-start, $bar-background-end */
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fceda7), color-stop(100%, #fbef7e));
   background-image: -webkit-linear-gradient(#fceda7, #fbef7e);
-  /* Chrome 10+, Saf5.1+ */
   background-image: -moz-linear-gradient(#fceda7, #fbef7e);
-  /* FF3.6 */
-  background-image: -ms-linear-gradient(#fceda7, #fbef7e);
-  /* IE10 */
   background-image: -o-linear-gradient(#fceda7, #fbef7e);
-  /* Opera 11.10+ */
   background-image: linear-gradient(#fceda7, #fbef7e);
 }
 
@@ -699,46 +854,53 @@
 .ui-bar-e select,
 .ui-bar-e textarea,
 .ui-bar-e button {
+  /* $global-font-family */
   font-family: Helvetica, Arial, sans-serif;
 }
 
 .ui-bar-e .ui-link-inherit {
+  /* $bar-color */
   color: #333333;
 }
 
 .ui-bar-e a.ui-link {
+  /* $bar-link-color */
   color: #2489ce;
   font-weight: bold;
 }
 
 .ui-bar-e a.ui-link:visited {
+  /* $bar-link-visited */
   color: #2489ce;
 }
 
 .ui-bar-e a.ui-link:hover {
+  /* $bar-link-hover */
   color: #2489ce;
 }
 
 .ui-bar-e a.ui-link:active {
+  /* $bar-link-active */
   color: #2489ce;
 }
 
+/* Body */
 .ui-body-e,
 .ui-overlay-e {
+  /* $body-border */
   border: 1px solid #f7c942;
-  color: #222222;
-  text-shadow: 0 1px 0 white;
+  /* $body-background-color */
   background: #fff9df;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fffadf), to(#fff3a5));
-  /* Saf4+, Chrome */
+  /* $body-color */
+  color: #222222;
+  /* $body-shadow-x $body-shadow-y $body-shadow-radius $body-shadow-color */
+  text-shadow: 0 1px 0 white;
+  font-weight: normal;
+  /* $body-background-start, $body-background-end */
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fffadf), color-stop(100%, #fff3a5));
   background-image: -webkit-linear-gradient(#fffadf, #fff3a5);
-  /* Chrome 10+, Saf5.1+ */
   background-image: -moz-linear-gradient(#fffadf, #fff3a5);
-  /* FF3.6 */
-  background-image: -ms-linear-gradient(#fffadf, #fff3a5);
-  /* IE10 */
   background-image: -o-linear-gradient(#fffadf, #fff3a5);
-  /* Opera 11.10+ */
   background-image: linear-gradient(#fffadf, #fff3a5);
 }
 
@@ -752,107 +914,117 @@
 .ui-body-e select,
 .ui-body-e textarea,
 .ui-body-e button {
+  /* $global-font-family */
   font-family: Helvetica, Arial, sans-serif;
 }
 
 .ui-body-e .ui-link-inherit {
+  /* $body-color */
   color: #222222;
 }
 
 .ui-body-e .ui-link {
+  /* $body-link-color */
   color: #2489ce;
   font-weight: bold;
 }
 
 .ui-body-e .ui-link:visited {
+  /* $body-link-visited */
   color: #2489ce;
 }
 
 .ui-body-e .ui-link:hover {
+  /* $body-link-hover */
   color: #2489ce;
 }
 
 .ui-body-e .ui-link:active {
+  /* $body-link-active */
   color: #2489ce;
 }
 
+/* Button: Normal */
 .ui-btn-up-e {
+  /* $bup-border */
   border: 1px solid #f4c63f;
+  /* $bup-background-color */
   background: #fadb4e;
   font-weight: bold;
-  color: #222222;
+  /* $bup-color */
+  color: #333333;
+  /* $bup-shadow-x $bup-shadow-y $bup-shadow-radius $bup-shadow-color */
   text-shadow: 0 1px 0 white;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffefaa), to(#ffe155));
-  /* Saf4+, Chrome */
+  /* $bup-background-start, $bup-background-end */
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffefaa), color-stop(100%, #ffe155));
   background-image: -webkit-linear-gradient(#ffefaa, #ffe155);
-  /* Chrome 10+, Saf5.1+ */
   background-image: -moz-linear-gradient(#ffefaa, #ffe155);
-  /* FF3.6 */
-  background-image: -ms-linear-gradient(#ffefaa, #ffe155);
-  /* IE10 */
   background-image: -o-linear-gradient(#ffefaa, #ffe155);
-  /* Opera 11.10+ */
   background-image: linear-gradient(#ffefaa, #ffe155);
 }
 
 .ui-btn-up-e:visited,
 .ui-btn-up-e a.ui-link-inherit {
-  color: #222222;
+  /* $bup-color */
+  color: #333333;
 }
 
+/* Button: Hover */
 .ui-btn-hover-e {
+  /* $bhover-border */
   border: 1px solid #f2c43d;
+  /* $bhover-background-color */
   background: #fbe26f;
   font-weight: bold;
+  /* $bhover-color */
   color: #111111;
+  /* $bhover-shadow-x $bhover-shadow-y $bhover-shadow-radius $bhover-shadow-color */
   text-shadow: 0 1px 0 white;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff5ba), to(#fbdd52));
-  /* Saf4+, Chrome */
+  /* $bhover-background-start, $bhover-background-end */
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fff5ba), color-stop(100%, #fbdd52));
   background-image: -webkit-linear-gradient(#fff5ba, #fbdd52);
-  /* Chrome 10+, Saf5.1+ */
   background-image: -moz-linear-gradient(#fff5ba, #fbdd52);
-  /* FF3.6 */
-  background-image: -ms-linear-gradient(#fff5ba, #fbdd52);
-  /* IE10 */
   background-image: -o-linear-gradient(#fff5ba, #fbdd52);
-  /* Opera 11.10+ */
   background-image: linear-gradient(#fff5ba, #fbdd52);
 }
 
 .ui-btn-hover-e:visited,
 .ui-btn-hover-e:hover,
 .ui-btn-hover-e a.ui-link-inherit {
-  color: #333333;
+  /* $bhover-color */
+  color: #111111;
 }
 
+/* Button: Pressed */
 .ui-btn-down-e {
+  /* $bdown-border */
   border: 1px solid #f2c43d;
+  /* $bdown-background-color */
   background: #fceda7;
   font-weight: bold;
+  /* $bdown-color */
   color: #111111;
+  /* $bdown-shadow-x $bdown-shadow-y $bdown-shadow-radius $bdown-shadow-color */
   text-shadow: 0 1px 0 white;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f8d94c), to(#fadb4e));
-  /* Saf4+, Chrome */
+  /* $bdown-background-start, $bdown-background-end */
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f8d94c), color-stop(100%, #fadb4e));
   background-image: -webkit-linear-gradient(#f8d94c, #fadb4e);
-  /* Chrome 10+, Saf5.1+ */
   background-image: -moz-linear-gradient(#f8d94c, #fadb4e);
-  /* FF3.6 */
-  background-image: -ms-linear-gradient(#f8d94c, #fadb4e);
-  /* IE10 */
   background-image: -o-linear-gradient(#f8d94c, #fadb4e);
-  /* Opera 11.10+ */
   background-image: linear-gradient(#f8d94c, #fadb4e);
 }
 
 .ui-btn-down-e:visited,
 .ui-btn-down-e:hover,
 .ui-btn-down-e a.ui-link-inherit {
-  color: #333333;
+  /* $bdown-color */
+  color: #111111;
 }
 
 .ui-btn-up-e,
 .ui-btn-hover-e,
 .ui-btn-down-e {
+  /* $global-font-family */
   font-family: Helvetica, Arial, sans-serif;
   text-decoration: none;
 }
@@ -1333,15 +1505,18 @@ a.ui-link-inherit {
 }
 
 /*
-* jQuery Mobile 1.3.1
+* BASED ON:
+* jQuery Mobile [1.3.1]
 * jquery.mobile.structure-1.3.1.css
-* Git HEAD hash: 74b4bec049fd93e4fe40205e6157de16eb64eb46 <> Date: Wed Apr 10 2013 21:57:23 UTC
 * http://jquerymobile.com
-*
+* 
 * Copyright 2010, 2013 jQuery Foundation, Inc. and other contributors
 * Released under the MIT license.
 * http://jquery.org/license
-*
+* 
+* Copyright 2013 JNK Design & Development
+* Released under the MIT license.
+* 
 */
 /* some unsets - more probably needed */
 .ui-mobile,
