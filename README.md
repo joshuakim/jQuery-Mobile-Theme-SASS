@@ -1,10 +1,15 @@
-[IN PROGRESS]
-
 jQuery-Mobile-Theme-SASS
 ========================
 
-Theme jQuery Mobile with SASS!
+jQuery Mobile Version:
+  1.3.1
 
+Description:
+  Theming jQuery Mobile with Sassy CSS (.scss) and Compass!
+
+...
+
+[IN PROGRESS]
 
 ...
 
