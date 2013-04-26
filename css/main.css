@@ -7,21 +7,36 @@
  * 
  * Copyright 2013 JNK Design & Development
  * Released under the MIT license.
+ *
+ * Original jQuery Mobile CSS:
+ * Copyright 2010, 2013 jQuery Foundation, Inc. and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
  * ========================================================================== */
 /*
  * BASED ON:
  * jQuery Mobile [1.3.1]
  * jquery.mobile.theme-1.3.1.css
  * http://jquerymobile.com
- * 
+ */
+/*
  * Copyright 2010, 2013 jQuery Foundation, Inc. and other contributors
  * Released under the MIT license.
  * http://jquery.org/license
- * 
  */
-/* ==========================================================================
-   Swatch: a
-   ========================================================================== */
+/*
+ * BASED ON:
+ * jQuery Mobile [1.3.1]
+ * jquery.mobile.theme-1.3.1.css
+ * http://jquerymobile.com
+ */
+/*
+ * Copyright 2010, 2013 jQuery Foundation, Inc. and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ */
+/* Swatch: a
+-----------------------------------------------------------------------------------------------------------*/
 /* Bar */
 .ui-bar-a {
   /* $bar-border */
@@ -221,9 +236,8 @@
   text-decoration: none;
 }
 
-/* ==========================================================================
-   Swatch: b
-   ========================================================================== */
+/* Swatch: b
+-----------------------------------------------------------------------------------------------------------*/
 /* Bar */
 .ui-bar-b {
   /* $bar-border */
@@ -423,9 +437,8 @@
   text-decoration: none;
 }
 
-/* ==========================================================================
-   Swatch: c
-   ========================================================================== */
+/* Swatch: c
+-----------------------------------------------------------------------------------------------------------*/
 /* Bar */
 .ui-bar-c {
   /* $bar-border */
@@ -625,9 +638,8 @@
   text-decoration: none;
 }
 
-/* ==========================================================================
-   Swatch: d
-   ========================================================================== */
+/* Swatch: d
+-----------------------------------------------------------------------------------------------------------*/
 /* Bar */
 .ui-bar-d {
   /* $bar-border */
@@ -827,9 +839,8 @@
   text-decoration: none;
 }
 
-/* ==========================================================================
-   Swatch: e
-   ========================================================================== */
+/* Swatch: e
+-----------------------------------------------------------------------------------------------------------*/
 /* Bar */
 .ui-bar-e {
   /* $bar-border */
@@ -1505,19 +1516,16 @@ a.ui-link-inherit {
 }
 
 /*
-* BASED ON:
-* jQuery Mobile [1.3.1]
-* jquery.mobile.structure-1.3.1.css
-* http://jquerymobile.com
-* 
-* Copyright 2010, 2013 jQuery Foundation, Inc. and other contributors
-* Released under the MIT license.
-* http://jquery.org/license
-* 
-* Copyright 2013 JNK Design & Development
-* Released under the MIT license.
-* 
-*/
+ * BASED ON:
+ * jQuery Mobile [1.3.1]
+ * jquery.mobile.structure-1.3.1.css
+ * http://jquerymobile.com
+ */
+/*
+ * Copyright 2010, 2013 jQuery Foundation, Inc. and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ */
 /* some unsets - more probably needed */
 .ui-mobile,
 .ui-mobile body {

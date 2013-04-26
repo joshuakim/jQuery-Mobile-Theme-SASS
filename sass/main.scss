@@ -7,62 +7,101 @@
  * 
  * Copyright 2013 JNK Design & Development
  * Released under the MIT license.
+ *
+ * Original jQuery Mobile CSS:
+ * Copyright 2010, 2013 jQuery Foundation, Inc. and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
  * ========================================================================== */
 
 // ==========================================================================
-// SASS Organization:
-// 1. Overwrite Default Global Theme and Swatch Variables
-// 2. Import "jquery.mobile.theme" [Private]
-// 3. Import "jquery.mobile.structure" [Private]
-// 4. Define which structure structure components to load
-// 5. Custom Styles
+// jQuery Mobile SASS File Organization:
+//
+// 1. jQuery Mobile Theme:
+// 1.1. Overwrite Theme's Default Global and Swatch (A - E) Variables
+// 1.2. Load Theme SASS files (Variables and Mixins)
+// 1.3. Select/Print Theme Swatches A - E CSS
+// 1.4. *Print Theme Structure CSS
+// 1.5. Create Additonal Custom Theme Swatches!
+
+// 2. jQuery Mobile Structure:
+// 2.1. *Load Structure SASS file (Mixins)
+// 2.2. *Select/Print Structure UI Components CSS
+
+// Your Custom CSS:
+// 3. Additonal Custom CSS
+
+// NOTE:
+//   Order Is Important:
+//   jQuery Mobile Theme should be loaded before jQuery Mobile Structure
+//
+//   * Required/Recommended for Best Visual Results
+// ==========================================================================
 
 
 // ==========================================================================
-// Overwrite Theme Global and Swatch Variables
+// 1. jQuery Mobile Theme:
 // ==========================================================================
 
+// 1.1. Overwrite Theme's Default Global and Swatch (A - E) Variables
+// --------------------------------------------------------------------------
 
-// ==========================================================================
-// jQuery Theme
-// ==========================================================================
-@import "jquery.mobile.theme";
 
+// 1.2. Load jQuery Mobile Theme SASS files (Variables and Mixins)
+// --------------------------------------------------------------------------
+@import "jqm/theme.variables";
+@import "jqm/theme.mixins";
+
+
+// 1.3. Print jQuery Theme Swatches A - E CSS
 // --------------------------------------------------------------------------
 // DEFAULT:
-//   Include theme swatch a - e
+//   Prints all theme swatches: a, b, c, d, e
 //
 // NOTE:
-//   Remove or comment out swatches if NOT needed. This will create a 
-//   cleaner and smaller css file.
+//   Remove or comment out swatches if they are NOT needed.
+//   This will create a cleaner and smaller css file.
 // --------------------------------------------------------------------------
-
+// OPTIONAL:
 @include theme-swatch-a;
 @include theme-swatch-b;
 @include theme-swatch-c;
 @include theme-swatch-d;
 @include theme-swatch-e;
 
-// RECOMMENDED:
+
+// 1.4. *Print jQuery Theme Structure CSS
+// --------------------------------------------------------------------------
+// REQUIRED:
 @include theme-structure;
 
 
-// ==========================================================================
-// jQuery Structure
-// ==========================================================================
-@import "jquery.mobile.structure";
+// 1.5. Create Additonal Custom Theme Swatches!
+// --------------------------------------------------------------------------
 
+
+// ==========================================================================
+// 2. jQuery Mobile Structure:
+// ==========================================================================
+
+// 2.1. *Load Structure SASS file (Mixins)
+// --------------------------------------------------------------------------
+@import "jqm/structure.mixins";
+
+
+// 2.2. *Select/Print Structure UI Components CSS
 // --------------------------------------------------------------------------
 // DEFAULT:
-//   Include all structure CSS
+//   Prints all Widgets/Components CSS
 // 
 // NOTE:
-//   Remove or comment out any modules you do not use to create a smaller
-//   css file.
+//   Remove or comment out Widgets if they are NOT needed.
+//   This will create a cleaner and smaller css file.
 // --------------------------------------------------------------------------
-
+// REQUIRED:
 @include ui-core;
 
+// OPTIONAL:
 @include ui-transitions;
 @include ui-grid;
 @include ui-fixed-header-footer;
@@ -84,6 +123,9 @@
 @include ui-panel;
 
 
+// ==========================================================================
+// 3. Additonal Custom CSS
+// ==========================================================================
 /* ===== Custom Styles ======================================================
    Author: 
    ========================================================================== */

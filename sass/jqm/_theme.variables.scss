@@ -1,0 +1,527 @@
+
+// BASED ON:
+// jQuery Mobile [1.3.1]
+// jquery.mobile.theme-1.3.1.css
+// http://jquerymobile.com
+//
+// Copyright 2010, 2013 jQuery Foundation, Inc. and other contributors
+// Released under the MIT license.
+// http://jquery.org/license
+
+
+// ==========================================================================
+// Global - General
+// ==========================================================================
+
+// Images Folder Path
+// --------------------------------------------------------------------------
+$img-path: "../images/" !default;
+
+
+// ==========================================================================
+// Theme Global Settings
+// ==========================================================================
+
+// Font Family
+// --------------------------------------------------------------------------
+$global-font-family: Helvetica, Arial, sans-serif !default;
+
+
+// Active State
+// --------------------------------------------------------------------------
+// Text Color
+$global-active-color: #fff !default;
+
+// Text Shadow
+$global-active-shadow-x:      0       !default;
+$global-active-shadow-y:      1px     !default;
+$global-active-shadow-radius: 0       !default;
+$global-active-shadow-color:  #3373a5 !default;
+
+// Background
+$global-active-background-color: #5393c5 !default;
+$global-active-background-start: #5393c5 !default;
+$global-active-background-end:   #6facd5 !default;
+
+// Border Color
+$global-active-border: #2373a5 !default;
+
+
+// Corner Radii
+// --------------------------------------------------------------------------
+$global-radii-blocks: .6em !default;
+$global-radii-buttons: 1em !default;
+
+
+// Icon
+// --------------------------------------------------------------------------
+$global-icon-set: white !default;	// Options: white | black
+$global-icon-color: #666 !default;
+$global-icon-opacity: 0.40 !default;
+
+// PRIVATE: This variable is calculated depending on disc-option and color + opacity
+$global-icon-disc: rgba($global-icon-color, $global-icon-opacity) !default;
+
+// Disc or W/O Disc
+// To remove disc around icon, uncomment the following:
+// $global-icon-disc: transparent !default;
+
+// PRIVATE: This variable is not included in ThemeRoller, but editable if wanted:
+$global-icon-shadow: rgba(255,255,255,.4) !default;
+
+
+// Box Shadow
+// --------------------------------------------------------------------------
+$global-box-shadow-color: #000 !default;
+$global-box-shadow-opacity: 0.2 !default;
+$global-box-shadow-size: 3px !default;
+
+
+// ==========================================================================
+// Swatch A
+// ==========================================================================
+
+// Header/Footer Bar
+// -----------------------------------
+$a-bar-color: #fff !default;
+$a-bar-shadow-x: 0 !default;
+$a-bar-shadow-y: -1px !default;
+$a-bar-shadow-radius: 0 !default;
+$a-bar-shadow-color: #000 !default;
+
+$a-bar-background-color: #111 !default;
+$a-bar-background-start: #3c3c3c !default;
+$a-bar-background-end: #111 !default;
+
+$a-bar-border: #333 !default;
+
+// Not in ThemeRoller
+$a-bar-link-color: #7cc4e7 !default;
+$a-bar-link-hover: #2489ce !default;
+$a-bar-link-active: #2489ce !default;
+$a-bar-link-visited: #2489ce !default;
+
+
+// Content Body
+// -----------------------------------
+$a-body-link-color: #2489ce !default;
+$a-body-link-hover: #2489ce !default;
+$a-body-link-active: #2489ce !default;
+$a-body-link-visited: #2489ce !default;
+
+$a-body-color: #fff !default;
+$a-body-shadow-x: 0 !default;
+$a-body-shadow-y: 1px !default;
+$a-body-shadow-radius: 0 !default;
+$a-body-shadow-color: #111 !default;
+
+$a-body-background-color: #222 !default;
+$a-body-background-start: #444 !default;
+$a-body-background-end: #222 !default;
+
+$a-body-border: #444 !default;
+
+
+// Button: Normal
+// -----------------------------------
+$a-bup-color: #fff !default;
+$a-bup-shadow-x: 0 !default;
+$a-bup-shadow-y: 1px !default;
+$a-bup-shadow-radius: 0 !default;
+$a-bup-shadow-color: #111 !default;
+
+$a-bup-background-color: #333 !default;
+$a-bup-background-start: #444 !default;
+$a-bup-background-end: #2d2d2d !default;
+
+$a-bup-border: #111 !default;
+
+
+// Button: Hover
+// -----------------------------------
+$a-bhover-color: #fff !default;
+$a-bhover-shadow-x: 0 !default;
+$a-bhover-shadow-y: 1px !default;
+$a-bhover-shadow-radius: 0 !default;
+$a-bhover-shadow-color: #111 !default;
+
+$a-bhover-background-color: #444 !default;
+$a-bhover-background-start: #555 !default;
+$a-bhover-background-end: #383838 !default;
+
+$a-bhover-border: #000 !default;
+
+
+// Button: Pressed
+// -----------------------------------
+$a-bdown-color: #fff !default;
+$a-bdown-shadow-x: 0 !default;
+$a-bdown-shadow-y: 1px !default;
+$a-bdown-shadow-radius: 0 !default;
+$a-bdown-shadow-color: #111 !default;
+
+$a-bdown-background-color: #222 !default;
+$a-bdown-background-start: #202020 !default;
+$a-bdown-background-end: #2c2c2c !default;
+
+$a-bdown-border: #000 !default;
+
+
+// ==========================================================================
+// Swatch B
+// ==========================================================================
+
+// Header/Footer Bar
+// -----------------------------------
+$b-bar-color: #fff !default;
+$b-bar-shadow-x: 0 !default;
+$b-bar-shadow-y: 1px !default;
+$b-bar-shadow-radius: 0 !default;
+$b-bar-shadow-color: #3e6790 !default;
+
+$b-bar-background-color: #5e87b0 !default;
+$b-bar-background-start: #6facd5 !default;
+$b-bar-background-end: #497bae !default;
+
+$b-bar-border: #456f9a !default;
+
+// Not in ThemeRoller
+$b-bar-link-color: #ddf0f8 !default;
+$b-bar-link-hover: #ddf0f8 !default;
+$b-bar-link-active: #ddf0f8 !default;
+$b-bar-link-visited: #ddf0f8 !default;
+
+
+// Content Body
+// -----------------------------------
+$b-body-link-color: #2489ce !default;
+$b-body-link-hover: #2489ce !default;
+$b-body-link-active: #2489ce !default;
+$b-body-link-visited: #2489ce !default;
+
+$b-body-color: #222 !default;
+$b-body-shadow-x: 0 !default;
+$b-body-shadow-y: 1px !default;
+$b-body-shadow-radius: 0 !default;
+$b-body-shadow-color: #fff !default;
+
+$b-body-background-color: #f3f3f3 !default;
+$b-body-background-start: #ddd !default;
+$b-body-background-end: #ccc !default;
+
+$b-body-border: #999 !default;
+
+
+// Button: Normal
+// -----------------------------------
+$b-bup-color: #fff !default;
+$b-bup-shadow-x: 0 !default;
+$b-bup-shadow-y: 1px !default;
+$b-bup-shadow-radius: 0 !default;
+$b-bup-shadow-color: #194b7e !default;
+
+$b-bup-background-color: #396b9e !default;
+$b-bup-background-start: #5f9cc5 !default;
+$b-bup-background-end: #396b9e !default;
+
+$b-bup-border: #044062 !default;
+
+
+// Button: Hover
+// -----------------------------------
+$b-bhover-color: #fff !default;
+$b-bhover-shadow-x: 0 !default;
+$b-bhover-shadow-y: 1px !default;
+$b-bhover-shadow-radius: 0 !default;
+$b-bhover-shadow-color: #194b7e !default;
+
+$b-bhover-background-color: #4b88b6 !default;
+$b-bhover-background-start: #6facd5 !default;
+$b-bhover-background-end: #4272a4 !default;
+
+$b-bhover-border: #00415e !default;
+
+
+// Button: Pressed
+// -----------------------------------
+$b-bdown-color: #fff !default;
+$b-bdown-shadow-x: 0 !default;
+$b-bdown-shadow-y: 1px !default;
+$b-bdown-shadow-radius: 0 !default;
+$b-bdown-shadow-color: #194b7e !default;
+
+$b-bdown-background-color: #4e89c5 !default;
+$b-bdown-background-start: #295b8e !default;
+$b-bdown-background-end: #3e79b5 !default;
+
+$b-bdown-border: #225377 !default;
+
+
+// ==========================================================================
+// Swatch C
+// ==========================================================================
+
+// Header/Footer Bar
+// -----------------------------------
+$c-bar-color: #3e3e3e !default;
+$c-bar-shadow-x: 0 !default;
+$c-bar-shadow-y: 1px !default;
+$c-bar-shadow-radius: 0 !default;
+$c-bar-shadow-color: #fff !default;
+
+$c-bar-background-color: #eee !default;
+$c-bar-background-start: #f0f0f0 !default;
+$c-bar-background-end: #ddd !default;
+
+$c-bar-border: #b3b3b3 !default;
+
+// Not in ThemeRoller
+$c-bar-link-color: #7cc4e7 !default;
+$c-bar-link-hover: #2489ce !default;
+$c-bar-link-active: #2489ce !default;
+$c-bar-link-visited: #2489ce !default;
+
+
+// Content Body
+// -----------------------------------
+$c-body-link-color: #2489ce !default;
+$c-body-link-hover: #2489ce !default;
+$c-body-link-active: #2489ce !default;
+$c-body-link-visited: #2489ce !default;
+
+$c-body-color: #333 !default;
+$c-body-shadow-x: 0 !default;
+$c-body-shadow-y: 1px !default;
+$c-body-shadow-radius: 0 !default;
+$c-body-shadow-color: #fff !default;
+
+$c-body-background-color: #f9f9f9 !default;
+$c-body-background-start: #f9f9f9 !default;
+$c-body-background-end: #eee !default;
+
+$c-body-border: #aaa !default;
+
+
+// Button: Normal
+// -----------------------------------
+$c-bup-color: #222 !default;
+$c-bup-shadow-x: 0 !default;
+$c-bup-shadow-y: 1px !default;
+$c-bup-shadow-radius: 0 !default;
+$c-bup-shadow-color: #fff !default;
+
+$c-bup-background-color: #eee !default;
+$c-bup-background-start: #fff !default;
+$c-bup-background-end: #f1f1f1 !default;
+
+$c-bup-border: #ccc !default;
+
+
+// Button: Hover
+// -----------------------------------
+$c-bhover-color: #222 !default;
+$c-bhover-shadow-x: 0 !default;
+$c-bhover-shadow-y: 1px !default;
+$c-bhover-shadow-radius: 0 !default;
+$c-bhover-shadow-color: #fff !default;
+
+$c-bhover-background-color: #dfdfdf !default;
+$c-bhover-background-start: #f6f6f6 !default;
+$c-bhover-background-end: #e0e0e0 !default;
+
+$c-bhover-border: #bbb !default;
+
+
+// Button: Pressed
+// -----------------------------------
+$c-bdown-color: #222 !default;
+$c-bdown-shadow-x: 0 !default;
+$c-bdown-shadow-y: 1px !default;
+$c-bdown-shadow-radius: 0 !default;
+$c-bdown-shadow-color: #fff !default;
+
+$c-bdown-background-color: #d6d6d6 !default;
+$c-bdown-background-start: #d0d0d0 !default;
+$c-bdown-background-end: #dfdfdf !default;
+
+$c-bdown-border: #bbb !default;
+
+
+// ==========================================================================
+// Swatch D
+// ==========================================================================
+
+// Header/Footer Bar
+// -----------------------------------
+$d-bar-color: #333 !default;
+$d-bar-shadow-x: 0 !default;
+$d-bar-shadow-y: 1px !default;
+$d-bar-shadow-radius: 0 !default;
+$d-bar-shadow-color: #eee !default;
+
+$d-bar-background-color: #bbb !default;
+$d-bar-background-start: #ddd !default;
+$d-bar-background-end: #bbb !default;
+
+$d-bar-border: #bbb !default;
+
+// Not in ThemeRoller
+$d-bar-link-color: #2489ce !default;
+$d-bar-link-hover: #2489ce !default;
+$d-bar-link-active: #2489ce !default;
+$d-bar-link-visited: #2489ce !default;
+
+
+// Content Body
+// -----------------------------------
+$d-body-link-color: #2489ce !default;
+$d-body-link-hover: #2489ce !default;
+$d-body-link-active: #2489ce !default;
+$d-body-link-visited: #2489ce !default;
+
+$d-body-color: #333 !default;
+$d-body-shadow-x: 0 !default;
+$d-body-shadow-y: 1px !default;
+$d-body-shadow-radius: 0 !default;
+$d-body-shadow-color: #fff !default;
+
+$d-body-background-color: #fff !default;
+$d-body-background-start: #fff !default;
+$d-body-background-end: #fff !default;
+
+$d-body-border: #bbb !default;
+
+
+// Button: Normal
+// -----------------------------------
+$d-bup-color: #333 !default;
+$d-bup-shadow-x: 0 !default;
+$d-bup-shadow-y: 1px !default;
+$d-bup-shadow-radius: 0 !default;
+$d-bup-shadow-color: #fff !default;
+
+$d-bup-background-color: #fff !default;
+$d-bup-background-start: #fafafa !default;
+$d-bup-background-end: #f6f6f6 !default;
+
+$d-bup-border: #bbb !default;
+
+
+// Button: Hover
+// -----------------------------------
+$d-bhover-color: #222 !default;
+$d-bhover-shadow-x: 0 !default;
+$d-bhover-shadow-y: 1px !default;
+$d-bhover-shadow-radius: 0 !default;
+$d-bhover-shadow-color: #fff !default;
+
+$d-bhover-background-color: #dfdfdf !default;
+$d-bhover-background-start: #f6f6f6 !default;
+$d-bhover-background-end: #e0e0e0 !default;
+
+$d-bhover-border: #bbb !default;
+
+
+// Button: Pressed
+// -----------------------------------
+$d-bdown-color: #333 !default;
+$d-bdown-shadow-x: 0 !default;
+$d-bdown-shadow-y: 1px !default;
+$d-bdown-shadow-radius: 0 !default;
+$d-bdown-shadow-color: #fff !default;
+
+$d-bdown-background-color: #eee !default;
+$d-bdown-background-start: #e5e5e5 !default;
+$d-bdown-background-end: #f2f2f2 !default;
+
+$d-bdown-border: #aaa !default;
+
+
+// ==========================================================================
+// Swatch E
+// ==========================================================================
+
+// Header/Footer Bar
+// -----------------------------------
+$e-bar-color: #333 !default;
+$e-bar-shadow-x: 0 !default;
+$e-bar-shadow-y: 1px !default;
+$e-bar-shadow-radius: 0 !default;
+$e-bar-shadow-color: #fff !default;
+
+$e-bar-background-color: #fadb4e !default;
+$e-bar-background-start: #fceda7 !default;
+$e-bar-background-end: #fbef7e !default;
+
+$e-bar-border: #f7c942 !default;
+
+// Not in ThemeRoller
+$e-bar-link-color: #2489ce !default;
+$e-bar-link-hover: #2489ce !default;
+$e-bar-link-active: #2489ce !default;
+$e-bar-link-visited: #2489ce !default;
+
+
+// Content Body
+// -----------------------------------
+$e-body-link-color: #2489ce !default;
+$e-body-link-hover: #2489ce !default;
+$e-body-link-active: #2489ce !default;
+$e-body-link-visited: #2489ce !default;
+
+$e-body-color: #222 !default;
+$e-body-shadow-x: 0 !default;
+$e-body-shadow-y: 1px !default;
+$e-body-shadow-radius: 0 !default;
+$e-body-shadow-color: #fff !default;
+
+$e-body-background-color: #fff9df !default;
+$e-body-background-start: #fffadf !default;
+$e-body-background-end: #fff3a5 !default;
+
+$e-body-border: #f7c942 !default;
+
+
+// Button: Normal
+// -----------------------------------
+$e-bup-color: #333 !default;
+$e-bup-shadow-x: 0 !default;
+$e-bup-shadow-y: 1px !default;
+$e-bup-shadow-radius: 0 !default;
+$e-bup-shadow-color: #fff !default;
+
+$e-bup-background-color: #fadb4e !default;
+$e-bup-background-start: #ffefaa !default;
+$e-bup-background-end: #ffe155 !default;
+
+$e-bup-border: #f4c63f !default;
+
+
+// Button: Hover
+// -----------------------------------
+$e-bhover-color: #111 !default;
+$e-bhover-shadow-x: 0 !default;
+$e-bhover-shadow-y: 1px !default;
+$e-bhover-shadow-radius: 0 !default;
+$e-bhover-shadow-color: #fff !default;
+
+$e-bhover-background-color: #fbe26f !default;
+$e-bhover-background-start: #fff5ba !default;
+$e-bhover-background-end: #fbdd52 !default;
+
+$e-bhover-border: #f2c43d !default;
+
+
+// Button: Pressed
+// -----------------------------------
+$e-bdown-color: #111 !default;
+$e-bdown-shadow-x: 0 !default;
+$e-bdown-shadow-y: 1px !default;
+$e-bdown-shadow-radius: 0 !default;
+$e-bdown-shadow-color: #fff !default;
+
+$e-bdown-background-color: #fceda7 !default;
+$e-bdown-background-start: #f8d94c !default;
+$e-bdown-background-end: #fadb4e !default;
+
+$e-bdown-border: #f2c43d !default;
